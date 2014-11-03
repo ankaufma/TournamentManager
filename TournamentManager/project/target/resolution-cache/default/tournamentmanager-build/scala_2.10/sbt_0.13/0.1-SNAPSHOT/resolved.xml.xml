@@ -4,7 +4,7 @@
 		module="tournamentmanager-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20141007171304"
+		publication="20141103205059"
 		e:scalaVersion="2.10" e:sbtVersion="0.13"
 	>
 		<description>
