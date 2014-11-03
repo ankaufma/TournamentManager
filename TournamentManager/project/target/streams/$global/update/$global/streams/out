@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/C:/Users/AK/Desktop/Fachhochschule/MSE2/MPL/WS/MyTorunement/TournamentManager/project/}tournamentmanager-build...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/C:/Users/AK/git/TournamentManager/TournamentManager/project/}tournamentmanager-build...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: default#tournamentmanager-build;0.1-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -1759,19 +1759,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.6!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 4754ms :: artifacts dl 87ms[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT compile produced in C:\Users\AK\Desktop\Fachhochschule\MSE2\MPL\WS\MyTorunement\TournamentManager\project\target\resolution-cache\reports\default-tournamentmanager-build-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT runtime produced in C:\Users\AK\Desktop\Fachhochschule\MSE2\MPL\WS\MyTorunement\TournamentManager\project\target\resolution-cache\reports\default-tournamentmanager-build-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT test produced in C:\Users\AK\Desktop\Fachhochschule\MSE2\MPL\WS\MyTorunement\TournamentManager\project\target\resolution-cache\reports\default-tournamentmanager-build-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT provided produced in C:\Users\AK\Desktop\Fachhochschule\MSE2\MPL\WS\MyTorunement\TournamentManager\project\target\resolution-cache\reports\default-tournamentmanager-build-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT optional produced in C:\Users\AK\Desktop\Fachhochschule\MSE2\MPL\WS\MyTorunement\TournamentManager\project\target\resolution-cache\reports\default-tournamentmanager-build-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT compile-internal produced in C:\Users\AK\Desktop\Fachhochschule\MSE2\MPL\WS\MyTorunement\TournamentManager\project\target\resolution-cache\reports\default-tournamentmanager-build-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT runtime-internal produced in C:\Users\AK\Desktop\Fachhochschule\MSE2\MPL\WS\MyTorunement\TournamentManager\project\target\resolution-cache\reports\default-tournamentmanager-build-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT test-internal produced in C:\Users\AK\Desktop\Fachhochschule\MSE2\MPL\WS\MyTorunement\TournamentManager\project\target\resolution-cache\reports\default-tournamentmanager-build-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT plugin produced in C:\Users\AK\Desktop\Fachhochschule\MSE2\MPL\WS\MyTorunement\TournamentManager\project\target\resolution-cache\reports\default-tournamentmanager-build-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT sources produced in C:\Users\AK\Desktop\Fachhochschule\MSE2\MPL\WS\MyTorunement\TournamentManager\project\target\resolution-cache\reports\default-tournamentmanager-build-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT docs produced in C:\Users\AK\Desktop\Fachhochschule\MSE2\MPL\WS\MyTorunement\TournamentManager\project\target\resolution-cache\reports\default-tournamentmanager-build-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT pom produced in C:\Users\AK\Desktop\Fachhochschule\MSE2\MPL\WS\MyTorunement\TournamentManager\project\target\resolution-cache\reports\default-tournamentmanager-build-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT scala-tool produced in C:\Users\AK\Desktop\Fachhochschule\MSE2\MPL\WS\MyTorunement\TournamentManager\project\target\resolution-cache\reports\default-tournamentmanager-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (4754ms resolve - 87ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 6490ms :: artifacts dl 592ms[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT compile produced in C:\Users\AK\git\TournamentManager\TournamentManager\project\target\resolution-cache\reports\default-tournamentmanager-build-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT runtime produced in C:\Users\AK\git\TournamentManager\TournamentManager\project\target\resolution-cache\reports\default-tournamentmanager-build-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT test produced in C:\Users\AK\git\TournamentManager\TournamentManager\project\target\resolution-cache\reports\default-tournamentmanager-build-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT provided produced in C:\Users\AK\git\TournamentManager\TournamentManager\project\target\resolution-cache\reports\default-tournamentmanager-build-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT optional produced in C:\Users\AK\git\TournamentManager\TournamentManager\project\target\resolution-cache\reports\default-tournamentmanager-build-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT compile-internal produced in C:\Users\AK\git\TournamentManager\TournamentManager\project\target\resolution-cache\reports\default-tournamentmanager-build-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT runtime-internal produced in C:\Users\AK\git\TournamentManager\TournamentManager\project\target\resolution-cache\reports\default-tournamentmanager-build-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT test-internal produced in C:\Users\AK\git\TournamentManager\TournamentManager\project\target\resolution-cache\reports\default-tournamentmanager-build-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT plugin produced in C:\Users\AK\git\TournamentManager\TournamentManager\project\target\resolution-cache\reports\default-tournamentmanager-build-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT sources produced in C:\Users\AK\git\TournamentManager\TournamentManager\project\target\resolution-cache\reports\default-tournamentmanager-build-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT docs produced in C:\Users\AK\git\TournamentManager\TournamentManager\project\target\resolution-cache\reports\default-tournamentmanager-build-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT pom produced in C:\Users\AK\git\TournamentManager\TournamentManager\project\target\resolution-cache\reports\default-tournamentmanager-build-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT scala-tool produced in C:\Users\AK\git\TournamentManager\TournamentManager\project\target\resolution-cache\reports\default-tournamentmanager-build-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (6490ms resolve - 592ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/C:/Users/AK/Desktop/Fachhochschule/MSE2/MPL/WS/MyTorunement/TournamentManager/}tournamentmanager...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/C:/Users/AK/git/TournamentManager/TournamentManager/}tournamentmanager...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: default#tournamentmanager_2.10;2.10[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#tournamentmanager_2.10;2.10 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.10;2.10->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.4 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@257d80fc[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3f54bf22[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.10.4] org.scala-lang#scala-library;2.10.4[0m
@@ -252,19 +252,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.4!scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2131ms :: artifacts dl 35ms[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 compile produced in C:\Users\AK\Desktop\Fachhochschule\MSE2\MPL\WS\MyTorunement\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 runtime produced in C:\Users\AK\Desktop\Fachhochschule\MSE2\MPL\WS\MyTorunement\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 test produced in C:\Users\AK\Desktop\Fachhochschule\MSE2\MPL\WS\MyTorunement\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 provided produced in C:\Users\AK\Desktop\Fachhochschule\MSE2\MPL\WS\MyTorunement\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 optional produced in C:\Users\AK\Desktop\Fachhochschule\MSE2\MPL\WS\MyTorunement\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 compile-internal produced in C:\Users\AK\Desktop\Fachhochschule\MSE2\MPL\WS\MyTorunement\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 runtime-internal produced in C:\Users\AK\Desktop\Fachhochschule\MSE2\MPL\WS\MyTorunement\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 test-internal produced in C:\Users\AK\Desktop\Fachhochschule\MSE2\MPL\WS\MyTorunement\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 plugin produced in C:\Users\AK\Desktop\Fachhochschule\MSE2\MPL\WS\MyTorunement\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 sources produced in C:\Users\AK\Desktop\Fachhochschule\MSE2\MPL\WS\MyTorunement\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 docs produced in C:\Users\AK\Desktop\Fachhochschule\MSE2\MPL\WS\MyTorunement\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 pom produced in C:\Users\AK\Desktop\Fachhochschule\MSE2\MPL\WS\MyTorunement\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 scala-tool produced in C:\Users\AK\Desktop\Fachhochschule\MSE2\MPL\WS\MyTorunement\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (2131ms resolve - 35ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 4071ms :: artifacts dl 172ms[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 compile produced in C:\Users\AK\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 runtime produced in C:\Users\AK\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 test produced in C:\Users\AK\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 provided produced in C:\Users\AK\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 optional produced in C:\Users\AK\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 compile-internal produced in C:\Users\AK\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 runtime-internal produced in C:\Users\AK\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 test-internal produced in C:\Users\AK\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 plugin produced in C:\Users\AK\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 sources produced in C:\Users\AK\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 docs produced in C:\Users\AK\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 pom produced in C:\Users\AK\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 scala-tool produced in C:\Users\AK\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (4071ms resolve - 172ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
