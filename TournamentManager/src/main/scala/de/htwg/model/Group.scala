@@ -45,7 +45,7 @@ case class Group (name: String, teams: ListBuffer[Team], games: ListBuffer[Game]
 	  	println("MATCHES OF GROUP " + this.name);
 	  	println("Matchindex. Home team : Foreign Team")
 	  	this.getGames.foreach(y => 
-	  	  	println(y.index + ". " + y.getMatch._1.name + "-" + y.getMatch._2.name + " " + y.r._1 + "-" + y.r._2))
+	  	  	println(y.index + ". " + y.getMatch._1.name + "-" + y.getMatch._2.name + " " + y.r._1 + ":" + y.r._2))
 		println("====================================")
 	}
 	
@@ -61,7 +61,7 @@ case class Group (name: String, teams: ListBuffer[Team], games: ListBuffer[Game]
 	  }
 	  // Refractor Teams in GroupList to recalculate the Table with new Copies of immutable Teams
 	  for(x <- this.teams; y <- teams; if(x.index == y.index)) {
-	    this.teams.update(x.index-1, y)
+	    this.teams.update(this.teams.indexOf(x), y)
 	  }
 	}
 	
