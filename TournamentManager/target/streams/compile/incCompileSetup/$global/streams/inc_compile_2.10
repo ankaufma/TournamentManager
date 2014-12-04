@@ -4,9 +4,11 @@ output mode:
 0 -> single
 output directories:
 1 items
-output dir -> C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes
+output dir -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes
 compile options:
-0 items
+2 items
+0 -> -unchecked
+1 -> -deprecation
 javac options:
 0 items
 compiler version:
@@ -19,43 +21,47 @@ name hashing:
 1 items
 0 -> true
 products:
-26 items
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Game$.class
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Game.class
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$1$$anonfun$apply$mcV$sp$1$$anonfun$apply$mcVI$sp$1.class
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$1$$anonfun$apply$mcV$sp$1$$anonfun$apply$mcVI$sp$2.class
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$1$$anonfun$apply$mcV$sp$1.class
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$1.class
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$2.class
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$getTable$1.class
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$printMatches$1.class
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$refractorGamePlan$1$$anonfun$apply$1.class
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$refractorGamePlan$1.class
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$refractorGamePlan$2$$anonfun$apply$2.class
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$refractorGamePlan$2$$anonfun$apply$3.class
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$refractorGamePlan$2.class
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$sort$1.class
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$.class
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group.class
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Team$.class
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Team.class
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$1.class
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$2.class
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$3.class
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$4.class
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$5.class
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$.class
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI.class
+30 items
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Game$.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Game.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$1$$anonfun$apply$mcV$sp$1$$anonfun$apply$mcVI$sp$1.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$1$$anonfun$apply$mcV$sp$1$$anonfun$apply$mcVI$sp$2.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$1$$anonfun$apply$mcV$sp$1.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$1.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$2.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$getTable$1.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$printMatches$1.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$refractorGamePlan$1$$anonfun$apply$1.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$refractorGamePlan$1.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$refractorGamePlan$2$$anonfun$apply$2.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$refractorGamePlan$2$$anonfun$apply$3.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$refractorGamePlan$2.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$sort$1.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Team$.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Team.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$1.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$2.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$3.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$4.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$5.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$routine$1.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$routine$2.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$routine$3.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$routine$4.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$.class
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI.class
 binary dependencies:
 8 items
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> C:\Program Files\Java\jdk1.7.0_51\jre\lib\rt.jar
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> C:\Users\AK\.sbt\boot\scala-2.10.4\lib\scala-library.jar
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Program Files\Java\jdk1.7.0_51\jre\lib\rt.jar
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\AK\.sbt\boot\scala-2.10.4\lib\scala-library.jar
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> C:\Program Files\Java\jdk1.7.0_51\jre\lib\rt.jar
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> C:\Users\AK\.sbt\boot\scala-2.10.4\lib\scala-library.jar
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Program Files\Java\jdk1.7.0_51\jre\lib\rt.jar
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Users\AK\.sbt\boot\scala-2.10.4\lib\scala-library.jar
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> C:\Program Files\Java\jre1.8.0_25\lib\rt.jar
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> C:\Users\ankaufma\.sbt\boot\scala-2.10.4\lib\scala-library.jar
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Program Files\Java\jre1.8.0_25\lib\rt.jar
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\ankaufma\.sbt\boot\scala-2.10.4\lib\scala-library.jar
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> C:\Program Files\Java\jre1.8.0_25\lib\rt.jar
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> C:\Users\ankaufma\.sbt\boot\scala-2.10.4\lib\scala-library.jar
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Program Files\Java\jre1.8.0_25\lib\rt.jar
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Users\ankaufma\.sbt\boot\scala-2.10.4\lib\scala-library.jar
 direct source dependencies:
 0 items
 direct external dependencies:
@@ -66,12 +72,12 @@ public inherited external dependencies:
 0 items
 member reference internal dependencies:
 6 items
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala
 member reference external dependencies:
 0 items
 inheritance internal dependencies:
@@ -79,376 +85,398 @@ inheritance internal dependencies:
 inheritance external dependencies:
 0 items
 class names:
-26 items
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> de.htwg.model.Game
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> de.htwg.model.Game$
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$$anonfun$1
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$$anonfun$1$$anonfun$apply$mcV$sp$1
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$$anonfun$1$$anonfun$apply$mcV$sp$1$$anonfun$apply$mcVI$sp$1
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$$anonfun$1$$anonfun$apply$mcV$sp$1$$anonfun$apply$mcVI$sp$2
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$$anonfun$2
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$$anonfun$getTable$1
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$$anonfun$printMatches$1
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$$anonfun$refractorGamePlan$1
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$$anonfun$refractorGamePlan$1$$anonfun$apply$1
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$$anonfun$refractorGamePlan$2
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$$anonfun$refractorGamePlan$2$$anonfun$apply$2
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$$anonfun$refractorGamePlan$2$$anonfun$apply$3
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$$anonfun$sort$1
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> de.htwg.model.Team
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> de.htwg.model.Team$
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> de.htwg.TUI.TUI
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> de.htwg.TUI.TUI$
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> de.htwg.TUI.TUI$$anonfun$1
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> de.htwg.TUI.TUI$$anonfun$2
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> de.htwg.TUI.TUI$$anonfun$3
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> de.htwg.TUI.TUI$$anonfun$4
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> de.htwg.TUI.TUI$$anonfun$5
+30 items
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> de.htwg.model.Game
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> de.htwg.model.Game$
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$$anonfun$1
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$$anonfun$1$$anonfun$apply$mcV$sp$1
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$$anonfun$1$$anonfun$apply$mcV$sp$1$$anonfun$apply$mcVI$sp$1
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$$anonfun$1$$anonfun$apply$mcV$sp$1$$anonfun$apply$mcVI$sp$2
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$$anonfun$2
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$$anonfun$getTable$1
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$$anonfun$printMatches$1
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$$anonfun$refractorGamePlan$1
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$$anonfun$refractorGamePlan$1$$anonfun$apply$1
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$$anonfun$refractorGamePlan$2
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$$anonfun$refractorGamePlan$2$$anonfun$apply$2
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$$anonfun$refractorGamePlan$2$$anonfun$apply$3
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de.htwg.model.Group$$anonfun$sort$1
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> de.htwg.model.Team
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> de.htwg.model.Team$
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> de.htwg.TUI.TUI
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> de.htwg.TUI.TUI$
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> de.htwg.TUI.TUI$$anonfun$1
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> de.htwg.TUI.TUI$$anonfun$2
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> de.htwg.TUI.TUI$$anonfun$3
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> de.htwg.TUI.TUI$$anonfun$4
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> de.htwg.TUI.TUI$$anonfun$5
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> de.htwg.TUI.TUI$$anonfun$routine$1
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> de.htwg.TUI.TUI$$anonfun$routine$2
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> de.htwg.TUI.TUI$$anonfun$routine$3
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> de.htwg.TUI.TUI$$anonfun$routine$4
 used names:
-277 items
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> &&
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> +
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> <
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> <init>
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> ==
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> >
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> AbstractFunction3
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> Game
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> Int
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> List
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> None
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> Product
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> ScalaRunTime
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> Serializable
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> Statics
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> Team
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> Tuple2
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> _1
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> _2
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> _toString
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> anyHash
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> apply
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> asInstanceOf
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> de
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> eq
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> finalizeHash
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> game
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> goals
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> goalsAgainst
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> htwg
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> immutable
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> index
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> isInstanceOf
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> mix
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> model
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> package
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> points
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> r
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> runtime
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> scala
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> toString
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> typedProductIterator
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$1
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$10
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$11
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$12
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$13
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$14
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$15
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$16
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$17
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$18
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$19
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$2
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$20
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$21
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$22
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$23
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$24
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$25
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$26
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$27
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$28
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$29
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$3
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$30
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$4
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$5
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$6
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$7
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$8
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$9
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> ||
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> !=
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> &&
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> *
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> +
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> +=
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> -
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> /
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> ::
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> :::
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> <
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> <=
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> <init>
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> ==
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> >
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> AbstractFunction3
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> Breaks
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> Game
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> Group
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> Int
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> List
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> ListBuffer
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> Nil
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> None
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> Predef
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> Product
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> ScalaRunTime
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> Serializable
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> String
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> Team
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> Tuple2
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> Unit
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> _1
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> _2
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> _hashCode
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> _toString
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> apply
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> asInstanceOf
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> break
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> breakable
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> collection
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> control
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> eq
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> filter
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> foreach
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> g
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> game
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> games
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> getGames
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> getMatch
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> goals
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> goalsAgainst
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> head
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> htwg
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> i
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> immutable
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> index
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> intWrapper
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> isInstanceOf
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> j
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> k
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> k_=
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> l
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> l_=
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> model
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> mutable
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> name
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> package
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> points
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> println
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> qual$1
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> r
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> result
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> reverse
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> runtime
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> scala
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> size
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> sort
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> t
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> tail
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> teams
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> to
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> toList
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> toString
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> typedProductIterator
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> until
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> update
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> util
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> withFilter
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> x
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> x$10
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> x$11
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> x$12
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> x$13
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> x$5
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> x$6
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> x$7
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> x$8
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> x$9
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> y
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> ||
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> &&
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> <init>
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> ==
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> AbstractFunction5
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> Int
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> None
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> Predef
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> Product
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> ScalaRunTime
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> Serializable
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> Statics
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> String
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> Team
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> _toString
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> anyHash
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> asInstanceOf
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> de
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> eq
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> finalizeHash
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> goals
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> goalsAgainst
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> htwg
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> index
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> isInstanceOf
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> mix
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> model
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> name
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> points
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> runtime
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> scala
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> toString
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> typedProductIterator
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> ||
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> !=
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> &&
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> +=
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> -
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> <init>
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> ==
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> Application
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> Group
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> IndexOutOfBoundsException
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> Int
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> List
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> ListBuffer
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> Nil
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> NumberFormatException
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> Predef
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> System
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> TUI
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> Team
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> apply
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> asInstanceOf
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> augmentString
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> canBuildFrom
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> collection
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> de
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> exit
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> filter
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> flatMap
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> foreach
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> game
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> getGames
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> getTable
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> goals
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> goalsAgainst
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> groupList
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> groupName
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> groups
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> htwg
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> i
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> immutable
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> index
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> input
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> intWrapper
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> isInstanceOf
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> java
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> lang
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> map
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> model
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> mutable
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> noGroups
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> noTeams
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> package
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> printMatches
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> printMenu
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> println
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> readInt
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> readLine
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> refractorGamePlan
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> routine
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> scala
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> setGameResult
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> setResult
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> teamList
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> teamName
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> teams
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> to
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> toInt
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> toList
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> toString
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> while$1
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> x
+289 items
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> &&
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> +
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> <
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> <init>
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> ==
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> >
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> AbstractFunction3
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> Game
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> Int
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> List
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> None
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> Product
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> ScalaRunTime
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> Serializable
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> Statics
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> Team
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> Tuple2
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> _1
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> _2
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> _toString
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> anyHash
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> apply
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> asInstanceOf
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> de
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> eq
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> finalizeHash
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> game
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> goals
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> goalsAgainst
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> htwg
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> immutable
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> index
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> isInstanceOf
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> mix
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> model
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> package
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> points
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> r
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> runtime
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> scala
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> toString
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> typedProductIterator
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$1
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$10
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$11
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$12
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$13
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$14
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$15
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$16
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$17
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$18
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$19
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$2
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$20
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$21
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$22
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$23
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$24
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$25
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$26
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$27
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$28
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$29
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$3
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$30
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$4
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$5
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$6
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$7
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$8
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> x$9
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> ||
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> !=
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> &&
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> *
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> +
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> +=
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> -
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> /
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> ::
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> :::
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> <
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> <=
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> <init>
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> ==
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> >
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> AbstractFunction3
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> Breaks
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> Game
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> Group
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> Int
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> List
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> ListBuffer
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> Nil
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> None
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> Predef
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> Product
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> ScalaRunTime
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> Serializable
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> String
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> Team
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> Tuple2
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> Unit
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> _1
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> _2
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> _hashCode
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> _toString
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> apply
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> asInstanceOf
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> break
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> breakable
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> collection
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> control
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> de
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> eq
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> filter
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> foreach
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> g
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> game
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> games
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> getGames
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> getMatch
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> goals
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> goalsAgainst
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> head
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> htwg
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> i
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> immutable
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> index
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> indexOf
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> intWrapper
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> isInstanceOf
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> j
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> k
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> k_=
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> l
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> l_=
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> model
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> mutable
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> name
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> package
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> points
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> println
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> qual$1
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> r
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> result
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> reverse
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> runtime
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> scala
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> size
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> sort
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> t
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> tail
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> teams
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> to
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> toList
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> toString
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> typedProductIterator
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> until
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> update
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> util
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> withFilter
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> x
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> x$10
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> x$11
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> x$12
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> x$13
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> x$5
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> x$6
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> x$7
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> x$8
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> x$9
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> y
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> ||
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> &&
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> <init>
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> ==
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> AbstractFunction5
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> Int
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> None
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> Predef
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> Product
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> ScalaRunTime
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> Serializable
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> Statics
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> String
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> Team
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> _toString
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> anyHash
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> asInstanceOf
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> de
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> eq
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> finalizeHash
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> goals
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> goalsAgainst
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> htwg
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> index
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> isInstanceOf
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> mix
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> model
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> name
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> points
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> runtime
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> scala
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> toString
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> typedProductIterator
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> ||
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> !=
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> &&
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> *
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> +
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> +=
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> -
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> /
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> <init>
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> ==
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> Application
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> Group
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> Int
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> List
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> ListBuffer
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> Nil
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> NumberFormatException
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> Predef
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> System
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> TUI
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> Team
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> apply
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> asInstanceOf
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> augmentString
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> canBuildFrom
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> collection
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> de
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> exit
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> filter
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> flatMap
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> foreach
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> from
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> from_=
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> game
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> gameIndex
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> getGames
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> getTable
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> goals
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> goalsAgainst
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> group
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> groupList
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> groupName
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> groups
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> htwg
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> i
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> immutable
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> index
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> input
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> intWrapper
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> isInstanceOf
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> java
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> lang
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> map
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> model
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> mutable
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> noGroups
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> noTeams
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> package
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> printMatches
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> printMenu
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> println
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> readInt
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> readLine
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> refractorGamePlan
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> routine
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> scala
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> setGameResult
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> setResult
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> size
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> slice
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> teamList
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> teamName
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> teams
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> teamsGroup
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> to
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> toInt
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> toList
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> toString
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> until
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> until_=
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> while$1
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> x
 product stamps:
-26 items
-C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Game$.class -> lastModified(1415044401169)
-C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Game.class -> lastModified(1415044401169)
-C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$1$$anonfun$apply$mcV$sp$1$$anonfun$apply$mcVI$sp$1.class -> lastModified(1415044401247)
-C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$1$$anonfun$apply$mcV$sp$1$$anonfun$apply$mcVI$sp$2.class -> lastModified(1415044401263)
-C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$1$$anonfun$apply$mcV$sp$1.class -> lastModified(1415044401247)
-C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$1.class -> lastModified(1415044401247)
-C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$2.class -> lastModified(1415044401278)
-C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$getTable$1.class -> lastModified(1415044401278)
-C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$printMatches$1.class -> lastModified(1415044401294)
-C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$refractorGamePlan$1$$anonfun$apply$1.class -> lastModified(1415044401309)
-C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$refractorGamePlan$1.class -> lastModified(1415044401294)
-C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$refractorGamePlan$2$$anonfun$apply$2.class -> lastModified(1415044401309)
-C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$refractorGamePlan$2$$anonfun$apply$3.class -> lastModified(1415044401325)
-C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$refractorGamePlan$2.class -> lastModified(1415044401309)
-C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$sort$1.class -> lastModified(1415044401325)
-C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$.class -> lastModified(1415044401231)
-C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group.class -> lastModified(1415044401216)
-C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Team$.class -> lastModified(1415044401356)
-C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Team.class -> lastModified(1415044401356)
-C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$1.class -> lastModified(1415044401075)
-C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$2.class -> lastModified(1415044401091)
-C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$3.class -> lastModified(1415044401107)
-C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$4.class -> lastModified(1415044401107)
-C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$5.class -> lastModified(1415044401107)
-C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$.class -> lastModified(1415044401060)
-C:\Users\AK\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI.class -> lastModified(1415044400982)
+30 items
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Game$.class -> lastModified(1416603873101)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Game.class -> lastModified(1416603873101)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$1$$anonfun$apply$mcV$sp$1$$anonfun$apply$mcVI$sp$1.class -> lastModified(1416603873132)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$1$$anonfun$apply$mcV$sp$1$$anonfun$apply$mcVI$sp$2.class -> lastModified(1416603873148)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$1$$anonfun$apply$mcV$sp$1.class -> lastModified(1416603873132)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$1.class -> lastModified(1416603873132)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$2.class -> lastModified(1416603873148)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$getTable$1.class -> lastModified(1416603873148)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$printMatches$1.class -> lastModified(1416603873148)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$refractorGamePlan$1$$anonfun$apply$1.class -> lastModified(1416603873163)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$refractorGamePlan$1.class -> lastModified(1416603873163)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$refractorGamePlan$2$$anonfun$apply$2.class -> lastModified(1416603873179)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$refractorGamePlan$2$$anonfun$apply$3.class -> lastModified(1416603873179)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$refractorGamePlan$2.class -> lastModified(1416603873179)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$$anonfun$sort$1.class -> lastModified(1416603873179)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group$.class -> lastModified(1416603873117)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Group.class -> lastModified(1416603873117)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Team$.class -> lastModified(1416603873179)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\model\Team.class -> lastModified(1416603873195)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$1.class -> lastModified(1416603873054)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$2.class -> lastModified(1416603873070)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$3.class -> lastModified(1416603873070)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$4.class -> lastModified(1416603873070)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$5.class -> lastModified(1416603873070)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$routine$1.class -> lastModified(1416603873085)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$routine$2.class -> lastModified(1416603873085)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$routine$3.class -> lastModified(1416603873085)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$$anonfun$routine$4.class -> lastModified(1416603873085)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI$.class -> lastModified(1416603873054)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\scala-2.10\classes\de\htwg\TUI\TUI.class -> lastModified(1416603873039)
 source stamps:
 4 items
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> hash(027a65cabb3f6d786e4717b17e0cc7a1433166fd)
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> hash(bccf310a39eee92f5f6e8c8e0874e2e3ef12605a)
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> hash(a2f76c3134cd4d7d5150aaee22d4dcffb053b0d3)
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> hash(63910f0e51c9bb796454dc6a3f34d66b273e20e8)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> hash(2cae72207f801eecaf35302a66c0c469600f24d6)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> hash(a3e216f436eb1ca02dea0edea541f8649ccbeb11)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> hash(0248b33e9db1889bd899e31765fde60b3bf523ac)
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> hash(9141781f84bb67ef7c341681a2ee1d846313590d)
 binary stamps:
 2 items
-C:\Program Files\Java\jdk1.7.0_51\jre\lib\rt.jar -> lastModified(1397581606698)
-C:\Users\AK\.sbt\boot\scala-2.10.4\lib\scala-library.jar -> lastModified(1395179187000)
+C:\Program Files\Java\jre1.8.0_25\lib\rt.jar -> lastModified(1416595682469)
+C:\Users\ankaufma\.sbt\boot\scala-2.10.4\lib\scala-library.jar -> lastModified(1395179187000)
 class names:
 2 items
-C:\Program Files\Java\jdk1.7.0_51\jre\lib\rt.jar -> java.lang.Object
-C:\Users\AK\.sbt\boot\scala-2.10.4\lib\scala-library.jar -> scala.runtime.AbstractFunction5
+C:\Program Files\Java\jre1.8.0_25\lib\rt.jar -> java.lang.Object
+C:\Users\ankaufma\.sbt\boot\scala-2.10.4\lib\scala-library.jar -> scala.runtime.AbstractFunction5
 internal apis:
 4 items
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHB3jti5AHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAJHNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cLkA5uZ0AAZub3RpZnlzcQB+AAwO08TNdAAEd2FpdHNxAH4ADIFx6gB0AA5jb3B5JGRlZmF1bHQkMnNxAH4ADD8eLYN0AA0kYXNJbnN0YW5jZU9mc3EAfgAMVrCqL3QADHByb2R1Y3RBcml0eXNxAH4ADLxbO/V0AAZlcXVhbHNzcQB+AAzlQ0npdAAJZ2V0UmVzdWx0c3EAfgAMDlg0wHQADGFzSW5zdGFuY2VPZnNxAH4ADMx3NF50AAxzeW5jaHJvbml6ZWRzcQB+AAwg5PSBdAAIZ2V0TWF0Y2hzcQB+AAxLJcOBdAANJGlzSW5zdGFuY2VPZnNxAH4ADBglgeB0AAhjYW5FcXVhbHNxAH4ADPIbwZh0AA1wcm9kdWN0UHJlZml4c3EAfgAMELscSHQACW5vdGlmeUFsbHNxAH4ADG2X9rN0AAxpc0luc3RhbmNlT2ZzcQB+AAz37VQEdAAGPGluaXQ+c3EAfgAMWYviPHQABEdhbWVzcQB+AAy7BnTVdAACPT1zcQB+AAwkUGJodAAJc2V0UmVzdWx0c3EAfgAMvGiU13QABWNsb25lc3EAfgAMkF9k9HQADmNvcHkkZGVmYXVsdCQzc3EAfgAMsY2QzXQABGNvcHlzcQB+AAyd8RFzdAAIdG9TdHJpbmdzcQB+AAzEMv/FdAACIT1zcQB+AAyc5ZbZdAAIZ2V0Q2xhc3NzcQB+AAyz+gKFdAAOY29weSRkZWZhdWx0JDFzcQB+AAxbEv5UdAABcnNxAH4ADHqReWN0AARnYW1lc3EAfgAMP7w/OHQAAm5lc3EAfgAM+Yj/N3QAAmVxc3EAfgAM7qxoWXQAD3Byb2R1Y3RJdGVyYXRvcnNxAH4ADPrYwXN0AAIjI3NxAH4ADJZBptZ0AAhmaW5hbGl6ZXNxAH4ADDisxSt0AAVpbmRleHNxAH4ADH2k2R50AA5wcm9kdWN0RWxlbWVudHNxAH4ADFSDLCF0AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AF94cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cAB0ABJkZS5odHdnLm1vZGVsLkdhbWV1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAhDbGFzc0RlZnVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbFACLpOXl0A/AgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cABwc3IAIHhzYnRpLlNhZmVMYXp5JCRhbm9uZnVuJHN0cmljdCQxAAAAAAAAAAACAAFMAAd2YWx1ZSQxcQB+AHh4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AHcAcHNxAH4AfHNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBfTAAJaW5oZXJpdGVkcQB+AF9MAAdwYXJlbnRzcQB+AF94cQB+AIBzcQB+AHcAcHNxAH4AfHVxAH4AWgAAAABzcQB+AHcAcHNxAH4AfHVxAH4AWgAAAABzcQB+AHcAcHNxAH4AfHVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAAGc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4Af3QADFNlcmlhbGl6YWJsZXNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4Af3NyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAAnNyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAFc2NhbGFzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4AnXNxAH4AkHEAfgCTc3EAfgCUc3EAfgCXdXEAfgCaAAAAA3NxAH4AnHQABGphdmFzcQB+AJx0AAJpb3EAfgChc3EAfgCQdAAHUHJvZHVjdHEAfgCWc3EAfgCQdAAGRXF1YWxzcQB+AJZzcQB+AJB0AAZPYmplY3RzcQB+AJRzcQB+AJd1cQB+AJoAAAADc3EAfgCccQB+AKdzcQB+AJx0AARsYW5ncQB+AKFzcQB+AJB0AANBbnlxAH4AlnVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAADc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+AA14cHQAB2RlLmh0d2dzcQB+ALp0AAJkZXNxAH4AunQADWRlLmh0d2cubW9kZWxzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAUl3N9ZIdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQATUM6XFVzZXJzXEFLXGdpdFxUb3VybmFtZW50TWFuYWdlclxUb3VybmFtZW50TWFuYWdlclx0YXJnZXRcc2NhbGEtMi4xMFxjbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUAnplyrs/bXhuRxexfgzHoUMxZv0=
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBRdCcaAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAKXNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cDHL/Vx0AAZub3RpZnlzcQB+AAw4hNwrdAAEbmFtZXNxAH4ADGomAKt0AAR3YWl0c3EAfgAM3buyo3QADmNvcHkkZGVmYXVsdCQyc3EAfgAMdSYsXnQADSRhc0luc3RhbmNlT2ZzcQB+AAxPhyvIdAAMcHJvZHVjdEFyaXR5c3EAfgAMzueQ53QABmVxdWFsc3NxAH4ADAeaDzV0AAxhc0luc3RhbmNlT2ZzcQB+AAwQVHFndAAMc3luY2hyb25pemVkc3EAfgAMpN5vr3QABXRlYW1zc3EAfgAMHlQ61nQADSRpc0luc3RhbmNlT2ZzcQB+AAw8xSzodAAIY2FuRXF1YWxzcQB+AAwvhpefdAANcHJvZHVjdFByZWZpeHNxAH4ADHs9dxZ0AAlub3RpZnlBbGxzcQB+AAzJuPH5dAANc2V0R2FtZVJlc3VsdHNxAH4ADIefCpx0AAxpc0luc3RhbmNlT2ZzcQB+AAwzNkg5dAAGPGluaXQ+c3EAfgAMAnwSO3QABUdyb3Vwc3EAfgAMB3b2inQAAWxzcQB+AAy9ynEJdAACPT1zcQB+AAzCexUndAAFY2xvbmVzcQB+AAyYitq6dAAIZ2V0VGFibGVzcQB+AAztBmPIdAAOY29weSRkZWZhdWx0JDNzcQB+AAwEkOL9dAAEY29weXNxAH4ADMvK9Kd0AAh0b1N0cmluZ3NxAH4ADAzEQmZ0AAIhPXNxAH4ADJabjCx0AAhnZXRDbGFzc3NxAH4ADF7oGnl0AA5jb3B5JGRlZmF1bHQkMXNxAH4ADJx5sb90AARzb3J0c3EAfgAMxxeiXXQAEXJlZnJhY3RvckdhbWVQbGFuc3EAfgAMs3zfK3QAAm5lc3EAfgAMJWZrjHQAAWtzcQB+AAzDDBN8dAAFZ2FtZXNzcQB+AAyojo/udAACZXFzcQB+AAxriRZFdAAPcHJvZHVjdEl0ZXJhdG9yc3EAfgAM+sF7oHQADHByaW50TWF0Y2hlc3NxAH4ADB7u72x0AAIjI3NxAH4ADCcE/4F0AAhmaW5hbGl6ZXNxAH4ADAV2EAF0AAhnZXRHYW1lc3NxAH4ADBxeb250AA5wcm9kdWN0RWxlbWVudHNxAH4ADBxKP7F0AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AGl4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cAB0ABNkZS5odHdnLm1vZGVsLkdyb3VwdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAIQ2xhc3NEZWZ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGxQAi6Tl5dAPwIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHAAcHNyACB4c2J0aS5TYWZlTGF6eSQkYW5vbmZ1biRzdHJpY3QkMQAAAAAAAAAAAgABTAAHdmFsdWUkMXEAfgCCeHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgCBAHBzcQB+AIZzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AaUwACWluaGVyaXRlZHEAfgBpTAAHcGFyZW50c3EAfgBpeHEAfgCKc3EAfgCBAHBzcQB+AIZ1cQB+AGQAAAAAc3EAfgCBAHBzcQB+AIZ1cQB+AGQAAAAAc3EAfgCBAHBzcQB+AIZ1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAABnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AIl0AAxTZXJpYWxpemFibGVzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AIlzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AKdzcQB+AJpxAH4AnXNxAH4AnnNxAH4AoXVxAH4ApAAAAANzcQB+AKZ0AARqYXZhc3EAfgCmdAACaW9xAH4Aq3NxAH4AmnQAB1Byb2R1Y3RxAH4AoHNxAH4AmnQABkVxdWFsc3EAfgCgc3EAfgCadAAGT2JqZWN0c3EAfgCec3EAfgChdXEAfgCkAAAAA3NxAH4ApnEAfgCxc3EAfgCmdAAEbGFuZ3EAfgCrc3EAfgCadAADQW55cQB+AKB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAA3NyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAdkZS5odHdnc3EAfgDEdAACZGVzcQB+AMR0AA1kZS5odHdnLm1vZGVsc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFJdzfWSHVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AE1DOlxVc2Vyc1xBS1xnaXRcVG91cm5hbWVudE1hbmFnZXJcVG91cm5hbWVudE1hbmFnZXJcdGFyZ2V0XHNjYWxhLTIuMTBcY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFLzPMQo57ukvX26Mjgh04uPvEmBa
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHA0UuOBAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAJXNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cA/Kyal0AAZub3RpZnlzcQB+AAyZonXVdAAEbmFtZXNxAH4ADNltu4J0AAR3YWl0c3EAfgAM9EtnDHQADmNvcHkkZGVmYXVsdCQyc3EAfgAMYhaHqHQADSRhc0luc3RhbmNlT2ZzcQB+AAycRwh/dAAOY29weSRkZWZhdWx0JDVzcQB+AAx1PCeWdAAMcHJvZHVjdEFyaXR5c3EAfgAMHM5y/XQABmVxdWFsc3NxAH4ADF173Dp0AAxhc0luc3RhbmNlT2ZzcQB+AAxGHmKRdAAMc3luY2hyb25pemVkc3EAfgAMaUYZvnQADSRpc0luc3RhbmNlT2ZzcQB+AAwf+rkDdAAIY2FuRXF1YWxzcQB+AAxvMwkBdAAOY29weSRkZWZhdWx0JDRzcQB+AAzcvnb/dAANcHJvZHVjdFByZWZpeHNxAH4ADAQNkNt0AAlub3RpZnlBbGxzcQB+AAxPt0FcdAAMaXNJbnN0YW5jZU9mc3EAfgAMok5rynQABFRlYW1zcQB+AAxKPGcFdAAGPGluaXQ+c3EAfgAMxLuqMHQABnBvaW50c3NxAH4ADIqa9510AAI9PXNxAH4ADAtXFzB0AAVjbG9uZXNxAH4ADAz/jQJ0AA5jb3B5JGRlZmF1bHQkM3NxAH4ADPecaCR0AARjb3B5c3EAfgAMIHVUUnQACHRvU3RyaW5nc3EAfgAMz+NdZnQAAiE9c3EAfgAM8gjwQXQACGdldENsYXNzc3EAfgAMpdsPb3QADmNvcHkkZGVmYXVsdCQxc3EAfgAMorqvmHQAAm5lc3EAfgAMZ57Wl3QAAmVxc3EAfgAMgmNIVXQAD3Byb2R1Y3RJdGVyYXRvcnNxAH4ADDa4MId0AAxnb2Fsc0FnYWluc3RzcQB+AAwbPHbsdAACIyNzcQB+AAz6TXo8dAAIZmluYWxpemVzcQB+AAxy7jyodAAFZ29hbHNzcQB+AAznM4CpdAAFaW5kZXhzcQB+AAyAOHqCdAAOcHJvZHVjdEVsZW1lbnRzcQB+AAxG6mQqdAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBheHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAASZGUuaHR3Zy5tb2RlbC5UZWFtdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAIQ2xhc3NEZWZ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGxQAi6Tl5dAPwIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHAAcHNyACB4c2J0aS5TYWZlTGF6eSQkYW5vbmZ1biRzdHJpY3QkMQAAAAAAAAAAAgABTAAHdmFsdWUkMXEAfgB6eHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgB5AHBzcQB+AH5zcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AYUwACWluaGVyaXRlZHEAfgBhTAAHcGFyZW50c3EAfgBheHEAfgCCc3EAfgB5AHBzcQB+AH51cQB+AFwAAAAAc3EAfgB5AHBzcQB+AH51cQB+AFwAAAAAc3EAfgB5AHBzcQB+AH51cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAABnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AIF0AAxTZXJpYWxpemFibGVzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AIFzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AJ9zcQB+AJJxAH4AlXNxAH4AlnNxAH4AmXVxAH4AnAAAAANzcQB+AJ50AARqYXZhc3EAfgCedAACaW9xAH4Ao3NxAH4AknQAB1Byb2R1Y3RxAH4AmHNxAH4AknQABkVxdWFsc3EAfgCYc3EAfgCSdAAGT2JqZWN0c3EAfgCWc3EAfgCZdXEAfgCcAAAAA3NxAH4AnnEAfgCpc3EAfgCedAAEbGFuZ3EAfgCjc3EAfgCSdAADQW55cQB+AJh1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAA3NyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAdkZS5odHdnc3EAfgC8dAACZGVzcQB+ALx0AA1kZS5odHdnLm1vZGVsc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFJdzfWSHVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AE1DOlxVc2Vyc1xBS1xnaXRcVG91cm5hbWVudE1hbmFnZXJcVG91cm5hbWVudE1hbmFnZXJcdGFyZ2V0XHNjYWxhLTIuMTBcY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFKL3bDE0zU19UVCq7iLU3P+wU7DT
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHDLzuDRAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAHnNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cG7vO6h0AAdyb3V0aW5lc3EAfgAMnAOUQ3QABm5vdGlmeXNxAH4ADPrAFz10AAh0ZWFtTGlzdHNxAH4ADBGcaWZ0AAR3YWl0c3EAfgAMSeKc2nQADSRhc0luc3RhbmNlT2ZzcQB+AAxlt40vdAAGZXF1YWxzc3EAfgAMg+T9E3QADGFzSW5zdGFuY2VPZnNxAH4ADEW9/3V0AA5leGVjdXRpb25TdGFydHNxAH4ADM4mtUp0AAxzeW5jaHJvbml6ZWRzcQB+AAz335TZdAAFdGVhbXNzcQB+AAxM4MYidAANJGlzSW5zdGFuY2VPZnNxAH4ADBzZfwN0AAhub0dyb3Vwc3NxAH4ADIIpIz10AARtYWluc3EAfgAMvScFsXQABmdyb3Vwc3NxAH4ADHkMoY10AAlub3RpZnlBbGxzcQB+AAzfisSxdAAMaXNJbnN0YW5jZU9mc3EAfgAMeCQX/HQAA1RVSXNxAH4ADDrmIgZ0AAI9PXNxAH4ADDtWr+90AAVjbG9uZXNxAH4ADAIpYsx0AAh0b1N0cmluZ3NxAH4ADAtpNeh0AAIhPXNxAH4ADIU8ZYR0AAhnZXRDbGFzc3NxAH4ADPgUoPJ0AAlwcmludE1lbnVzcQB+AAwgMiZQdAACbmVzcQB+AAwbi1/DdAAHbm9UZWFtc3NxAH4ADNvn/5Z0AAJlcXNxAH4ADPI0WSJ0AAIjI3NxAH4ADEWMypN0AAhmaW5hbGl6ZXNxAH4ADMnVSDh0AAhoYXNoQ29kZXNxAH4ADOTKmO10AAlncm91cExpc3RzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBTeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAPZGUuaHR3Zy5UVUkuVFVJdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4AbHhwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AawBwc3EAfgBwc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AFNMAAlpbmhlcml0ZWRxAH4AU0wAB3BhcmVudHNxAH4AU3hxAH4AdHNxAH4AawBwc3EAfgBwdXEAfgBOAAAAAHNxAH4AawBwc3EAfgBwdXEAfgBOAAAAAXNyAA14c2J0aS5hcGkuRGVmUr6f4ny0NmkCAAJMAApyZXR1cm5UeXBldAAQTHhzYnRpL2FwaS9UeXBlO1sAD3ZhbHVlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1BhcmFtZXRlckxpc3Q7eHEAfgBUcQB+AF11cQB+AF4AAAAAc3EAfgBgAHEAfgAndXEAfgBjAAAAAHNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AHN0AARVbml0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBzc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCUdXIAGltMeHNidGkuYXBpLlBhcmFtZXRlckxpc3Q79dM6HfKzcO4CAAB4cAAAAAFzcgAXeHNidGkuYXBpLlBhcmFtZXRlckxpc3TWxbwcZEl04wIAAloACmlzSW1wbGljaXRbAApwYXJhbWV0ZXJzdAAcW0x4c2J0aS9hcGkvTWV0aG9kUGFyYW1ldGVyO3hwAHVyABxbTHhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXI7z7jFXaXdtW0CAAB4cAAAAAFzcgAZeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlch9FrhfTSbDqAgAEWgAKaGFzRGVmYXVsdEwACG1vZGlmaWVydAAdTHhzYnRpL2FwaS9QYXJhbWV0ZXJNb2RpZmllcjtMAARuYW1lcQB+AA1MAAN0cGVxAH4AgXhwAH5yABt4c2J0aS5hcGkuUGFyYW1ldGVyTW9kaWZpZXIAAAAAAAAAABIAAHhxAH4AZnQABVBsYWludAAEYXJnc3NyABd4c2J0aS5hcGkuUGFyYW1ldGVyaXplZBZs7mkDybt/AgACTAAIYmFzZVR5cGVxAH4AiFsADXR5cGVBcmd1bWVudHN0ABFbTHhzYnRpL2FwaS9UeXBlO3hxAH4Ac3NxAH4Ah3QABUFycmF5cQB+AI11cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAXNxAH4Ah3QABlN0cmluZ3NxAH4Ai3NxAH4AjnVxAH4AkQAAAANzcQB+AJN0AARqYXZhc3EAfgCTdAAEbGFuZ3EAfgCYc3EAfgBrAHBzcQB+AHB1cQB+AKwAAAADc3EAfgCHdAALQXBwbGljYXRpb25xAH4AjXNxAH4Ah3QABk9iamVjdHEAfgCwc3EAfgCHdAADQW55cQB+AI11cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAA3NyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAdkZS5odHdnc3EAfgDCdAACZGVzcQB+AMJ0AAtkZS5odHdnLlRVSXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSXc31kh1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdABNQzpcVXNlcnNcQUtcZ2l0XFRvdXJuYW1lbnRNYW5hZ2VyXFRvdXJuYW1lbnRNYW5hZ2VyXHRhcmdldFxzY2FsYS0yLjEwXGNsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABRjkQ8OUcm7eWRU3Go/NNZrJz4g6A==
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHB3jti5AHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAJHNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cLkA5uZ0AAZub3RpZnlzcQB+AAwO08TNdAAEd2FpdHNxAH4ADIFx6gB0AA5jb3B5JGRlZmF1bHQkMnNxAH4ADD8eLYN0AA0kYXNJbnN0YW5jZU9mc3EAfgAMVrCqL3QADHByb2R1Y3RBcml0eXNxAH4ADLxbO/V0AAZlcXVhbHNzcQB+AAzlQ0npdAAJZ2V0UmVzdWx0c3EAfgAMDlg0wHQADGFzSW5zdGFuY2VPZnNxAH4ADMx3NF50AAxzeW5jaHJvbml6ZWRzcQB+AAwg5PSBdAAIZ2V0TWF0Y2hzcQB+AAxLJcOBdAANJGlzSW5zdGFuY2VPZnNxAH4ADBglgeB0AAhjYW5FcXVhbHNxAH4ADPIbwZh0AA1wcm9kdWN0UHJlZml4c3EAfgAMELscSHQACW5vdGlmeUFsbHNxAH4ADG2X9rN0AAxpc0luc3RhbmNlT2ZzcQB+AAz37VQEdAAGPGluaXQ+c3EAfgAMWYviPHQABEdhbWVzcQB+AAy7BnTVdAACPT1zcQB+AAwkUGJodAAJc2V0UmVzdWx0c3EAfgAMvGiU13QABWNsb25lc3EAfgAMkF9k9HQADmNvcHkkZGVmYXVsdCQzc3EAfgAMsY2QzXQABGNvcHlzcQB+AAyd8RFzdAAIdG9TdHJpbmdzcQB+AAzEMv/FdAACIT1zcQB+AAyc5ZbZdAAIZ2V0Q2xhc3NzcQB+AAyz+gKFdAAOY29weSRkZWZhdWx0JDFzcQB+AAxbEv5UdAABcnNxAH4ADHqReWN0AARnYW1lc3EAfgAMP7w/OHQAAm5lc3EAfgAM+Yj/N3QAAmVxc3EAfgAM7qxoWXQAD3Byb2R1Y3RJdGVyYXRvcnNxAH4ADPrYwXN0AAIjI3NxAH4ADJZBptZ0AAhmaW5hbGl6ZXNxAH4ADDisxSt0AAVpbmRleHNxAH4ADH2k2R50AA5wcm9kdWN0RWxlbWVudHNxAH4ADFSDLCF0AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AF94cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cAB0ABJkZS5odHdnLm1vZGVsLkdhbWV1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAhDbGFzc0RlZnVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgATeHNidGkuU2FmZUxhenkkSW1wbFACLpOXl0A/AgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cABwc3IAIHhzYnRpLlNhZmVMYXp5JCRhbm9uZnVuJHN0cmljdCQxAAAAAAAAAAACAAFMAAd2YWx1ZSQxcQB+AHh4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AHcAcHNxAH4AfHNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgBfTAAJaW5oZXJpdGVkcQB+AF9MAAdwYXJlbnRzcQB+AF94cQB+AIBzcQB+AHcAcHNxAH4AfHVxAH4AWgAAAABzcQB+AHcAcHNxAH4AfHVxAH4AWgAAAABzcQB+AHcAcHNxAH4AfHVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAAGc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4Af3QADFNlcmlhbGl6YWJsZXNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4Af3NyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAAnNyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAFc2NhbGFzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4AnXNxAH4AkHEAfgCTc3EAfgCUc3EAfgCXdXEAfgCaAAAAA3NxAH4AnHQABGphdmFzcQB+AJx0AAJpb3EAfgChc3EAfgCQdAAHUHJvZHVjdHEAfgCWc3EAfgCQdAAGRXF1YWxzcQB+AJZzcQB+AJB0AAZPYmplY3RzcQB+AJRzcQB+AJd1cQB+AJoAAAADc3EAfgCccQB+AKdzcQB+AJx0AARsYW5ncQB+AKFzcQB+AJB0AANBbnlxAH4AlnVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAADc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+AA14cHQAB2RlLmh0d2dzcQB+ALp0AAJkZXNxAH4AunQADWRlLmh0d2cubW9kZWxzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAUnUK6aWdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAU0M6XFVzZXJzXGFua2F1Zm1hXGdpdFxUb3VybmFtZW50TWFuYWdlclxUb3VybmFtZW50TWFuYWdlclx0YXJnZXRcc2NhbGEtMi4xMFxjbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAULK5yIH+AHuyvNTAqZsDEaWAPJNY=
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBRdCcaAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAKXNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cDHL/Vx0AAZub3RpZnlzcQB+AAw4hNwrdAAEbmFtZXNxAH4ADGomAKt0AAR3YWl0c3EAfgAM3buyo3QADmNvcHkkZGVmYXVsdCQyc3EAfgAMdSYsXnQADSRhc0luc3RhbmNlT2ZzcQB+AAxPhyvIdAAMcHJvZHVjdEFyaXR5c3EAfgAMzueQ53QABmVxdWFsc3NxAH4ADAeaDzV0AAxhc0luc3RhbmNlT2ZzcQB+AAwQVHFndAAMc3luY2hyb25pemVkc3EAfgAMpN5vr3QABXRlYW1zc3EAfgAMHlQ61nQADSRpc0luc3RhbmNlT2ZzcQB+AAw8xSzodAAIY2FuRXF1YWxzcQB+AAwvhpefdAANcHJvZHVjdFByZWZpeHNxAH4ADHs9dxZ0AAlub3RpZnlBbGxzcQB+AAzJuPH5dAANc2V0R2FtZVJlc3VsdHNxAH4ADIefCpx0AAxpc0luc3RhbmNlT2ZzcQB+AAwzNkg5dAAGPGluaXQ+c3EAfgAMAnwSO3QABUdyb3Vwc3EAfgAMB3b2inQAAWxzcQB+AAy9ynEJdAACPT1zcQB+AAzCexUndAAFY2xvbmVzcQB+AAyYitq6dAAIZ2V0VGFibGVzcQB+AAztBmPIdAAOY29weSRkZWZhdWx0JDNzcQB+AAwEkOL9dAAEY29weXNxAH4ADMvK9Kd0AAh0b1N0cmluZ3NxAH4ADAzEQmZ0AAIhPXNxAH4ADJabjCx0AAhnZXRDbGFzc3NxAH4ADF7oGnl0AA5jb3B5JGRlZmF1bHQkMXNxAH4ADJx5sb90AARzb3J0c3EAfgAMxxeiXXQAEXJlZnJhY3RvckdhbWVQbGFuc3EAfgAMs3zfK3QAAm5lc3EAfgAMJWZrjHQAAWtzcQB+AAzDDBN8dAAFZ2FtZXNzcQB+AAyojo/udAACZXFzcQB+AAxriRZFdAAPcHJvZHVjdEl0ZXJhdG9yc3EAfgAM+sF7oHQADHByaW50TWF0Y2hlc3NxAH4ADB7u72x0AAIjI3NxAH4ADCcE/4F0AAhmaW5hbGl6ZXNxAH4ADAV2EAF0AAhnZXRHYW1lc3NxAH4ADBxeb250AA5wcm9kdWN0RWxlbWVudHNxAH4ADBxKP7F0AAhoYXNoQ29kZXNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AGl4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cAB0ABNkZS5odHdnLm1vZGVsLkdyb3VwdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAIQ2xhc3NEZWZ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGxQAi6Tl5dAPwIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHAAcHNyACB4c2J0aS5TYWZlTGF6eSQkYW5vbmZ1biRzdHJpY3QkMQAAAAAAAAAAAgABTAAHdmFsdWUkMXEAfgCCeHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgCBAHBzcQB+AIZzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AaUwACWluaGVyaXRlZHEAfgBpTAAHcGFyZW50c3EAfgBpeHEAfgCKc3EAfgCBAHBzcQB+AIZ1cQB+AGQAAAAAc3EAfgCBAHBzcQB+AIZ1cQB+AGQAAAAAc3EAfgCBAHBzcQB+AIZ1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAABnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AIl0AAxTZXJpYWxpemFibGVzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AIlzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AKdzcQB+AJpxAH4AnXNxAH4AnnNxAH4AoXVxAH4ApAAAAANzcQB+AKZ0AARqYXZhc3EAfgCmdAACaW9xAH4Aq3NxAH4AmnQAB1Byb2R1Y3RxAH4AoHNxAH4AmnQABkVxdWFsc3EAfgCgc3EAfgCadAAGT2JqZWN0c3EAfgCec3EAfgChdXEAfgCkAAAAA3NxAH4ApnEAfgCxc3EAfgCmdAAEbGFuZ3EAfgCrc3EAfgCadAADQW55cQB+AKB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAA3NyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAdkZS5odHdnc3EAfgDEdAACZGVzcQB+AMR0AA1kZS5odHdnLm1vZGVsc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFJ1CumlnVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AFNDOlxVc2Vyc1xhbmthdWZtYVxnaXRcVG91cm5hbWVudE1hbmFnZXJcVG91cm5hbWVudE1hbmFnZXJcdGFyZ2V0XHNjYWxhLTIuMTBcY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFKPiFvQ26xygLeoO3qVB+GScy+sR
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHA0UuOBAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAJXNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cA/Kyal0AAZub3RpZnlzcQB+AAyZonXVdAAEbmFtZXNxAH4ADNltu4J0AAR3YWl0c3EAfgAM9EtnDHQADmNvcHkkZGVmYXVsdCQyc3EAfgAMYhaHqHQADSRhc0luc3RhbmNlT2ZzcQB+AAycRwh/dAAOY29weSRkZWZhdWx0JDVzcQB+AAx1PCeWdAAMcHJvZHVjdEFyaXR5c3EAfgAMHM5y/XQABmVxdWFsc3NxAH4ADF173Dp0AAxhc0luc3RhbmNlT2ZzcQB+AAxGHmKRdAAMc3luY2hyb25pemVkc3EAfgAMaUYZvnQADSRpc0luc3RhbmNlT2ZzcQB+AAwf+rkDdAAIY2FuRXF1YWxzcQB+AAxvMwkBdAAOY29weSRkZWZhdWx0JDRzcQB+AAzcvnb/dAANcHJvZHVjdFByZWZpeHNxAH4ADAQNkNt0AAlub3RpZnlBbGxzcQB+AAxPt0FcdAAMaXNJbnN0YW5jZU9mc3EAfgAMok5rynQABFRlYW1zcQB+AAxKPGcFdAAGPGluaXQ+c3EAfgAMxLuqMHQABnBvaW50c3NxAH4ADIqa9510AAI9PXNxAH4ADAtXFzB0AAVjbG9uZXNxAH4ADAz/jQJ0AA5jb3B5JGRlZmF1bHQkM3NxAH4ADPecaCR0AARjb3B5c3EAfgAMIHVUUnQACHRvU3RyaW5nc3EAfgAMz+NdZnQAAiE9c3EAfgAM8gjwQXQACGdldENsYXNzc3EAfgAMpdsPb3QADmNvcHkkZGVmYXVsdCQxc3EAfgAMorqvmHQAAm5lc3EAfgAMZ57Wl3QAAmVxc3EAfgAMgmNIVXQAD3Byb2R1Y3RJdGVyYXRvcnNxAH4ADDa4MId0AAxnb2Fsc0FnYWluc3RzcQB+AAwbPHbsdAACIyNzcQB+AAz6TXo8dAAIZmluYWxpemVzcQB+AAxy7jyodAAFZ29hbHNzcQB+AAznM4CpdAAFaW5kZXhzcQB+AAyAOHqCdAAOcHJvZHVjdEVsZW1lbnRzcQB+AAxG6mQqdAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBheHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAASZGUuaHR3Zy5tb2RlbC5UZWFtdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAIQ2xhc3NEZWZ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGxQAi6Tl5dAPwIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHAAcHNyACB4c2J0aS5TYWZlTGF6eSQkYW5vbmZ1biRzdHJpY3QkMQAAAAAAAAAAAgABTAAHdmFsdWUkMXEAfgB6eHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgB5AHBzcQB+AH5zcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AYUwACWluaGVyaXRlZHEAfgBhTAAHcGFyZW50c3EAfgBheHEAfgCCc3EAfgB5AHBzcQB+AH51cQB+AFwAAAAAc3EAfgB5AHBzcQB+AH51cQB+AFwAAAAAc3EAfgB5AHBzcQB+AH51cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAABnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AIF0AAxTZXJpYWxpemFibGVzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AIFzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AJ9zcQB+AJJxAH4AlXNxAH4AlnNxAH4AmXVxAH4AnAAAAANzcQB+AJ50AARqYXZhc3EAfgCedAACaW9xAH4Ao3NxAH4AknQAB1Byb2R1Y3RxAH4AmHNxAH4AknQABkVxdWFsc3EAfgCYc3EAfgCSdAAGT2JqZWN0c3EAfgCWc3EAfgCZdXEAfgCcAAAAA3NxAH4AnnEAfgCpc3EAfgCedAAEbGFuZ3EAfgCjc3EAfgCSdAADQW55cQB+AJh1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAA3NyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAdkZS5odHdnc3EAfgC8dAACZGVzcQB+ALx0AA1kZS5odHdnLm1vZGVsc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFJ1CumlnVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AFNDOlxVc2Vyc1xhbmthdWZtYVxnaXRcVG91cm5hbWVudE1hbmFnZXJcVG91cm5hbWVudE1hbmFnZXJcdGFyZ2V0XHNjYWxhLTIuMTBcY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFAJIsz6dsYib2JnjF2X95gs79SOs
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHCCBuUXAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAIHNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cG7vO6h0AAdyb3V0aW5lc3EAfgAMnAOUQ3QABm5vdGlmeXNxAH4ADPrAFz10AAh0ZWFtTGlzdHNxAH4ADBGcaWZ0AAR3YWl0c3EAfgAMSeKc2nQADSRhc0luc3RhbmNlT2ZzcQB+AAxlt40vdAAGZXF1YWxzc3EAfgAMg+T9E3QADGFzSW5zdGFuY2VPZnNxAH4ADEW9/3V0AA5leGVjdXRpb25TdGFydHNxAH4ADM4mtUp0AAxzeW5jaHJvbml6ZWRzcQB+AAz335TZdAAFdGVhbXNzcQB+AAxM4MYidAANJGlzSW5zdGFuY2VPZnNxAH4ADBzZfwN0AAhub0dyb3Vwc3NxAH4ADIIpIz10AARtYWluc3EAfgAMvScFsXQABmdyb3Vwc3NxAH4ADG6aOid0AAV1bnRpbHNxAH4ADHkMoY10AAlub3RpZnlBbGxzcQB+AAzfisSxdAAMaXNJbnN0YW5jZU9mc3EAfgAMeCQX/HQAA1RVSXNxAH4ADDrmIgZ0AAI9PXNxAH4ADDtWr+90AAVjbG9uZXNxAH4ADGkkoxx0AARmcm9tc3EAfgAMAilizHQACHRvU3RyaW5nc3EAfgAMC2k16HQAAiE9c3EAfgAMhTxlhHQACGdldENsYXNzc3EAfgAM+BSg8nQACXByaW50TWVudXNxAH4ADCAyJlB0AAJuZXNxAH4ADBuLX8N0AAdub1RlYW1zc3EAfgAM2+f/lnQAAmVxc3EAfgAM8jRZInQAAiMjc3EAfgAMRYzKk3QACGZpbmFsaXplc3EAfgAMydVIOHQACGhhc2hDb2Rlc3EAfgAM5MqY7XQACWdyb3VwTGlzdHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AFd4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cAB0AA9kZS5odHdnLlRVSS5UVUl1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGxQAi6Tl5dAPwIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHAAcHNyACB4c2J0aS5TYWZlTGF6eSQkYW5vbmZ1biRzdHJpY3QkMQAAAAAAAAAAAgABTAAHdmFsdWUkMXEAfgBweHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgBvAHBzcQB+AHRzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AV0wACWluaGVyaXRlZHEAfgBXTAAHcGFyZW50c3EAfgBXeHEAfgB4c3EAfgBvAHBzcQB+AHR1cQB+AFIAAAAAc3EAfgBvAHBzcQB+AHR1cQB+AFIAAAABc3IADXhzYnRpLmFwaS5EZWZSvp/ifLQ2aQIAAkwACnJldHVyblR5cGV0ABBMeHNidGkvYXBpL1R5cGU7WwAPdmFsdWVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvUGFyYW1ldGVyTGlzdDt4cQB+AFhxAH4AYXVxAH4AYgAAAABzcQB+AGQAcQB+ACd1cQB+AGcAAAAAc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4Ad3QABFVuaXRzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AHdzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AJh1cgAaW0x4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdDv10zod8rNw7gIAAHhwAAAAAXNyABd4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdNbFvBxkSXTjAgACWgAKaXNJbXBsaWNpdFsACnBhcmFtZXRlcnN0ABxbTHhzYnRpL2FwaS9NZXRob2RQYXJhbWV0ZXI7eHAAdXIAHFtMeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlcjvPuMVdpd21bQIAAHhwAAAAAXNyABl4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyH0WuF9NJsOoCAARaAApoYXNEZWZhdWx0TAAIbW9kaWZpZXJ0AB1MeHNidGkvYXBpL1BhcmFtZXRlck1vZGlmaWVyO0wABG5hbWVxAH4ADUwAA3RwZXEAfgCFeHAAfnIAG3hzYnRpLmFwaS5QYXJhbWV0ZXJNb2RpZmllcgAAAAAAAAAAEgAAeHEAfgBqdAAFUGxhaW50AARhcmdzc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJpemVkFmzuaQPJu38CAAJMAAhiYXNlVHlwZXEAfgCMWwANdHlwZUFyZ3VtZW50c3QAEVtMeHNidGkvYXBpL1R5cGU7eHEAfgB3c3EAfgCLdAAFQXJyYXlxAH4AkXVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAABc3EAfgCLdAAGU3RyaW5nc3EAfgCPc3EAfgCSdXEAfgCVAAAAA3NxAH4Al3QABGphdmFzcQB+AJd0AARsYW5ncQB+AJxzcQB+AG8AcHNxAH4AdHVxAH4AsAAAAANzcQB+AIt0AAtBcHBsaWNhdGlvbnEAfgCRc3EAfgCLdAAGT2JqZWN0cQB+ALRzcQB+AIt0AANBbnlxAH4AkXVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAADc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+AA14cHQAB2RlLmh0d2dzcQB+AMZ0AAJkZXNxAH4AxnQAC2RlLmh0d2cuVFVJc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFJ1CumlnVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AFNDOlxVc2Vyc1xhbmthdWZtYVxnaXRcVG91cm5hbWVudE1hbmFnZXJcVG91cm5hbWVudE1hbmFnZXJcdGFyZ2V0XHNjYWxhLTIuMTBcY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFJFBeB+Eu2fvfDQWgaLuHYRjE1kN
 external apis:
 0 items
 source infos:
 4 items
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> 
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Game.scala -> 
 AAAAAAAAAAA=
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> 
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Group.scala -> 
 AAAAAAAAAAA=
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> 
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\model\Team.scala -> 
 AAAAAAAAAAA=
-C:\Users\AK\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> 
-AAAAAAAAAAEAAAEAAAAHACBvYmplY3QgVFVJIGV4dGVuZHMgQXBwbGljYXRpb24gewEAAACPAQAAABMBABMgICAgICAgICAgICAgICAgICAgAQBYQzpcVXNlcnNcQUtcZ2l0XFRvdXJuYW1lbnRNYW5hZ2VyXFRvdXJuYW1lbnRNYW5hZ2VyXHNyY1xtYWluXHNjYWxhXGRlXGh0d2dcVFVJXFRVSS5zY2FsYQEAWEM6XFVzZXJzXEFLXGdpdFxUb3VybmFtZW50TWFuYWdlclxUb3VybmFtZW50TWFuYWdlclxzcmNcbWFpblxzY2FsYVxkZVxodHdnXFRVSVxUVUkuc2NhbGEAQXRyYWl0IEFwcGxpY2F0aW9uIGluIHBhY2thZ2Ugc2NhbGEgaXMgZGVwcmVjYXRlZDogdXNlIEFwcCBpbnN0ZWFkAQ==
+C:\Users\ankaufma\git\TournamentManager\TournamentManager\src\main\scala\de\htwg\TUI\TUI.scala -> 
+AAAAAQAAAQAAAAcAIG9iamVjdCBUVUkgZXh0ZW5kcyBBcHBsaWNhdGlvbiB7AQAAAIkBAAAAEwEAEyAgICAgICAgICAgICAgICAgICABAF5DOlxVc2Vyc1xhbmthdWZtYVxnaXRcVG91cm5hbWVudE1hbmFnZXJcVG91cm5hbWVudE1hbmFnZXJcc3JjXG1haW5cc2NhbGFcZGVcaHR3Z1xUVUlcVFVJLnNjYWxhAQBeQzpcVXNlcnNcYW5rYXVmbWFcZ2l0XFRvdXJuYW1lbnRNYW5hZ2VyXFRvdXJuYW1lbnRNYW5hZ2VyXHNyY1xtYWluXHNjYWxhXGRlXGh0d2dcVFVJXFRVSS5zY2FsYQBBdHJhaXQgQXBwbGljYXRpb24gaW4gcGFja2FnZSBzY2FsYSBpcyBkZXByZWNhdGVkOiB1c2UgQXBwIGluc3RlYWQBAAAAAA==
 compilations:
-1 items
+3 items
 0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSXc31kh1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQATUM6XFVzZXJzXEFLXGdpdFxUb3VybmFtZW50TWFuYWdlclxUb3VybmFtZW50TWFuYWdlclx0YXJnZXRcc2NhbGEtMi4xMFxjbGFzc2VzdAABLw==
+1 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSdQqHhJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAU0M6XFVzZXJzXGFua2F1Zm1hXGdpdFxUb3VybmFtZW50TWFuYWdlclxUb3VybmFtZW50TWFuYWdlclx0YXJnZXRcc2NhbGEtMi4xMFxjbGFzc2VzdAABLw==
+2 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSdQrppZ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAU0M6XFVzZXJzXGFua2F1Zm1hXGdpdFxUb3VybmFtZW50TWFuYWdlclxUb3VybmFtZW50TWFuYWdlclx0YXJnZXRcc2NhbGEtMi4xMFxjbGFzc2VzdAABLw==

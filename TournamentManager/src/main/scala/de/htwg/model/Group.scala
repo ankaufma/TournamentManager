@@ -23,14 +23,7 @@ case class Group (name: String, teams: ListBuffer[Team], games: ListBuffer[Game]
 	 
 	def getGames() = games.reverse
 	
-	def getTable = {
-	  println("====================================")
-	  println("TABLE OF GROUP " + this.name )
-	  println("Team name | Points | Goals | Goals against")
-	  sort(this.teams).reverse.foreach(y => 
-	          println(y.name + " | " + y.points + " | " + y.goals + " | " + y.goalsAgainst))
-	  println("====================================")
-	}
+	def getTable (group: Group): List[Team] = sort(group.teams)
 	
 	def sort(teams: ListBuffer[Team]): List[Team] = {
 	  teams.toList match {
