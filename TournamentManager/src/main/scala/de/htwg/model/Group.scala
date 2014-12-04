@@ -26,11 +26,11 @@ case class Group (name: String, teams: ListBuffer[Team], games: ListBuffer[Game]
 	def getTable (group: Group): List[Team] = sort(group.teams)
 	
 	def sort(teams: ListBuffer[Team]): List[Team] = {
-	  teams.toList match {
-	    case Nil => teams.toList
-	    case _ => sort(teams.tail.filter(_.points <= teams.head.points)) ::: teams.head :: sort(
-	        teams.tail.filter(_.points > teams.head.points))
-	  }
+	  teams.toList.
+	  sortWith((x,y) => x.goals						>	y.goals).
+	  sortWith((x,y) => (x.goals-x.goalsAgainst) 	> 	(y.goals-y.goalsAgainst)).
+	  sortWith((x,y) => x.points 					> 	y.points)
+	  .reverse
 	}
 	
 	def printMatches = {
