@@ -5,9 +5,11 @@ import de.htwg.model.Team
 import de.htwg.model.Group
 
 object Controller {
+	class EasyTable(group: Group) {
+		def getEasyTable = getTable(group)
+	}
   	val teams = new ListBuffer[Team]()
 	val groups = new ListBuffer[Group]() 
-	
 	def initTeams(team: String) = teams += Team(teams.size-1,team,0,0,0)
 	
 	def initGroups(countOfGroups: Int, group: String) = {
@@ -27,6 +29,8 @@ object Controller {
 	def getTable(group: Group) = {
 	  group.getTable(group)
 	}
+
+	implicit def getEasyTable(group: Group) = new EasyTable(group)
 	
 	def getGames(group: Group) = {
 	  group.getGames

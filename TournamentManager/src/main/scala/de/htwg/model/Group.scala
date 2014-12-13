@@ -3,8 +3,7 @@ package de.htwg.model
 import scala.collection.mutable.ListBuffer
 import scala.util.control.Breaks._
 
-case class Group (name: String, teams: ListBuffer[Team], games: ListBuffer[Game]) {	
-	
+case class Group (name: String, teams: ListBuffer[Team], games: ListBuffer[Game]) {		
 	// Calculates the Matches of the group
 	// Gameplan has to be immutable but updatable (ListBuffer)
 	var k = 0
@@ -20,10 +19,11 @@ case class Group (name: String, teams: ListBuffer[Team], games: ListBuffer[Game]
 		   }
 		}
 	}
-	 
+	
 	def getGames() = games.reverse
 	
 	def getTable (group: Group): List[Team] = sort(group.teams)
+	def getTable = sort(this.teams)
 	
 	def sort(teams: ListBuffer[Team]): List[Team] = {
 	  teams.toList.
