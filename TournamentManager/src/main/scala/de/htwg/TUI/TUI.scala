@@ -1,19 +1,31 @@
 package de.htwg.TUI
 
 import de.htwg.model.Team
+import scala.swing._
 import scala.collection.mutable.ListBuffer
 import de.htwg.model.Group
 import de.htwg.controller.Controller
+import de.htwg.controller.NewState
+import de.htwg.controller.TeamsInit
+import de.htwg.controller.GroupsInit
 
-object TUI extends Application {
+class TUI (controller: Controller) extends Reactor {
+	listenTo(controller)
 	
-	//Initialization of Basic Data...
+	reactions += {
+	  case a: NewState => 
+	    printMatches(a.g)
+	    printTable(a.g)
+	  case _ => 
+	}
+	
+	def init() {
 	println("Please type in the number of teams: ")
 	val noTeams: Int = readInt
 	for(i <- 1 to noTeams) {
 	  println("Please type in the Team Name: ")
 	  val teamName = readLine
-	  Controller.initTeams(teamName)
+	  controller.initTeams(teamName)
 	}
 	
 	println("Please type in the number of groups: ")
@@ -21,29 +33,26 @@ object TUI extends Application {
 	for(i <- 1 to countOfGroups) {
 	  println("Please type in the Group Name: ")
 	  val groupName = readLine
-	  Controller.initGroups(countOfGroups, groupName)
-	}
-
-	routine
+	  controller.initGroups(countOfGroups, groupName)
+	}}
 		
-	def routine() = {
+	def routine(input: String) = {
 	  printMenu()
-	  while(true) {
-	    val input = readLine 
+	  var continue = true
 	    input.toList match {
-	      case 't' :: rest => Controller.groups.foreach(printTable(_))
-	      case 'T' :: rest => Controller.groups.foreach(printTable(_))
-	      case 'm' :: 'a' :: rest => Controller.groups.foreach(printMatches(_))
-	      case 'M' :: 'a' :: rest => Controller.groups.foreach(printMatches(_))
+	      case 't' :: rest => controller.groups.foreach(printTable(_))
+	      case 'T' :: rest => controller.groups.foreach(printTable(_))
+	      case 'm' :: 'a' :: rest => controller.groups.foreach(printMatches(_))
+	      case 'M' :: 'a' :: rest => controller.groups.foreach(printMatches(_))
 	      case 'm' :: 'e' :: rest => printMenu()
 	      case 'M' :: 'e' :: rest => printMenu()
-	      case 'q' :: rest => System.exit(0)
-	      case 'Q' :: rest => System.exit(0) 
+	      case 'q' :: rest => continue = false
+	      case 'Q' :: rest => continue = false
 	      case _ => {
 	    	 try { 
 	    	   input.replaceAll(":", " ").replaceAll("\\.", "").split(" ").toList.map(_.toInt) match {
 	    	 	case group :: index :: goals :: goalsAgainst :: Nil => 
-	    	 		printTable(Controller.setGameResult(group, index, goals, goalsAgainst))
+	    	 		controller.setGameResult(group, index, goals, goalsAgainst)
 	    	 	case _ => println("omG an Error occured")
 	    	   }
 	    	 } catch {
@@ -58,7 +67,7 @@ object TUI extends Application {
 	    	 }
 	      }
 	    }
-	  }
+	  continue
 	}
 	
 	def printMenu() = {
@@ -73,7 +82,7 @@ object TUI extends Application {
 	}
 	
 	def printTable(group: Group) = {
-	  val teams = Controller.getTable(group)
+	  val teams = controller.getTable(group)
 	  println("====================================")
 	  println("TABLE OF GROUP " + group.name )
 	  println("Team name | Points | Goals | Goals against")
@@ -86,7 +95,7 @@ object TUI extends Application {
 		println("====================================")
 	  	println("MATCHES OF GROUP " + group.name);
 	  	println("Matchindex. Home team : Foreign Team")
-	  	Controller.getGames(group).foreach(y => 
+	  	controller.getGames(group).foreach(y => 
 	  	println(y.index + ". " + y.getMatch._1.name + "-" + y.getMatch._2.name + " " + y.r._1 + ":" + y.r._2))
 		println("====================================")
 	}
