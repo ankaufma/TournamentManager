@@ -31,9 +31,10 @@ class Controller extends Publisher {
 	def setGameResult(group: Int, index: Int, goals: Int, goalsAgainst: Int) = {
 		val game = groups.flatMap(x => x.getGames)
 		val gameIndex = (groups(0).getGames.size)*(group-1)+(index-1)
-		println(gameIndex)
+		groups(0).teams.foreach(x => println(x.points))
 		groups(group-1).refractorGamePlan(game(gameIndex).setResult(goals,goalsAgainst))
 		groups(group-1).setGameResult(index, (goals,goalsAgainst))
+		groups(0).teams.foreach(x => println(x.points))
 	    publish(new NewState(groups(group-1)))
 	}
 	

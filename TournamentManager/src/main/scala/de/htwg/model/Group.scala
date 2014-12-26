@@ -33,27 +33,20 @@ case class Group (name: String, teams: ListBuffer[Team], games: ListBuffer[Game]
 	  .reverse
 	}
 	
-	def printMatches = {
-		println("====================================")
-	  	println("MATCHES OF GROUP " + this.name);
-	  	println("Matchindex. Home team : Foreign Team")
-	  	this.getGames.foreach(y => 
-	  	  	println(y.index + ". " + y.getMatch._1.name + "-" + y.getMatch._2.name + " " + y.r._1 + ":" + y.r._2))
-		println("====================================")
-	}
-	
 	def refractorGamePlan(teams: List[Team]) = {
 	  // Refractor game plan with copie of Teams to be able to sort points and goals
 	  for(g <- this.games; t <- teams) {
 	    if(g.game._1.index == t.index) {
-	      this.games.update(this.games.size-g.index, g.copy(game = (t, g.game._2)))
+	      this.games.update(this.games.size-g.index, g.copy(game = (t, this.games(this.games.size-g.index).game._2)))
 	    }
 	    if(g.game._2.index == t.index) {
-	      this.games.update(this.games.size-g.index, g.copy(game = (g.game._1, t)))
+	      this.games.update(this.games.size-g.index, g.copy(game = (this.games(this.games.size-g.index).game._1, t)))
 	    }
 	  }
+
 	  // Refractor Teams in GroupList to recalculate the Table with new Copies of immutable Teams
 	  for(x <- this.teams; y <- teams; if(x.index == y.index)) {
+	    println(y.name + " " +y.points + " " + x.points)
 	    this.teams.update(this.teams.indexOf(x), y)
 	  }
 	}
