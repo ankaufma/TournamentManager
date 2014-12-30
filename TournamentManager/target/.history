@@ -5,3 +5,4 @@ run
 compile -deprecated
 set scalacOptions in ThisBuild ++= Seq("-unchecked", "-deprecation")
 compile
+run

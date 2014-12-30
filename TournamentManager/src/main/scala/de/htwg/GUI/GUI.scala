@@ -27,6 +27,17 @@ class GUI(controller: Controller) extends Frame {
   val tables = List.range(0,initTnG.cog).map(x => new Table(controller.groups(0).teams.size+1, 4))
   updateTables
   
+  val myMenuBar = new MenuBar {
+    contents += new Menu("File") {
+      contents += new MenuItem(Action("Players") { new PlayerManager(controller) })
+      contents += new MenuItem(Action("Back Season") {
+    	  listOfButtons.foreach(_.enabled = true) 
+    	  listOfGoals.foreach(_.text = "0")
+        })
+      contents += new MenuItem(Action("Quit") { System.exit(0) })
+    }
+  }
+  
   val boxPanels = for(i <- List.range(0,initTnG.cog)) yield
   	new BoxPanel(Orientation.Vertical) {
 	  getGroupComponents(i).map(x => 
@@ -51,19 +62,9 @@ class GUI(controller: Controller) extends Frame {
   		}
   	}
   
-  val myMenuBar = new MenuBar {
-    contents += new Menu("File") {
-      contents += new MenuItem(Action("Back Season") {
-    	  listOfButtons.foreach(_.enabled = true) 
-    	  listOfGoals.foreach(_.text = "0")
-        })
-      contents += new MenuItem(Action("Quit") { System.exit(0) })
-    }
-  }
-  
+  menuBar = myMenuBar
   contents = myPanel
   visible = true
-  menuBar = myMenuBar
 	
 	def updateTables = {
     var i = 0
@@ -85,9 +86,11 @@ class GUI(controller: Controller) extends Frame {
     }
   }
 	
-  def getGroupComponents(i: Int): List[Component] = {	  	
+  def getGroupComponents(i: Int): List[Component] = {
+    List(new FlowPanel { contents += new Label("Group " + controller.groups(i).name) }) :::
     controller.getGames(controller.groups(i)).map(x =>
-	  		new FlowPanel {
+      		new FlowPanel {
+	  		  this.vGap = 0
 	  		  val t1 = new Label(x.game._1.name)
 	  		  t1.minimumSize = new Dimension(100,12)
 	  		  t1.preferredSize = new Dimension(100,12)
@@ -106,6 +109,9 @@ class GUI(controller: Controller) extends Frame {
 	  		  val goalsAgainst = new TextField("0", 3)
 	  		  contents += goalsAgainst
 	  		  val commit = new Button("Commit")
+	  		  commit.maximumSize = new Dimension(78,20)
+	  		  commit.minimumSize = new Dimension(78,20)
+	  		  commit.preferredSize = new Dimension(78,20)
 	  		  listenTo(commit)
 	  		  reactions += {
 	  		    case ButtonClicked(button) =>

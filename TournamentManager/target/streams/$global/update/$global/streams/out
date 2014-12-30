@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/C:/Users/ankaufma/git/TournamentManager/TournamentManager/}tournamentmanager...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/home/ankaufma/git/TournamentManager/TournamentManager/}tournamentmanager...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: default#tournamentmanager_2.10;2.10[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#tournamentmanager_2.10;2.10 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.10;2.10->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.4 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@66cd3fe5[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@69ae01d0[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.10.4] org.scala-lang#scala-library;2.10.4[0m
@@ -17,26 +17,19 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.10;2.10->org.scala-lang#scala-swing;2.10+ [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-swing;2.10+ ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-swing;2.10+ {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdefault-cache: no cached resolved revision for org.scala-lang#scala-swing;2.10+[0m
+[0m[[0mdebug[0m] [0mdefault-cache: cached resolved revision expired for org.scala-lang#scala-swing;2.10+[0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-swing;2.10+ ...[0m
 [0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.scala-lang#scala-swing;2.10+ {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0mdefault-cache: no cached resolved revision for org.scala-lang#scala-swing;2.10+[0m
-[0m[[0mdebug[0m] [0mdefault-cache: no cached resolved revision for org.scala-lang#scala-swing;2.10+[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\ankaufma\.ivy2\local\org.scala-lang\scala-swing\[revision]\ivys\ivy.xml[0m
+[0m[[0mdebug[0m] [0mdefault-cache: cached resolved revision expired for org.scala-lang#scala-swing;2.10+[0m
+[0m[[0mdebug[0m] [0mdefault-cache: cached resolved revision expired for org.scala-lang#scala-swing;2.10+[0m
+[0m[[0mdebug[0m] [0m		tried /home/ankaufma/.ivy2/local/org.scala-lang/scala-swing/[revision]/ivys/ivy.xml[0m
 [0m[[0mdebug[0m] [0m	local: no ivy file found for org.scala-lang#scala-swing;2.10+[0m
-[0m[[0mdebug[0m] [0mdefault-cache: no cached resolved revision for org.scala-lang#scala-swing;2.10+[0m
+[0m[[0mdebug[0m] [0mdefault-cache: cached resolved revision expired for org.scala-lang#scala-swing;2.10+[0m
 [0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/scala-lang/scala-swing/[revision]/scala-swing-[revision].pom[0m
 [0m[[0mdebug[0m] [0m	public: found md file for org.scala-lang#scala-swing;2.10+[0m
 [0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/org/scala-lang/scala-swing/2.10.4/scala-swing-2.10.4.pom (2.10.4)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/org/scala-lang/scala-swing/2.10.4/scala-swing-2.10.4.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-swing/2.10.4/scala-swing-2.10.4.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-swing/2.10.4/scala-swing-2.10.4.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-swing/2.10.4/scala-swing-2.10.4.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-swing;2.10.4!scala-swing.pom(pom.original) (468ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\ankaufma\.ivy2\local\org.scala-lang\scala-swing\2.10.4\jars\scala-swing.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/scala-lang/scala-swing/2.10.4/scala-swing-2.10.4.jar[0m
-[0m[[0mdebug[0m] [0m		[2.10.4] org.scala-lang#scala-swing[0m
-[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-swing;2.10.4 in public[0m
+[0m[[0mdebug[0m] [0m	default-cache: revision in cache: org.scala-lang#scala-swing;2.10.4[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-swing;2.10.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.10.4] org.scala-lang#scala-swing;2.10+[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.10;2.10->org.scala-lang#scala-swing;2.10+ [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.10;2.10->org.scala-lang#scala-swing;2.10+ [compile->compile][0m
@@ -81,24 +74,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.10;2.10->org.scalatest#scalatest_2.10;2.0 [test->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scalatest#scalatest_2.10;2.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scalatest#scalatest_2.10;2.0 {test=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving org.scalatest#scalatest_2.10;2.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.scalatest#scalatest_2.10;2.0 {test=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\ankaufma\.ivy2\local\org.scalatest\scalatest_2.10\2.0\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.scalatest#scalatest_2.10;2.0[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.0/scalatest_2.10-2.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.scalatest#scalatest_2.10;2.0[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.0/scalatest_2.10-2.0.pom (2.0)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.0/scalatest_2.10-2.0.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.0/scalatest_2.10-2.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.0/scalatest_2.10-2.0.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.0/scalatest_2.10-2.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scalatest#scalatest_2.10;2.0!scalatest_2.10.pom(pom.original) (470ms)[0m
-[0m[[0minfo[0m] [0mResolving org.sonatype.oss#oss-parent;7 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.sonatype.oss#oss-parent;7 {}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.sonatype.oss#oss-parent;7[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\ankaufma\.ivy2\local\org.scalatest\scalatest_2.10\2.0\jars\scalatest_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.0/scalatest_2.10-2.0.jar[0m
-[0m[[0mdebug[0m] [0m	found org.scalatest#scalatest_2.10;2.0 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scalatest#scalatest_2.10;2.0[0m
+[0m[[0mdebug[0m] [0m	found org.scalatest#scalatest_2.10;2.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.10;2.10->org.scalatest#scalatest_2.10;2.0 [test->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.10;2.10->org.scalatest#scalatest_2.10;2.0 [test->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalatest#scalatest_2.10;2.0->org.scala-lang#scala-library;2.10.0 [compile->master(compile)][0m
@@ -108,21 +85,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalatest#scalatest_2.10;2.0->org.scala-lang#scala-reflect;2.10.0 [compile->master(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-reflect;2.10.0 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-reflect;2.10.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.scala-lang#scala-reflect;2.10.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\ankaufma\.ivy2\local\org.scala-lang\scala-reflect\2.10.0\ivys\ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.scala-lang#scala-reflect;2.10.0[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.scala-lang#scala-reflect;2.10.0[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.pom (2.10.0)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.10.0!scala-reflect.pom(pom.original) (453ms)[0m
-[0m[[0mdebug[0m] [0m		tried C:\Users\ankaufma\.ivy2\local\org.scala-lang\scala-reflect\2.10.0\jars\scala-reflect.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.jar[0m
-[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-reflect;2.10.0 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.10.0[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-reflect;2.10.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalatest#scalatest_2.10;2.0->org.scala-lang#scala-reflect;2.10.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.10.0->org.scala-lang#scala-library;2.10.0 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.10.0->org.scala-lang#scala-library;2.10.4 [compile->master(compile)][0m
@@ -281,41 +245,26 @@
 [0m[[0mdebug[0m] [0m	resolved ivy file produced in cache[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.4!scala-library.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/scala-lang/scala-swing/2.10.4/scala-swing-2.10.4.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/scala-lang/scala-swing/2.10.4/scala-swing-2.10.4.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-swing/2.10.4/scala-swing-2.10.4.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-swing/2.10.4/scala-swing-2.10.4.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-swing/2.10.4/scala-swing-2.10.4.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-swing;2.10.4!scala-swing.jar (2044ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.0/scalatest_2.10-2.0.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.0/scalatest_2.10-2.0.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.0/scalatest_2.10-2.0.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.0/scalatest_2.10-2.0.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/scalatest/scalatest_2.10/2.0/scalatest_2.10-2.0.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scalatest#scalatest_2.10;2.0!scalatest_2.10.jar (16584ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.10.0!scala-reflect.jar (7506ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-swing;2.10.4!scala-swing.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalatest#scalatest_2.10;2.0!scalatest_2.10.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.0!scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.4!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.4!scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2905ms :: artifacts dl 26165ms[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 compile produced in C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 runtime produced in C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 test produced in C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 provided produced in C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 optional produced in C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 compile-internal produced in C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 runtime-internal produced in C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 test-internal produced in C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 plugin produced in C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 sources produced in C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 docs produced in C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 pom produced in C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 scala-tool produced in C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (2905ms resolve - 26165ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1021ms :: artifacts dl 5ms[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 compile produced in /home/ankaufma/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.10-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 runtime produced in /home/ankaufma/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.10-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 test produced in /home/ankaufma/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.10-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 provided produced in /home/ankaufma/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.10-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 optional produced in /home/ankaufma/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.10-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 compile-internal produced in /home/ankaufma/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.10-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 runtime-internal produced in /home/ankaufma/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.10-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 test-internal produced in /home/ankaufma/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.10-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 plugin produced in /home/ankaufma/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.10-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 sources produced in /home/ankaufma/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.10-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 docs produced in /home/ankaufma/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.10-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 pom produced in /home/ankaufma/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.10-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.10;2.10 scala-tool produced in /home/ankaufma/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.10-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (1021ms resolve - 5ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
