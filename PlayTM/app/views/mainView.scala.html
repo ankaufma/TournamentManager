@@ -1,0 +1,45 @@
+@(groups: List[Group])
+
+@main("Welcome Play") {
+    @for(i <- 0 until Controller.groupWinners.size) {
+        <p><b>Group Winner: @Controller.groupWinners(i).name</b></p>
+    }
+    @for(i <- 0 until groups.size) {
+        <table>
+            <tr>
+                <th colspan="8">Group: @Controller.groups(i).name</th>
+            </tr>
+            @for(j <- 0 until Controller.groups(i).games.size) {
+                <tr>
+                    <td>@Controller.groups(i).games(j).getMatch._1.name</td>
+                    <td> - </td>
+                    <td>@Controller.groups(i).games(j).getMatch._2.name</td>
+                    <td> </td>
+                    <form action="@routes.Application.setResult()" method="post">
+                        <input type="hidden" name="group" value="@{i+1}">
+                        <input type="hidden" name="game" value="@{Controller.groups(i).games.size-j}">
+                        <td><input name="r1" type="number" value="@Controller.groups(i).games(j).getResult._1"></td>
+                        <td>:</td>
+                        <td><input name="r2" type="number" value="@Controller.groups(i).games(j).getResult._2"></td>
+                        <td><button>Ok</button></td>
+                    </form>
+                </tr>
+            }
+                <tr>
+                    <td colspan="2"><b>Team</b></td>
+                    <td colspan="2"><b>Points</b></td>
+                    <td colspan="2"><b>Goals</b></td>
+                    <td colspan="2"><b>GoalsAgainst</b></td>
+                </tr>
+            @for(team <- Controller.groups(i).getTable.reverse) {
+                <tr>
+                    <td colspan="2">@team.name</td>
+                    <td colspan="2">@team.points</td>
+                    <td colspan="2">@team.goals</td>
+                    <td colspan="2">@team.goalsAgainst</td>
+                </tr>
+            }
+        </table>
+    }
+
+}

@@ -1,0 +1,13 @@
+@(message: String)
+
+@main("Welcome to Play") {
+
+    <form action="@routes.Application.postInit()" method="post">
+        <table>
+        <tr><td>Number of Teams</td><td><input name="Teams" type="number"></td></tr>
+        <tr><td>Number of Groups</td><td><input name="Groups" type="number"></td></tr>
+        <tr><td><button>Submit</button></td><td></td></tr>
+        </table>
+    </form>
+
+}

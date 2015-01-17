@@ -1,0 +1,19 @@
+@(count: InitForm)
+
+@main("Welcome to Play") {
+
+    <form action="@routes.Application.initTnG()" method="post">
+        <table>
+            <tr><td><b>Groups</b></td><td></td></tr>
+            @for(i <- 0 until count.groups) {
+            <tr><td>Name of Group @{i+1}</td><td><input name="groups[@i]" type="text"></td></tr>
+            }
+            <tr><td><b>Teams</b></td><td></td></tr>
+            @for(i <- 0 until count.teams) {
+                <tr><td>Name of Team @{i+1}</td><td><input name="teams[@i]" type="text"></td></tr>
+            }
+            <tr><td><button>Submit</button></td><td></td></tr>
+        </table>
+    </form>
+
+}
