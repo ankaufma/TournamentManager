@@ -5,7 +5,6 @@ import java.awt.FlowLayout
 import scala.swing._
 import scala.swing.event.ButtonClicked
 import scala.swing.event.ButtonClicked
-import de.htwg.controller.Controller
 import de.htwg.actorCommunication
 import scala.collection.mutable.ListBuffer
 import de.htwg.model._

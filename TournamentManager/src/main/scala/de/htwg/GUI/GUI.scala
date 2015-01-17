@@ -2,7 +2,7 @@ package de.htwg.GUI
 
 import scala.swing._
 import scala.swing.event.ButtonClicked
-import de.htwg.controller.Controller
+import de.htwg.controller._
 import java.awt.GridLayout
 import scala.collection.mutable.ListBuffer
 import java.awt.Dimension
@@ -14,7 +14,7 @@ import akka.actor.ActorSystem
 import akka.actor.ActorContext
 import akka.actor.ActorRef
 
-class GUI(controller: Controller) extends Frame {
+class GUI(controller: ControllerTrait) extends Frame {
   import de.htwg.swingCommunication._
   import controller.getEasyTable
   
@@ -89,7 +89,7 @@ class GUI(controller: Controller) extends Frame {
     	table.update(0, 1, "Points")
     	table.update(0, 2, "Goals")
     	table.update(0, 3, "Goals")
-      	for(team <- controller.groups(i).getEasyTable.reverse) {
+      	for(team <- controller.groups(i).getTable.reverse) {
       		table.update(j, 0, team.name)
       		table.update(j, 1, team.points)
       		table.update(j, 2, team.goals)
@@ -130,6 +130,7 @@ class GUI(controller: Controller) extends Frame {
 	  		  listenTo(commit)
 	  		  reactions += {
 	  		    case ButtonClicked(button) =>
+              println((i+1) + " " + x.index)
 	  		    	controller.setGameResult(i+1, x.index, goals.text.toInt, goalsAgainst.text.toInt)
 	  		    	commit.enabled = false
 	  		  }

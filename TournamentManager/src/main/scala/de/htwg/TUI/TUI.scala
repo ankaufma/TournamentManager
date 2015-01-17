@@ -62,8 +62,8 @@ class TUIActor extends Actor {
 	      case 'M' :: 'a' :: rest => context.system.eventStream.publish(GetAllGroups)
 	      case 'm' :: 'e' :: rest => printMenu()
 	      case 'M' :: 'e' :: rest => printMenu()
-	      case 'q' :: rest => continue = false
-	      case 'Q' :: rest => continue = false
+	      case 'q' :: rest => System.exit(0)
+	      case 'Q' :: rest => System.exit(0)
 	      case _ => {
 	    	 try { 
 	    	   input.replaceAll(":", " ").replaceAll("\\.", "").split(" ").toList.map(_.toInt) match {
@@ -117,7 +117,7 @@ class TUIActor extends Actor {
 
 }
 
-class TUI (controller: Controller) extends Reactor {
+class TUI (controller: ControllerTrait) extends Reactor {
   import de.htwg.swingCommunication._
   listenTo(controller)
   
@@ -191,7 +191,7 @@ class TUI (controller: Controller) extends Reactor {
   }
   
   def printTable(group: Group) = {
-    val teams = controller.getTable(group)
+    val teams = group.getTable(group)
     println("====================================")
     println("TABLE OF GROUP " + group.name )
     println("Team name | Points | Goals | Goals against")

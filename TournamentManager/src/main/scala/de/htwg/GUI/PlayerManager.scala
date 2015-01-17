@@ -5,12 +5,12 @@ import java.awt.FlowLayout
 import scala.swing._
 import scala.swing.event.ButtonClicked
 import scala.swing.event.ButtonClicked
-import de.htwg.controller.Controller
+import de.htwg.controller._
 import de.htwg.actorCommunication._
 import scala.collection.mutable.ListBuffer
 import de.htwg.model.Player
 
-class PlayerManager(controller: Controller) extends Frame {
+class PlayerManager(controller: ControllerTrait) extends Frame {
 	title = "Player Management"
 	
 	//listenTo(controller)
