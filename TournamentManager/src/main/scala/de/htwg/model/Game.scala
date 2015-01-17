@@ -1,6 +1,6 @@
 package de.htwg.model
 
-case class Game(index: Int, game: (Team, Team), r: (Int, Int)) {
+case class Game(index: Int, game: (Team, Team), r: (Int, Int), isPlayed: Boolean) {
  
  def setResult(r: (Int, Int)): List[Team] = {
    if(r._1 > r._2) {

@@ -2,9 +2,12 @@ name := "TournamentManager"
 
 version := "2.10"
 
-scalaVersion := "2.10.4"
+scalaVersion := "2.11.4"
+
+resolvers += "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
 
 libraryDependencies ++= Seq(
-  "org.scala-lang" % "scala-swing" % "2.10+",
-  "org.scalatest" % "scalatest_2.10" % "2.0" % "test"
+  "com.typesafe.akka" %% "akka-actor" % "2.3.8",
+  "org.scala-lang" % "scala-swing" % "2.11.0-M7",
+  "org.specs2" %% "specs2-core" % "2.4.15" % "test"
 )

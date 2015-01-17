@@ -1,17 +1,17 @@
 package de.htwg.TUI
 
 import de.htwg.model.Team
+import akka.actor.Actor
+import akka.actor.Props
+import akka.event.Logging
 import scala.swing._
 import scala.collection.mutable.ListBuffer
 import de.htwg.model.Group
-import de.htwg.controller.Controller
-import de.htwg.controller.NewState
-import de.htwg.controller.TeamsInit
-import de.htwg.controller.GroupsInit
+import de.htwg.controller._
 
 class TUI (controller: Controller) extends Reactor {
 	listenTo(controller)
-	
+  
 	reactions += {
 	  case a: NewState => 
 	    printMatches(a.g)

@@ -4,7 +4,7 @@
 		module="tournamentmanager_2.10"
 		revision="2.10"
 		status="integration"
-		publication="20141230115025"
+		publication="20150116194242"
 	>
 		<description>
 		TournamentManager
@@ -34,7 +34,7 @@
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.10.4" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.10.4" conf="scala-tool->default,optional(default);compile->default(compile)"/>
-		<dependency org="org.scala-lang" name="scala-swing" rev="2.10+" conf="compile->default(compile)"/>
-		<dependency org="org.scalatest" name="scalatest_2.10" rev="2.0" conf="test->default(compile)"/>
+		<dependency org="org.scala-lang" name="scala-swing" rev="2.10.4" conf="compile->default(compile)"/>
+		<dependency org="org.specs2" name="specs2-core_2.10" rev="2.4.15" conf="test->default(compile)"/>
 	</dependencies>
 </ivy-module>

@@ -12,7 +12,7 @@ case class Group (name: String, teams: ListBuffer[Team], games: ListBuffer[Game]
 	   for(i <- 0 until teams.size; j <- 0 to teams.size-1 if(i!=j)) {
 		   if ((i+1) > teams.size/2) break 
 		   else {
-			   games += new Game(l, (teams(k),teams(j)), (0,0))
+			   games += new Game(l, (teams(k),teams(j)), (0,0), false)
 			   l-=1
 			   if (k<teams.size-1) k += 1
 			   else k = 0
@@ -21,15 +21,27 @@ case class Group (name: String, teams: ListBuffer[Team], games: ListBuffer[Game]
 	}
 	
 	def getGames() = games.reverse
+  
+  def getWinner: Option[(Group,Team)] = { 
+    games.forall { x => x.isPlayed } match {
+      case true => 
+        Some(this,getTable.reverse(0)) 
+      case false =>
+        None
+    }
+  }
+  
 	
 	def getTable (group: Group): List[Team] = sort(group.teams)
 	def getTable = sort(this.teams)
-	
+  
+  def getGameById(id: Int): Game = games.filter(x => x.index == id)(0)
+  
 	def sort(teams: ListBuffer[Team]): List[Team] = {
 	  teams.toList.
-	  sortWith((x,y) => x.goals						>	y.goals).
+	  sortWith((x,y) => x.goals						        >	  y.goals).
 	  sortWith((x,y) => (x.goals-x.goalsAgainst) 	> 	(y.goals-y.goalsAgainst)).
-	  sortWith((x,y) => x.points 					> 	y.points)
+	  sortWith((x,y) => x.points 					        > 	y.points)
 	  .reverse
 	}
 	
@@ -52,6 +64,6 @@ case class Group (name: String, teams: ListBuffer[Team], games: ListBuffer[Game]
 	}
 	
 	def setGameResult(index: Int, result: (Int, Int)) {
-	  this.games.update(this.games.size-index, this.games(this.games.size-index).copy(r = (result._1, result._2)))
+	  this.games.update(this.games.size-index, this.games(this.games.size-index).copy(r = (result._1, result._2), isPlayed = true))
 	}
 }

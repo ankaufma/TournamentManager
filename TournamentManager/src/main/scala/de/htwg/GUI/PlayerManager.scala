@@ -13,7 +13,7 @@ import de.htwg.model.Player
 class PlayerManager(controller: Controller) extends Frame {
 	title = "Player Management"
 	
-	listenTo(controller)
+	//listenTo(controller)
 	reactions += {
 	  case nps: NewPlayerState =>
 	    if(!boxpanel.contents.isEmpty) boxpanel.contents.clear

@@ -6,24 +6,39 @@ import de.htwg.controller._
 import java.awt.GridLayout
 import scala.collection.mutable.ListBuffer
 import java.awt.Dimension
+import java.awt.Color
+import java.awt.{Component => _}
+import akka.actor.Actor
+import akka.actor.Props
+import akka.event.Logging
+import akka.actor.ActorSystem
+import akka.actor.ActorContext
+import akka.actor.ActorRef
 
 class GUI(controller: Controller) extends Frame {
   import controller.getEasyTable
   
-  listenTo(controller)
-  reactions += {
-	case a: NewState => updateTables
-	case _ => 
-  }
+  //def receive = {
+    //case a: NewState => updateTables
+    //case GroupWinnerFound(a,b) => new GroupWinner(a,b)
+  //}
+  
+  //listenTo(controller)
+  //reactions += {
+	//case a: NewState => updateTables
+  //case GroupWinnerFound(a,b) => new GroupWinner(a,b)
+	//case _ => 
+  //}
+  
   
   val initTnG = new InitTnGDialog().init.getOrElse(throw new IllegalStateException("WTF"))
   val initGroups = new InitGroupsDialog(initTnG.cog).init.getOrElse(throw new IllegalStateException("WTF"))
   val initTeams = new InitTeamsDialog(initTnG.cot).init.getOrElse(throw new IllegalStateException("WTF"))
-  val listOfButtons: ListBuffer[Button] = ListBuffer[Button]()
-  val listOfGoals: ListBuffer[TextField] = ListBuffer[TextField]()
-  
   initTeams.teams.foreach(controller.initTeams(_))
   initGroups.groups.reverse.foreach(controller.initGroups(initTnG.cog, _))
+  
+  val listOfButtons: ListBuffer[Button] = ListBuffer[Button]()
+  val listOfGoals: ListBuffer[TextField] = ListBuffer[TextField]()
   val tables = List.range(0,initTnG.cog).map(x => new Table(controller.groups(0).teams.size+1, 4))
   updateTables
   
@@ -50,14 +65,18 @@ class GUI(controller: Controller) extends Frame {
     if (initTnG.cog != 1) {
     	new GridPanel(2,cols) {
     		for(i <- 0 until initTnG.cog) {
-    			contents += boxPanels(i)
+          val bp = boxPanels(i)
+          bp.border_=(javax.swing.BorderFactory.createLineBorder(Color.BLACK))
+    			contents += bp
     		}
     	}
     }
   	else {
   		new GridPanel(1,cols) {
   			for(i <- 0 until initTnG.cog) {
-  				contents += boxPanels(i)
+  				val bp = boxPanels(i)
+          bp.border
+          contents += bp
   			}
   		}
   	}
