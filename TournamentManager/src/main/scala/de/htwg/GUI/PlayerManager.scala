@@ -6,7 +6,7 @@ import scala.swing._
 import scala.swing.event.ButtonClicked
 import scala.swing.event.ButtonClicked
 import de.htwg.controller.Controller
-import de.htwg.controller.NewPlayerState
+import de.htwg.actorCommunication._
 import scala.collection.mutable.ListBuffer
 import de.htwg.model.Player
 

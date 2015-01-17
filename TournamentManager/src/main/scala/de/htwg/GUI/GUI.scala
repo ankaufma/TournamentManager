@@ -2,12 +2,11 @@ package de.htwg.GUI
 
 import scala.swing._
 import scala.swing.event.ButtonClicked
-import de.htwg.controller._
+import de.htwg.controller.Controller
 import java.awt.GridLayout
 import scala.collection.mutable.ListBuffer
 import java.awt.Dimension
 import java.awt.Color
-import java.awt.{Component => _}
 import akka.actor.Actor
 import akka.actor.Props
 import akka.event.Logging
@@ -16,19 +15,15 @@ import akka.actor.ActorContext
 import akka.actor.ActorRef
 
 class GUI(controller: Controller) extends Frame {
+  import de.htwg.swingCommunication._
   import controller.getEasyTable
   
-  //def receive = {
-    //case a: NewState => updateTables
-    //case GroupWinnerFound(a,b) => new GroupWinner(a,b)
-  //}
-  
-  //listenTo(controller)
-  //reactions += {
-	//case a: NewState => updateTables
-  //case GroupWinnerFound(a,b) => new GroupWinner(a,b)
-	//case _ => 
-  //}
+  listenTo(controller)
+  reactions += {
+	  case a: NewState => updateTables
+    case GroupWinnerFound(a,b) => new GroupWinner(a,b)
+	  case _ => 
+  }
   
   
   val initTnG = new InitTnGDialog().init.getOrElse(throw new IllegalStateException("WTF"))
@@ -39,13 +34,14 @@ class GUI(controller: Controller) extends Frame {
   
   val listOfButtons: ListBuffer[Button] = ListBuffer[Button]()
   val listOfGoals: ListBuffer[TextField] = ListBuffer[TextField]()
-  val tables = List.range(0,initTnG.cog).map(x => new Table(controller.groups(0).teams.size+1, 4))
+  val tables = List.range(0,initTnG.cog).map(x => new scala.swing.Table(controller.groups(0).teams.size+1, 4))
   updateTables
   
   val myMenuBar = new MenuBar {
     contents += new Menu("File") {
       contents += new MenuItem(Action("Players") { new PlayerManager(controller) })
       contents += new MenuItem(Action("Back Season") {
+        controller.playBackSeason()
     	  listOfButtons.foreach(_.enabled = true) 
     	  listOfGoals.foreach(_.text = "0")
         })
@@ -84,7 +80,7 @@ class GUI(controller: Controller) extends Frame {
   menuBar = myMenuBar
   contents = myPanel
   visible = true
-	
+  
 	def updateTables = {
     var i = 0
     var j = 1

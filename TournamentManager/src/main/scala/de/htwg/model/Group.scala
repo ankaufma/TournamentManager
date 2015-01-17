@@ -58,7 +58,6 @@ case class Group (name: String, teams: ListBuffer[Team], games: ListBuffer[Game]
 
 	  // Refractor Teams in GroupList to recalculate the Table with new Copies of immutable Teams
 	  for(x <- this.teams; y <- teams; if(x.index == y.index)) {
-	    println(y.name + " " +y.points + " " + x.points)
 	    this.teams.update(this.teams.indexOf(x), y)
 	  }
 	}
