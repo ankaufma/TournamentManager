@@ -1,13 +1,54 @@
 @(message: String)
 
-@main("Welcome to Play") {
+@main("Welcome to the Tournament Manager") {
 
     <form action="@routes.Application.postInit()" method="post">
-        <table>
-        <tr><td>Number of Teams</td><td><input name="Teams" type="number"></td></tr>
-        <tr><td>Number of Groups</td><td><input name="Groups" type="number"></td></tr>
-        <tr><td><button>Submit</button></td><td></td></tr>
-        </table>
+    <div class="container-fluid">
+    	<div class="row">
+    		<div class="col-md-2"></div>
+    		<div class="col-md-8">
+    			<div class="page-header">
+        			<h1>Start Configuration - Tournament Manager</h1>
+      			</div>
+    		</div>
+    		<div class="col-md-2"></div>
+    	</div>
+    	<div class="row"><div class="col-md-12"></div></div>
+      	<div class="row">
+      		<div class="col-md-12">
+      			<div class="col-md-6">
+          			<table class="table">
+            			<thead>
+              				<tr>
+                				<th>Number of Teams</th>
+                				<th>Number of Groups</th>
+                				<th> Send Config </th>
+              				</tr>
+            			</thead>
+            			<tbody>
+              				<tr>
+               	 				<td>
+                					<div class="input-group">
+  									<input name="Teams" type="number" class="form-control" placeholder="Number of Teams" aria-describedby="basic-addon2">
+									</div>
+								</td>
+                				<td>
+                					<div class="input-group">
+  										<input name="Groups" type="number" class="form-control" placeholder="Number of Groups" aria-describedby="basic-addon2">
+									</div>
+								</td>
+								<td>
+									<div class="input-group">
+  				    					<button type="submit" class="btn btn-default btn-block">Submit</button>
+									</div>
+								</td>
+              				</tr>
+            			</tbody>
+          			</table>
+        		</div>
+      		</div>
+        </div>
     </form>
 
 }
+
