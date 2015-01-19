@@ -2,15 +2,15 @@
 
 @main("Welcome Play") {
     @for(i <- 0 until groups.size) {
-        <table>
+        <table class="table">
             <tr>
-                <th colspan="8">Group: @Controller.groups(i).name</th>
+                <th colspan="8" id="changeColorYellow">Group: @Controller.groups(i).name</th>
             </tr>
             @for(j <- 0 until Controller.groups(i).games.size) {
                 <tr>
-                    <td>@Controller.groups(i).games(j).getMatch._1.name</td>
-                    <td> - </td>
-                    <td>@Controller.groups(i).games(j).getMatch._2.name</td>
+                    <td id="changeColorWhite">@Controller.groups(i).games(j).getMatch._1.name</td>
+                    <td id="changeColorWhite"> - </td>
+                    <td id="changeColorWhite">@Controller.groups(i).games(j).getMatch._2.name</td>
                     <td> </td>
                     <form action="@routes.Application.setResult()" method="post">
                         <input type="hidden" name="group" value="@{i+1}">
@@ -18,22 +18,22 @@
                         <td><input name="r1" type="number" value="@Controller.groups(i).games(j).getResult._1"></td>
                         <td>:</td>
                         <td><input name="r2" type="number" value="@Controller.groups(i).games(j).getResult._2"></td>
-                        <td><button>Ok</button></td>
+                        <td><button class="btn btn-info">Ok</button></td>
                     </form>
                 </tr>
             }
                 <tr>
-                    <td colspan="2"><b>Team</b></td>
-                    <td colspan="2"><b>Points</b></td>
-                    <td colspan="2"><b>Goals</b></td>
-                    <td colspan="2"><b>GoalsAgainst</b></td>
+                    <td colspan="2"><b id="changeColorYellow">Team</b></td>
+                    <td colspan="2"><b id="changeColorYellow">Points</b></td>
+                    <td colspan="2"><b id="changeColorYellow">Goals</b></td>
+                    <td colspan="2"><b id="changeColorYellow">Goals Against</b></td>
                 </tr>
             @for(team <- Controller.groups(i).getTable.reverse) {
                 <tr>
-                    <td colspan="2">@team.name</td>
-                    <td colspan="2">@team.points</td>
-                    <td colspan="2">@team.goals</td>
-                    <td colspan="2">@team.goalsAgainst</td>
+                    <td colspan="2" id="changeColorWhite"><b>@team.name</b></td>
+                    <td colspan="2" id="changeColorWhite"><b>@team.points</b></td>
+                    <td colspan="2" id="changeColorWhite"><b>@team.goals</b></td>
+                    <td colspan="2" id="changeColorWhite"><b>@team.goalsAgainst</b></td>
                 </tr>
             }
         </table>
