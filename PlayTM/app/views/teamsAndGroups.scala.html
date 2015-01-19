@@ -1,19 +1,64 @@
 @(count: InitForm)
 
-@main("Welcome to Play") {
+@main("Tournament Manager") {
 
     <form action="@routes.Application.initTnG()" method="post">
-        <table>
-            <tr><td><b>Groups</b></td><td></td></tr>
-            @for(i <- 0 until count.groups) {
-            <tr><td>Name of Group @{i+1}</td><td><input name="groups[@i]" type="text"></td></tr>
-            }
-            <tr><td><b>Teams</b></td><td></td></tr>
-            @for(i <- 0 until count.teams) {
-                <tr><td>Name of Team @{i+1}</td><td><input name="teams[@i]" type="text"></td></tr>
-            }
-            <tr><td><button>Submit</button></td><td></td></tr>
-        </table>
+    	<div class="form-group">
+    	<div class="container-fluid">
+    		<div class="row">
+    			<div class="col-md-12">
+        			<table class="table">
+            			<thead>
+              				<tr>
+                				<th>Groups</th>
+              				</tr>
+            			</thead>
+            			<tbody>
+            			@for(i <- 0 until count.groups) {
+              				<tr>
+               	 				<td>
+                					<div id ="changeColorWhite" class="input-group">
+            							<b>Name of Group @{i+1}</b>
+									</div>
+								</td>
+                				<td>
+                					<div class="input-group">
+  										<input name="groups[@i]" type="text" placeholder="Group Name" aria-describedby="basic-addon2">}
+									</div>
+								</td>
+              				</tr>
+            			</tbody>
+          			</table>
+        		</div>
+    		</div>
+    		<div class="row">
+    			<div class="col-md-12">
+        			<table class="table">
+            			<thead>
+              				<tr>
+                				<th>Teams</th>
+              				</tr>
+            			</thead>
+            			<tbody>
+            			@for(i <- 0 until count.teams) {
+              				<tr>
+               	 				<td>
+                					<div id ="changeColorWhite" class="input-group">
+            							<b>Name of Team @{i+1}</b>
+									</div>
+								</td>
+                				<td>
+                					<div class="input-group">
+  										<input name="teams[@i]" type="text" placeholder="Team Name" aria-describedby="basic-addon2">}
+									</div>
+								</td>
+              				</tr>
+            			</tbody>
+          			</table>
+        		</div>
+    	</div>
+    	</div>
+		<button type="submit" class="btn btn-primary btn-block">Submit</button>
     </form>
 
 }

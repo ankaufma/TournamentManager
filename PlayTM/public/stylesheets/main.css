@@ -4,6 +4,10 @@ body {
 h1{
 	color: #FFFFFF
 }
-th{
+tbody{
+	background-color: #808080
+}
+#changeColorWhite{
 	color: #FFFFFF
 }
+

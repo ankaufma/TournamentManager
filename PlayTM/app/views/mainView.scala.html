@@ -1,9 +1,6 @@
 @(groups: List[Group])
 
 @main("Welcome Play") {
-    @for(i <- 0 until Controller.groupWinners.size) {
-        <p><b>Group Winner: @Controller.groupWinners(i).name</b></p>
-    }
     @for(i <- 0 until groups.size) {
         <table>
             <tr>
@@ -40,6 +37,9 @@
                 </tr>
             }
         </table>
+    }
+        @for(i <- 0 until Controller.groupWinners.size) {
+    	<div class="alert alert-success" role="alert"><b>Group Winner: @Controller.groupWinners(i).name</b></div>
     }
 
 }
