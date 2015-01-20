@@ -12,6 +12,12 @@ class GameTest extends Specification {
   val game = Game(1, (bayern, dortmund), (0, 0), false)
 
   "A new game" should {
+    "Should have been created" in {
+      Game(1, (bayern, dortmund), (0, 0), false) must be_==(game)
+    }
+  }
+
+  "A new game" should {
     "have been createtd with name with Bayern vs. Dortmund should beend have created not played yet" in {
       game.index must be_==(1)
       game.getMatch._1.name must be_==("FCB")
