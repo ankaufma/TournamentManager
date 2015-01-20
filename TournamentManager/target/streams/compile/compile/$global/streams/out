@@ -17,7 +17,7 @@
 [0m[[0minfo[0m] [0mCompiling 16 Scala sources to /Users/gian-lucapiras/git/TournamentManager/TournamentManager/target/scala-2.11/classes...[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.4[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.4[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 7bcb22f3, interfacing (CompilerInterface) with Scala compiler version 2.11.4[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 776491cf, interfacing (CompilerInterface) with Scala compiler version 2.11.4[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-Xplugin:/Users/gian-lucapiras/.ivy2/cache/org.scoverage/scalac-scoverage-plugin_2.11/jars/scalac-scoverage-plugin_2.11-1.0.1.jar[0m
 [0m[[0mdebug[0m] [0m	-P:scoverage:dataDir:/Users/gian-lucapiras/git/TournamentManager/TournamentManager/target/scala-2.11/scoverage-data[0m
@@ -29,7 +29,7 @@
 [0m[[33mwarn[0m] [0mthere were 13 deprecation warnings; re-run with -deprecation for details[0m
 [0m[[33mwarn[0m] [0mthere were four feature warnings; re-run with -feature for details[0m
 [0m[[33mwarn[0m] [0mtwo warnings found[0m
-[0m[[0mdebug[0m] [0mScala compilation took 12.430708914 s[0m
+[0m[[0mdebug[0m] [0mScala compilation took 13.050963619 s[0m
 [0m[[0mdebug[0m] [0mInvalidating /Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/swingCommunication/Communication.scala...[0m
 [0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/swingCommunication/Communication.scala...[0m
 [0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/swingCommunication/Communication.scala)[0m

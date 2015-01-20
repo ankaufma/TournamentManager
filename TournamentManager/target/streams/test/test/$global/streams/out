@@ -1,9 +1,11 @@
 [0m[[0mdebug[0m] [0mRunning TaskDef(testTeam.TeamSpec, specs2 Specification fingerprint, false, [SuiteSelector])[0m
 [0m[[0mdebug[0m] [0mRunning TaskDef(de.htwg.model.PlayerSpec, specs2 Specification fingerprint, false, [SuiteSelector])[0m
+[0m[[0mdebug[0m] [0mRunning TaskDef(de.htwg.model.PlayerManagerSpec, specs2 Specification fingerprint, false, [SuiteSelector])[0m
 [0m[[0mdebug[0m] [0mRunning TaskDef(gameTest.GameSpec, specs2 Specification fingerprint, false, [SuiteSelector])[0m
 [0m[[0mdebug[0m] [0mSummary for specs2 not available.[0m
-[0m[[0minfo[0m] [0mPassed: Total 24, Failed 0, Errors 0, Passed 24[0m
+[0m[[0minfo[0m] [0mPassed: Total 36, Failed 0, Errors 0, Passed 36[0m
 [0m[[0mdebug[0m] [0mPassed tests:[0m
 [0m[[0mdebug[0m] [0m	gameTest.GameSpec[0m
+[0m[[0mdebug[0m] [0m	de.htwg.model.PlayerManagerSpec[0m
 [0m[[0mdebug[0m] [0m	de.htwg.model.PlayerSpec[0m
 [0m[[0mdebug[0m] [0m	testTeam.TeamSpec[0m

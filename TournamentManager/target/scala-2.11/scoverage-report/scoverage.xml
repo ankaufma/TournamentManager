@@ -1,5 +1,5 @@
 <scoverage 
-statement-count="1302" statements-invoked="69" statement-rate="5,30" branch-rate="14,81" version="1.0" timestamp="1421778921057">
+statement-count="1302" statements-invoked="186" statement-rate="14,29" branch-rate="22,22" version="1.0" timestamp="1421792803968">
     <packages>
         <package name="de.htwg.GUI" statement-count="477" statements-invoked="0" statement-rate="0,00">
             <classes>
@@ -3537,7 +3537,7 @@ statement-count="1302" statements-invoked="69" statement-rate="5,30" branch-rate
 </class>
             </classes>
         </package>
-        <package name="de.htwg.model" statement-count="297" statements-invoked="69" statement-rate="23,23">
+        <package name="de.htwg.model" statement-count="297" statements-invoked="186" statement-rate="62,63">
             <classes>
                 <class 
                 name="Game" filename="/de/htwg/model/Game.scala" statement-count="69" statements-invoked="69" statement-rate="100,00" branch-rate="100,00">
@@ -3767,411 +3767,411 @@ statement-count="1302" statements-invoked="69" statement-rate="5,30" branch-rate
                     </methods>
 </class>
                 <class 
-                name="PlayerManager" filename="/de/htwg/model/PlayerManager.scala" statement-count="117" statements-invoked="0" statement-rate="0,00" branch-rate="0,00">
+                name="PlayerManager" filename="/de/htwg/model/PlayerManager.scala" statement-count="117" statements-invoked="117" statement-rate="100,00" branch-rate="100,00">
                     <methods>
                         <method 
-                        name="de.htwg.model/PlayerManager/decrementRedCards" statement-count="10" statements-invoked="0" statement-rate="0,00" branch-rate="0,00">
+                        name="de.htwg.model/PlayerManager/decrementRedCards" statement-count="10" statements-invoked="10" statement-rate="100,00" branch-rate="100,00">
                             <statements>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementRedCards" start="1366" end="1366" line="42" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementRedCards" start="1366" end="1366" line="42" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementRedCards" start="1366" end="1366" line="42" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementRedCards" start="1366" end="1366" line="42" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementRedCards" start="1329" end="1411" line="42" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementRedCards" start="1329" end="1411" line="42" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementRedCards" start="1351" end="1365" line="42" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementRedCards" start="1351" end="1365" line="42" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementRedCards" start="1351" end="1410" line="42" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementRedCards" start="1351" end="1410" line="42" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementRedCards" start="1366" end="1366" line="42" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementRedCards" start="1366" end="1366" line="42" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementRedCards" start="1366" end="1366" line="42" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementRedCards" start="1366" end="1366" line="42" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementRedCards" start="1366" end="1366" line="42" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementRedCards" start="1366" end="1366" line="42" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementRedCards" start="1382" end="1409" line="42" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementRedCards" start="1382" end="1409" line="42" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementRedCards" start="1366" end="1366" line="42" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementRedCards" start="1366" end="1366" line="42" branch="false" invocation-count="1">
 </statement>
                             </statements>
 </method>
                         <method 
-                        name="de.htwg.model/PlayerManager/decrementYellowCards" statement-count="10" statements-invoked="0" statement-rate="0,00" branch-rate="0,00">
+                        name="de.htwg.model/PlayerManager/decrementYellowCards" statement-count="10" statements-invoked="10" statement-rate="100,00" branch-rate="100,00">
                             <statements>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementYellowCards" start="1088" end="1088" line="35" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementYellowCards" start="1088" end="1088" line="35" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementYellowCards" start="1073" end="1138" line="35" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementYellowCards" start="1073" end="1138" line="35" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementYellowCards" start="1088" end="1088" line="35" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementYellowCards" start="1088" end="1088" line="35" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementYellowCards" start="1088" end="1088" line="35" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementYellowCards" start="1088" end="1088" line="35" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementYellowCards" start="1088" end="1088" line="35" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementYellowCards" start="1088" end="1088" line="35" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementYellowCards" start="1107" end="1137" line="35" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementYellowCards" start="1107" end="1137" line="35" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementYellowCards" start="1073" end="1087" line="35" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementYellowCards" start="1073" end="1087" line="35" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementYellowCards" start="1051" end="1139" line="35" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementYellowCards" start="1051" end="1139" line="35" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementYellowCards" start="1088" end="1088" line="35" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementYellowCards" start="1088" end="1088" line="35" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementYellowCards" start="1088" end="1088" line="35" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementYellowCards" start="1088" end="1088" line="35" branch="false" invocation-count="1">
 </statement>
                             </statements>
 </method>
                         <method 
-                        name="de.htwg.model/PlayerManager/decrementAssists" statement-count="10" statements-invoked="0" statement-rate="0,00" branch-rate="0,00">
+                        name="de.htwg.model/PlayerManager/decrementAssists" statement-count="10" statements-invoked="10" statement-rate="100,00" branch-rate="100,00">
                             <statements>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementAssists" start="804" end="804" line="28" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementAssists" start="804" end="804" line="28" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementAssists" start="819" end="845" line="28" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementAssists" start="819" end="845" line="28" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementAssists" start="804" end="804" line="28" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementAssists" start="804" end="804" line="28" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementAssists" start="804" end="804" line="28" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementAssists" start="804" end="804" line="28" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementAssists" start="767" end="847" line="28" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementAssists" start="767" end="847" line="28" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementAssists" start="789" end="803" line="28" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementAssists" start="789" end="803" line="28" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementAssists" start="804" end="804" line="28" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementAssists" start="804" end="804" line="28" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementAssists" start="804" end="804" line="28" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementAssists" start="804" end="804" line="28" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementAssists" start="804" end="804" line="28" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementAssists" start="804" end="804" line="28" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementAssists" start="789" end="846" line="28" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementAssists" start="789" end="846" line="28" branch="false" invocation-count="1">
 </statement>
                             </statements>
 </method>
                         <method 
-                        name="de.htwg.model/PlayerManager/setBenched" statement-count="23" statements-invoked="0" statement-rate="0,00" branch-rate="0,00">
+                        name="de.htwg.model/PlayerManager/setBenched" statement-count="23" statements-invoked="23" statement-rate="100,00" branch-rate="100,00">
                             <statements>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1628" end="1628" line="49" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1628" end="1628" line="49" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1613" end="1651" line="49" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1613" end="1651" line="49" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1562" end="1566" line="47" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1562" end="1566" line="47" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1508" end="1568" line="47" branch="true" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1508" end="1568" line="47" branch="true" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1628" end="1628" line="49" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1628" end="1628" line="49" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1545" end="1545" line="47" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1545" end="1545" line="47" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1545" end="1545" line="47" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1545" end="1545" line="47" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1545" end="1545" line="47" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1545" end="1545" line="47" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1628" end="1628" line="49" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1628" end="1628" line="49" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1530" end="1544" line="47" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1530" end="1544" line="47" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1628" end="1628" line="49" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1628" end="1628" line="49" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1508" end="1568" line="47" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1508" end="1568" line="47" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1545" end="1545" line="47" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1545" end="1545" line="47" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1645" end="1650" line="49" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1645" end="1650" line="49" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1591" end="1652" line="49" branch="true" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1591" end="1652" line="49" branch="true" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1545" end="1545" line="47" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1545" end="1545" line="47" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1613" end="1627" line="49" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1613" end="1627" line="49" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1591" end="1652" line="49" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1591" end="1652" line="49" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1545" end="1545" line="47" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1545" end="1545" line="47" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1628" end="1628" line="49" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1628" end="1628" line="49" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1530" end="1567" line="47" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1530" end="1567" line="47" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1628" end="1628" line="49" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1628" end="1628" line="49" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1465" end="1498" line="46" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="setBenched" start="1465" end="1498" line="46" branch="false" invocation-count="1">
 </statement>
                             </statements>
 </method>
                         <method 
-                        name="de.htwg.model/PlayerManager/decrementGoals" statement-count="10" statements-invoked="0" statement-rate="0,00" branch-rate="0,00">
+                        name="de.htwg.model/PlayerManager/decrementGoals" statement-count="10" statements-invoked="10" statement-rate="100,00" branch-rate="100,00">
                             <statements>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementGoals" start="538" end="538" line="20" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementGoals" start="538" end="538" line="20" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementGoals" start="538" end="538" line="20" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementGoals" start="538" end="538" line="20" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementGoals" start="538" end="538" line="20" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementGoals" start="538" end="538" line="20" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementGoals" start="523" end="537" line="20" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementGoals" start="523" end="537" line="20" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementGoals" start="501" end="577" line="20" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementGoals" start="501" end="577" line="20" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementGoals" start="523" end="576" line="20" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementGoals" start="523" end="576" line="20" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementGoals" start="538" end="538" line="20" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementGoals" start="538" end="538" line="20" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementGoals" start="538" end="538" line="20" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementGoals" start="538" end="538" line="20" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementGoals" start="538" end="538" line="20" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementGoals" start="538" end="538" line="20" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementGoals" start="551" end="575" line="20" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="decrementGoals" start="551" end="575" line="20" branch="false" invocation-count="1">
 </statement>
                             </statements>
 </method>
                         <method 
-                        name="de.htwg.model/PlayerManager/incrementYellowCards" statement-count="10" statements-invoked="0" statement-rate="0,00" branch-rate="0,00">
+                        name="de.htwg.model/PlayerManager/incrementYellowCards" statement-count="10" statements-invoked="10" statement-rate="100,00" branch-rate="100,00">
                             <statements>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementYellowCards" start="943" end="943" line="31" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementYellowCards" start="943" end="943" line="31" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementYellowCards" start="928" end="942" line="31" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementYellowCards" start="928" end="942" line="31" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementYellowCards" start="906" end="994" line="31" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementYellowCards" start="906" end="994" line="31" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementYellowCards" start="943" end="943" line="31" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementYellowCards" start="943" end="943" line="31" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementYellowCards" start="943" end="943" line="31" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementYellowCards" start="943" end="943" line="31" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementYellowCards" start="928" end="993" line="31" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementYellowCards" start="928" end="993" line="31" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementYellowCards" start="943" end="943" line="31" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementYellowCards" start="943" end="943" line="31" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementYellowCards" start="962" end="992" line="31" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementYellowCards" start="962" end="992" line="31" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementYellowCards" start="943" end="943" line="31" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementYellowCards" start="943" end="943" line="31" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementYellowCards" start="943" end="943" line="31" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementYellowCards" start="943" end="943" line="31" branch="false" invocation-count="1">
 </statement>
                             </statements>
 </method>
                         <method 
-                        name="de.htwg.model/PlayerManager/incrementRedCards" statement-count="10" statements-invoked="0" statement-rate="0,00" branch-rate="0,00">
+                        name="de.htwg.model/PlayerManager/incrementRedCards" statement-count="10" statements-invoked="10" statement-rate="100,00" branch-rate="100,00">
                             <statements>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementRedCards" start="1230" end="1230" line="38" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementRedCards" start="1230" end="1230" line="38" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementRedCards" start="1230" end="1230" line="38" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementRedCards" start="1230" end="1230" line="38" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementRedCards" start="1246" end="1273" line="38" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementRedCards" start="1246" end="1273" line="38" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementRedCards" start="1215" end="1229" line="38" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementRedCards" start="1215" end="1229" line="38" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementRedCards" start="1193" end="1275" line="38" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementRedCards" start="1193" end="1275" line="38" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementRedCards" start="1230" end="1230" line="38" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementRedCards" start="1230" end="1230" line="38" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementRedCards" start="1230" end="1230" line="38" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementRedCards" start="1230" end="1230" line="38" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementRedCards" start="1215" end="1274" line="38" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementRedCards" start="1215" end="1274" line="38" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementRedCards" start="1230" end="1230" line="38" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementRedCards" start="1230" end="1230" line="38" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementRedCards" start="1230" end="1230" line="38" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementRedCards" start="1230" end="1230" line="38" branch="false" invocation-count="1">
 </statement>
                             </statements>
 </method>
                         <method 
-                        name="de.htwg.model/PlayerManager/createPlayer" statement-count="9" statements-invoked="0" statement-rate="0,00" branch-rate="0,00">
+                        name="de.htwg.model/PlayerManager/createPlayer" statement-count="9" statements-invoked="9" statement-rate="100,00" branch-rate="100,00">
                             <statements>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="createPlayer" start="204" end="205" line="8" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="createPlayer" start="204" end="205" line="8" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="createPlayer" start="186" end="198" line="8" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="createPlayer" start="186" end="198" line="8" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="createPlayer" start="208" end="209" line="8" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="createPlayer" start="208" end="209" line="8" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="createPlayer" start="179" end="218" line="8" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="createPlayer" start="179" end="218" line="8" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="createPlayer" start="176" end="176" line="8" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="createPlayer" start="176" end="176" line="8" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="createPlayer" start="206" end="207" line="8" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="createPlayer" start="206" end="207" line="8" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="createPlayer" start="212" end="217" line="8" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="createPlayer" start="212" end="217" line="8" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="createPlayer" start="210" end="211" line="8" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="createPlayer" start="210" end="211" line="8" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="createPlayer" start="168" end="218" line="8" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="createPlayer" start="168" end="218" line="8" branch="false" invocation-count="1">
 </statement>
                             </statements>
 </method>
                         <method 
-                        name="de.htwg.model/PlayerManager/incrementGoals" statement-count="10" statements-invoked="0" statement-rate="0,00" branch-rate="0,00">
+                        name="de.htwg.model/PlayerManager/incrementGoals" statement-count="10" statements-invoked="10" statement-rate="100,00" branch-rate="100,00">
                             <statements>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementGoals" start="411" end="411" line="16" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementGoals" start="411" end="411" line="16" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementGoals" start="411" end="411" line="16" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementGoals" start="411" end="411" line="16" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementGoals" start="411" end="411" line="16" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementGoals" start="411" end="411" line="16" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementGoals" start="424" end="448" line="16" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementGoals" start="424" end="448" line="16" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementGoals" start="396" end="410" line="16" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementGoals" start="396" end="410" line="16" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementGoals" start="374" end="450" line="16" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementGoals" start="374" end="450" line="16" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementGoals" start="411" end="411" line="16" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementGoals" start="411" end="411" line="16" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementGoals" start="411" end="411" line="16" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementGoals" start="411" end="411" line="16" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementGoals" start="396" end="449" line="16" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementGoals" start="396" end="449" line="16" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementGoals" start="411" end="411" line="16" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementGoals" start="411" end="411" line="16" branch="false" invocation-count="1">
 </statement>
                             </statements>
 </method>
                         <method 
-                        name="de.htwg.model/PlayerManager/incrementAssists" statement-count="10" statements-invoked="0" statement-rate="0,00" branch-rate="0,00">
+                        name="de.htwg.model/PlayerManager/incrementAssists" statement-count="10" statements-invoked="10" statement-rate="100,00" branch-rate="100,00">
                             <statements>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementAssists" start="671" end="671" line="24" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementAssists" start="671" end="671" line="24" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementAssists" start="671" end="671" line="24" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementAssists" start="671" end="671" line="24" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementAssists" start="656" end="713" line="24" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementAssists" start="656" end="713" line="24" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementAssists" start="671" end="671" line="24" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementAssists" start="671" end="671" line="24" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementAssists" start="686" end="712" line="24" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementAssists" start="686" end="712" line="24" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementAssists" start="671" end="671" line="24" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementAssists" start="671" end="671" line="24" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementAssists" start="671" end="671" line="24" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementAssists" start="671" end="671" line="24" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementAssists" start="671" end="671" line="24" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementAssists" start="671" end="671" line="24" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementAssists" start="634" end="714" line="24" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementAssists" start="634" end="714" line="24" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementAssists" start="656" end="670" line="24" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="incrementAssists" start="656" end="670" line="24" branch="false" invocation-count="1">
 </statement>
                             </statements>
 </method>
                         <method 
-                        name="de.htwg.model/PlayerManager/sortByGoals" statement-count="5" statements-invoked="0" statement-rate="0,00" branch-rate="0,00">
+                        name="de.htwg.model/PlayerManager/sortByGoals" statement-count="5" statements-invoked="5" statement-rate="100,00" branch-rate="100,00">
                             <statements>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="sortByGoals" start="273" end="294" line="12" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="sortByGoals" start="273" end="294" line="12" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="sortByGoals" start="285" end="294" line="12" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="sortByGoals" start="285" end="294" line="12" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="sortByGoals" start="305" end="322" line="12" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="sortByGoals" start="305" end="322" line="12" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="sortByGoals" start="315" end="322" line="12" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="sortByGoals" start="315" end="322" line="12" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="sortByGoals" start="256" end="323" line="12" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="PlayerManager" class-type="Class" top-level-class="PlayerManager" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/PlayerManager.scala" method="sortByGoals" start="256" end="323" line="12" branch="false" invocation-count="1">
 </statement>
                             </statements>
 </method>

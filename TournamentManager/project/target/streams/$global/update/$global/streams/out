@@ -2270,7 +2270,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.7!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1588ms :: artifacts dl 76ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1601ms :: artifacts dl 66ms[0m
 [0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT compile produced in /Users/gian-lucapiras/git/TournamentManager/TournamentManager/project/target/resolution-cache/reports/default-tournamentmanager-build-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT runtime produced in /Users/gian-lucapiras/git/TournamentManager/TournamentManager/project/target/resolution-cache/reports/default-tournamentmanager-build-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT test produced in /Users/gian-lucapiras/git/TournamentManager/TournamentManager/project/target/resolution-cache/reports/default-tournamentmanager-build-test.xml[0m
@@ -2284,5 +2284,5 @@
 [0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT docs produced in /Users/gian-lucapiras/git/TournamentManager/TournamentManager/project/target/resolution-cache/reports/default-tournamentmanager-build-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT pom produced in /Users/gian-lucapiras/git/TournamentManager/TournamentManager/project/target/resolution-cache/reports/default-tournamentmanager-build-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#tournamentmanager-build;0.1-SNAPSHOT scala-tool produced in /Users/gian-lucapiras/git/TournamentManager/TournamentManager/project/target/resolution-cache/reports/default-tournamentmanager-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (1588ms resolve - 76ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (1601ms resolve - 66ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
