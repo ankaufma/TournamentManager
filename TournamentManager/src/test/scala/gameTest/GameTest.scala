@@ -81,4 +81,11 @@ class GameTest extends Specification {
     }
   }
 
+  val gameNotPlayed = Game(1, (bayern, dortmund), (0, 0), false)
+  "A Already played game" should {
+    "return some on setResult" in {
+      gameNotPlayed.setResult(0,0) must be_==(Some(List(bayern.copy(points=1), dortmund.copy(points=1))))
+    }
+  }
+
 }
