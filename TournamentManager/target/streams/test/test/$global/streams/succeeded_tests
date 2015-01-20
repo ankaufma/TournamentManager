@@ -1,4 +1,5 @@
 #Successful Tests
-#Tue Jan 20 18:42:32 CET 2015
-testTeam.TeamSpec=1421775752058
-gameTest.GameSpec=1421775752422
+#Tue Jan 20 19:26:59 CET 2015
+testTeam.TeamSpec=1421778419091
+gameTest.GameSpec=1421778419683
+de.htwg.model.PlayerSpec=1421778419353

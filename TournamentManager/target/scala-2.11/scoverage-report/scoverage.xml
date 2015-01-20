@@ -1,5 +1,5 @@
 <scoverage 
-statement-count="1302" statements-invoked="69" statement-rate="5,30" branch-rate="14,81" version="1.0" timestamp="1421775770681">
+statement-count="1302" statements-invoked="69" statement-rate="5,30" branch-rate="14,81" version="1.0" timestamp="1421778921057">
     <packages>
         <package name="de.htwg.GUI" statement-count="477" statements-invoked="0" statement-rate="0,00">
             <classes>
