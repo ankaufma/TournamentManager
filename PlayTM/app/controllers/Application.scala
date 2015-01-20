@@ -35,10 +35,8 @@ object Application extends Controller {
 
   def initTnG = Action { implicit request =>
     val init = teamsgroups.bindFromRequest.get
-    println(init.groups.size)
     init.teams.foreach(x => Controller.initTeams(x))
     init.groups.foreach(x => Controller.initGroups(init.groups.size, x))
-    println(Controller.groups.size)
     Ok(views.html.mainView(Controller.groups.toList))
   }
 
@@ -53,9 +51,7 @@ object Application extends Controller {
 
   def setResult = Action { implicit request =>
     val init = sr.bindFromRequest.get
-    println(init.game + " " +init.group)
     Controller.setGameResult(init.group, init.game, init.r1, init.r2)
-    Controller.groups.foreach(x => x.games.foreach(y => println(y.toString)))
     Redirect(routes.Application.initTnG())
   }
 

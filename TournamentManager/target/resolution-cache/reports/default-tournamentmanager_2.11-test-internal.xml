@@ -7,8 +7,32 @@
 		revision="2.10"
 		conf="test-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20150117233638"/>
+		date="20150120180459"/>
 	<dependencies>
+		<module organisation="org.scoverage" name="scalac-scoverage-plugin_2.11">
+			<revision name="1.0.1" status="release" pubdate="20141128113352" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scoverage/scalac-scoverage-plugin" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="16">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3639" time="0" location="C:\Users\ankaufma\.ivy2\cache\org.scoverage\scalac-scoverage-plugin_2.11\ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scoverage/scalac-scoverage-plugin_2.11/1.0.1/scalac-scoverage-plugin_2.11-1.0.1.pom"/>
+				<caller organisation="default" name="tournamentmanager_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="2.10"/>
+				<artifacts>
+					<artifact name="scalac-scoverage-plugin_2.11" type="jar" ext="jar" status="no" details="" size="240744" time="0" location="C:\Users\ankaufma\.ivy2\cache\org.scoverage\scalac-scoverage-plugin_2.11\jars\scalac-scoverage-plugin_2.11-1.0.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scoverage/scalac-scoverage-plugin_2.11/1.0.1/scalac-scoverage-plugin_2.11-1.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scoverage" name="scalac-scoverage-runtime_2.11">
+			<revision name="1.0.1" status="release" pubdate="20141128113337" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/scoverage/scalac-scoverage-plugin" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="15">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2842" time="0" location="C:\Users\ankaufma\.ivy2\cache\org.scoverage\scalac-scoverage-runtime_2.11\ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scoverage/scalac-scoverage-runtime_2.11/1.0.1/scalac-scoverage-runtime_2.11-1.0.1.pom"/>
+				<caller organisation="default" name="tournamentmanager_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="2.10"/>
+				<artifacts>
+					<artifact name="scalac-scoverage-runtime_2.11" type="jar" ext="jar" status="no" details="" size="7320" time="0" location="C:\Users\ankaufma\.ivy2\cache\org.scoverage\scalac-scoverage-runtime_2.11\jars\scalac-scoverage-runtime_2.11-1.0.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scoverage/scalac-scoverage-runtime_2.11/1.0.1/scalac-scoverage-runtime_2.11-1.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="org.specs2" name="specs2-core_2.11">
 			<revision name="2.4.15" status="release" pubdate="20141210002400" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://specs2.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="6">
 				<license name="MIT-style" url="http://www.opensource.org/licenses/mit-license.php"/>
@@ -57,9 +81,9 @@
 					</artifact>
 				</artifacts>
 			</revision>
-			<revision name="2.11.0" status="release" pubdate="20140416111350" resolver="public" artresolver="public" evicted="latest-revision" evicted-reason="" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.0/" downloaded="true" searched="true" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+			<revision name="2.11.0" status="release" pubdate="20140416111350" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.0/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
 				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
-				<metadata-artifact status="successful" details="" size="1568" time="374" location="C:\Users\ankaufma\.ivy2\cache\org.scala-lang\scala-reflect\ivy-2.11.0.xml" searched="true" original-local-location="C:\Users\ankaufma\.ivy2\cache\org.scala-lang\scala-reflect\ivy-2.11.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.0/scala-reflect-2.11.0.pom"/>
+				<metadata-artifact status="no" details="" size="2860" time="0" location="C:\Users\ankaufma\.ivy2\cache\org.scala-lang\scala-reflect\ivy-2.11.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.0/scala-reflect-2.11.0.pom"/>
 				<evicted-by rev="2.11.4"/>
 				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="2.11.0"/>
 				<artifacts>
@@ -108,6 +132,7 @@
 			<revision name="1.0.2" status="release" pubdate="20140520101040" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, master(*)" position="11">
 				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
 				<metadata-artifact status="no" details="" size="3024" time="0" location="C:\Users\ankaufma\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\ivy-1.0.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.pom"/>
+				<caller organisation="org.scoverage" name="scalac-scoverage-plugin_2.11" conf="default, compile, runtime, master" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="1.0.1"/>
 				<caller organisation="org.scalaz" name="scalaz-core_2.11" conf="compile, runtime" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="7.1.0"/>
 				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="2.11.0"/>
 				<artifacts>
@@ -120,6 +145,7 @@
 				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
 				<metadata-artifact status="no" details="" size="3024" time="0" location="C:\Users\ankaufma\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.1/scala-xml_2.11-1.0.1.pom"/>
 				<evicted-by rev="1.0.2"/>
+				<caller organisation="org.scoverage" name="scalac-scoverage-plugin_2.11" conf="default, compile, runtime, master" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="1.0.1"/>
 				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="2.11.0"/>
 				<artifacts>
 				</artifacts>
@@ -183,12 +209,12 @@
 			</revision>
 		</module>
 		<module organisation="com.escalatesoft.subcut" name="subcut_2.11">
-			<revision name="2.1" status="release" pubdate="20140701231633" resolver="public" artresolver="public" homepage="http://github.com/dickwall/subcut" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+			<revision name="2.1" status="release" pubdate="20140701231633" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/dickwall/subcut" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
 				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="successful" details="" size="1990" time="406" location="C:\Users\ankaufma\.ivy2\cache\com.escalatesoft.subcut\subcut_2.11\ivy-2.1.xml" searched="true" original-local-location="C:\Users\ankaufma\.ivy2\cache\com.escalatesoft.subcut\subcut_2.11\ivy-2.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/escalatesoft/subcut/subcut_2.11/2.1/subcut_2.11-2.1.pom"/>
+				<metadata-artifact status="no" details="" size="2937" time="0" location="C:\Users\ankaufma\.ivy2\cache\com.escalatesoft.subcut\subcut_2.11\ivy-2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/escalatesoft/subcut/subcut_2.11/2.1/subcut_2.11-2.1.pom"/>
 				<caller organisation="default" name="tournamentmanager_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.1" rev-constraint-default="2.1" rev-constraint-dynamic="2.1" callerrev="2.10"/>
 				<artifacts>
-					<artifact name="subcut_2.11" type="jar" ext="jar" status="successful" details="" size="92648" time="578" location="C:\Users\ankaufma\.ivy2\cache\com.escalatesoft.subcut\subcut_2.11\jars\subcut_2.11-2.1.jar">
+					<artifact name="subcut_2.11" type="jar" ext="jar" status="no" details="" size="92648" time="0" location="C:\Users\ankaufma\.ivy2\cache\com.escalatesoft.subcut\subcut_2.11\jars\subcut_2.11-2.1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/escalatesoft/subcut/subcut_2.11/2.1/subcut_2.11-2.1.jar"/>
 					</artifact>
 				</artifacts>
@@ -207,7 +233,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-lang" name="scala-library">
-			<revision name="2.11.4" status="release" pubdate="20141023173451" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.4/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master, master(*)" position="0">
+			<revision name="2.11.4" status="release" pubdate="20141023173451" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.4/" downloaded="false" searched="false" default="false" conf="default, master(*), compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="0">
 				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
 				<metadata-artifact status="no" details="" size="2685" time="0" location="C:\Users\ankaufma\.ivy2\cache\org.scala-lang\scala-library\ivy-2.11.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.4/scala-library-2.11.4.pom"/>
 				<caller organisation="default" name="tournamentmanager_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.11.4" rev-constraint-default="2.11.4" rev-constraint-dynamic="2.11.4" callerrev="2.10"/>
@@ -217,6 +243,8 @@
 				<caller organisation="org.scala-lang" name="scala-swing" conf="default, compile, runtime, master" rev="2.11.0-M7" rev-constraint-default="2.11.0-M7" rev-constraint-dynamic="2.11.0-M7" callerrev="2.11.0-M7"/>
 				<caller organisation="com.typesafe.akka" name="akka-actor_2.11" conf="default, compile, runtime, master" rev="2.11.4" rev-constraint-default="2.11.4" rev-constraint-dynamic="2.11.4" callerrev="2.3.8"/>
 				<caller organisation="org.scalaz" name="scalaz-effect_2.11" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="7.1.0"/>
+				<caller organisation="org.scoverage" name="scalac-scoverage-plugin_2.11" conf="default, compile, runtime, master" rev="2.11.4" rev-constraint-default="2.11.4" rev-constraint-dynamic="2.11.4" callerrev="1.0.1"/>
+				<caller organisation="org.scoverage" name="scalac-scoverage-runtime_2.11" conf="default, compile, runtime, master" rev="2.11.4" rev-constraint-default="2.11.4" rev-constraint-dynamic="2.11.4" callerrev="1.0.1"/>
 				<caller organisation="org.scalaz" name="scalaz-core_2.11" conf="compile, runtime" rev="2.11.2" rev-constraint-default="2.11.2" rev-constraint-dynamic="2.11.2" callerrev="7.1.0"/>
 				<caller organisation="org.specs2" name="specs2-core_2.11" conf="default, compile, runtime, master" rev="2.11.4" rev-constraint-default="2.11.4" rev-constraint-dynamic="2.11.4" callerrev="2.4.15"/>
 				<caller organisation="org.specs2" name="specs2-matcher_2.11" conf="compile, runtime" rev="2.11.4" rev-constraint-default="2.11.4" rev-constraint-dynamic="2.11.4" callerrev="2.4.15"/>

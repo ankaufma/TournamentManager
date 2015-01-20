@@ -70,7 +70,6 @@ object Controller {
   def setGameResult(group: Int, index: Int, goals: Int, goalsAgainst: Int) = {
     val game = groups.flatMap(x => x.getGames)
     val gameIndex = (groups(0).getGames.size)*(group-1)+(index-1)
-    groups(0).teams.foreach(x => println(x.points))
     game(gameIndex).setResult(goals,goalsAgainst) match {
       case Some(teams) => groups(group-1).refractorGamePlan(teams)
       case None => println("Game was already played...")
