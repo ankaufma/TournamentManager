@@ -1,0 +1,2249 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          de/htwg/GUI/GUI.scala.html
+        </title>
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.18.3/addons/pager/jquery.tablesorter.pager.min.js"></script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier;'>1 <span style=''>package de.htwg.GUI
+</span>2 <span style=''>
+</span>3 <span style=''>import scala.swing._
+</span>4 <span style=''>import scala.swing.event.ButtonClicked
+</span>5 <span style=''>import de.htwg.controller._
+</span>6 <span style=''>import java.awt.GridLayout
+</span>7 <span style=''>import scala.collection.mutable.ListBuffer
+</span>8 <span style=''>import java.awt.Dimension
+</span>9 <span style=''>import java.awt.Color
+</span>10 <span style=''>import akka.actor.Actor
+</span>11 <span style=''>import akka.actor.Props
+</span>12 <span style=''>import akka.event.Logging
+</span>13 <span style=''>import akka.actor.ActorSystem
+</span>14 <span style=''>import akka.actor.ActorContext
+</span>15 <span style=''>import akka.actor.ActorRef
+</span>16 <span style=''>
+</span>17 <span style=''>class GUI(controller: ControllerTrait) extends Frame {
+</span>18 <span style=''>  import de.htwg.swingCommunication._
+</span>19 <span style=''>  import controller.getEasyTable
+</span>20 <span style=''>  
+</span>21 <span style=''>  </span><span style='background: #F0ADAD'>listenTo(controller)</span><span style=''>
+</span>22 <span style=''>  </span><span style='background: #F0ADAD'>reactions += {
+</span>23 <span style=''></span><span style='background: #F0ADAD'>	  case a: NewState => updateTables
+</span>24 <span style=''></span><span style='background: #F0ADAD'>    case GroupWinnerFound(a,b) => new GroupWinner(a,b)
+</span>25 <span style=''></span><span style='background: #F0ADAD'>	  case _ => 
+</span>26 <span style=''></span><span style='background: #F0ADAD'>  }</span><span style=''>
+</span>27 <span style=''>  
+</span>28 <span style=''>  
+</span>29 <span style=''>  val initTnG = </span><span style='background: #F0ADAD'>new InitTnGDialog().init.getOrElse(throw new IllegalStateException("WTF"))</span><span style=''>
+</span>30 <span style=''>  val initGroups = </span><span style='background: #F0ADAD'>new InitGroupsDialog(initTnG.cog).init.getOrElse(throw new IllegalStateException("WTF"))</span><span style=''>
+</span>31 <span style=''>  val initTeams = </span><span style='background: #F0ADAD'>new InitTeamsDialog(initTnG.cot).init.getOrElse(throw new IllegalStateException("WTF"))</span><span style=''>
+</span>32 <span style=''>  </span><span style='background: #F0ADAD'>initTeams.teams.foreach(controller.initTeams(_))</span><span style=''>
+</span>33 <span style=''>  </span><span style='background: #F0ADAD'>initGroups.groups.reverse.foreach(controller.initGroups(initTnG.cog, _))</span><span style=''>
+</span>34 <span style=''>  
+</span>35 <span style=''>  val listOfButtons: ListBuffer[Button] = </span><span style='background: #F0ADAD'>ListBuffer[Button]()</span><span style=''>
+</span>36 <span style=''>  val listOfGoals: ListBuffer[TextField] = </span><span style='background: #F0ADAD'>ListBuffer[TextField]()</span><span style=''>
+</span>37 <span style=''>  val tables = </span><span style='background: #F0ADAD'>List.range(0,initTnG.cog).map(x => new scala.swing.Table(controller.groups(0).teams.size+1, 4))</span><span style=''>
+</span>38 <span style=''>  </span><span style='background: #F0ADAD'>updateTables</span><span style=''>
+</span>39 <span style=''>  
+</span>40 <span style=''>  val myMenuBar = </span><span style='background: #F0ADAD'>new</span><span style=''> MenuBar {
+</span>41 <span style=''>    </span><span style='background: #F0ADAD'>contents += new Menu("File") {
+</span>42 <span style=''></span><span style='background: #F0ADAD'>      contents += new MenuItem(Action("Players") { new PlayerManager(controller) })
+</span>43 <span style=''></span><span style='background: #F0ADAD'>      contents += new MenuItem(Action("Back Season") {
+</span>44 <span style=''></span><span style='background: #F0ADAD'>        controller.playBackSeason()
+</span>45 <span style=''></span><span style='background: #F0ADAD'>    	  listOfButtons.foreach(_.enabled = true) 
+</span>46 <span style=''></span><span style='background: #F0ADAD'>    	  listOfGoals.foreach(_.text = "0")
+</span>47 <span style=''></span><span style='background: #F0ADAD'>        })
+</span>48 <span style=''></span><span style='background: #F0ADAD'>      contents += new MenuItem(Action("Quit") { System.exit(0) })
+</span>49 <span style=''></span><span style='background: #F0ADAD'>    }</span><span style=''>
+</span>50 <span style=''>  }
+</span>51 <span style=''>  
+</span>52 <span style=''>  val boxPanels = </span><span style='background: #F0ADAD'>for(i <- List.range(0,initTnG.cog)) yield
+</span>53 <span style=''></span><span style='background: #F0ADAD'>  	new BoxPanel(Orientation.Vertical) {
+</span>54 <span style=''></span><span style='background: #F0ADAD'>	  getGroupComponents(i).map(x => 
+</span>55 <span style=''></span><span style='background: #F0ADAD'>	    contents += x
+</span>56 <span style=''></span><span style='background: #F0ADAD'>	  )
+</span>57 <span style=''></span><span style='background: #F0ADAD'>	}</span><span style=''>
+</span>58 <span style=''>  
+</span>59 <span style=''>  val cols = </span><span style='background: #F0ADAD'>initTnG.cog/2.toInt+1</span><span style=''>
+</span>60 <span style=''>  def myPanel: GridPanel = 
+</span>61 <span style=''>    if (</span><span style='background: #F0ADAD'>initTnG.cog != 1</span><span style=''>) {
+</span>62 <span style=''>    	</span><span style='background: #F0ADAD'>new GridPanel(2,cols) {
+</span>63 <span style=''></span><span style='background: #F0ADAD'>    		for(i <- 0 until initTnG.cog) {
+</span>64 <span style=''></span><span style='background: #F0ADAD'>          val bp = boxPanels(i)
+</span>65 <span style=''></span><span style='background: #F0ADAD'>          bp.border_=(javax.swing.BorderFactory.createLineBorder(Color.BLACK))
+</span>66 <span style=''></span><span style='background: #F0ADAD'>    			contents += bp
+</span>67 <span style=''></span><span style='background: #F0ADAD'>    		}
+</span>68 <span style=''></span><span style='background: #F0ADAD'>    	}</span><span style=''>
+</span>69 <span style=''>    }
+</span>70 <span style=''>  	else {
+</span>71 <span style=''>  		</span><span style='background: #F0ADAD'>new GridPanel(1,cols) {
+</span>72 <span style=''></span><span style='background: #F0ADAD'>  			for(i <- 0 until initTnG.cog) {
+</span>73 <span style=''></span><span style='background: #F0ADAD'>  				val bp = boxPanels(i)
+</span>74 <span style=''></span><span style='background: #F0ADAD'>          bp.border
+</span>75 <span style=''></span><span style='background: #F0ADAD'>          contents += bp
+</span>76 <span style=''></span><span style='background: #F0ADAD'>  			}
+</span>77 <span style=''></span><span style='background: #F0ADAD'>  		}</span><span style=''>
+</span>78 <span style=''>  	}
+</span>79 <span style=''>  
+</span>80 <span style=''>  </span><span style='background: #F0ADAD'>menuBar = myMenuBar</span><span style=''>
+</span>81 <span style=''>  </span><span style='background: #F0ADAD'>contents = myPanel</span><span style=''>
+</span>82 <span style=''>  </span><span style='background: #F0ADAD'>visible = true</span><span style=''>
+</span>83 <span style=''>  
+</span>84 <span style=''>	def updateTables = {
+</span>85 <span style=''>    var i = </span><span style='background: #F0ADAD'>0</span><span style=''>
+</span>86 <span style=''>    var j = </span><span style='background: #F0ADAD'>1</span><span style=''>
+</span>87 <span style=''>    </span><span style='background: #F0ADAD'>for(table <- tables) {
+</span>88 <span style=''></span><span style='background: #F0ADAD'>    	table.update(0, 0, "Name")
+</span>89 <span style=''></span><span style='background: #F0ADAD'>    	table.update(0, 1, "Points")
+</span>90 <span style=''></span><span style='background: #F0ADAD'>    	table.update(0, 2, "Goals")
+</span>91 <span style=''></span><span style='background: #F0ADAD'>    	table.update(0, 3, "Goals")
+</span>92 <span style=''></span><span style='background: #F0ADAD'>      	for(team <- controller.groups(i).getTable.reverse) {
+</span>93 <span style=''></span><span style='background: #F0ADAD'>      		table.update(j, 0, team.name)
+</span>94 <span style=''></span><span style='background: #F0ADAD'>      		table.update(j, 1, team.points)
+</span>95 <span style=''></span><span style='background: #F0ADAD'>      		table.update(j, 2, team.goals)
+</span>96 <span style=''></span><span style='background: #F0ADAD'>      		table.update(j, 3, team.goalsAgainst)
+</span>97 <span style=''></span><span style='background: #F0ADAD'>      		j = j+1
+</span>98 <span style=''></span><span style='background: #F0ADAD'>      	}
+</span>99 <span style=''></span><span style='background: #F0ADAD'>      	j = 1
+</span>100 <span style=''></span><span style='background: #F0ADAD'>      	i = i+1
+</span>101 <span style=''></span><span style='background: #F0ADAD'>    }</span><span style=''>
+</span>102 <span style=''>  }
+</span>103 <span style=''>	
+</span>104 <span style=''>  def getGroupComponents(i: Int): List[Component] = {
+</span>105 <span style=''>    List(new FlowPanel { contents += new Label("Group " + controller.groups(i).name) }) </span><span style='background: #F0ADAD'>:::
+</span>106 <span style=''></span><span style='background: #F0ADAD'>    controller.getGames(controller.groups(i)).map(x =>
+</span>107 <span style=''></span><span style='background: #F0ADAD'>      		new FlowPanel {
+</span>108 <span style=''></span><span style='background: #F0ADAD'>	  		  this.vGap = 0
+</span>109 <span style=''></span><span style='background: #F0ADAD'>	  		  val t1 = new Label(x.game._1.name)
+</span>110 <span style=''></span><span style='background: #F0ADAD'>	  		  t1.minimumSize = new Dimension(100,12)
+</span>111 <span style=''></span><span style='background: #F0ADAD'>	  		  t1.preferredSize = new Dimension(100,12)
+</span>112 <span style=''></span><span style='background: #F0ADAD'>	  		  t1.maximumSize = new Dimension(100,12)
+</span>113 <span style=''></span><span style='background: #F0ADAD'>	  		  contents += t1
+</span>114 <span style=''></span><span style='background: #F0ADAD'>	  		  contents += new Label(" - ")
+</span>115 <span style=''></span><span style='background: #F0ADAD'>	  		  val t2 = new Label(x.game._2.name)
+</span>116 <span style=''></span><span style='background: #F0ADAD'>	  		  t2.minimumSize = new Dimension(100,12)
+</span>117 <span style=''></span><span style='background: #F0ADAD'>	  		  t2.preferredSize = new Dimension(100,12)
+</span>118 <span style=''></span><span style='background: #F0ADAD'>	  		  t2.maximumSize = new Dimension(100,12)
+</span>119 <span style=''></span><span style='background: #F0ADAD'>	  		  contents += t2
+</span>120 <span style=''></span><span style='background: #F0ADAD'>	  		  contents += new Label("   ")
+</span>121 <span style=''></span><span style='background: #F0ADAD'>	  		  val goals = new TextField("0", 3)
+</span>122 <span style=''></span><span style='background: #F0ADAD'>	  		  contents += goals
+</span>123 <span style=''></span><span style='background: #F0ADAD'>	  		  contents += new Label(" : ")
+</span>124 <span style=''></span><span style='background: #F0ADAD'>	  		  val goalsAgainst = new TextField("0", 3)
+</span>125 <span style=''></span><span style='background: #F0ADAD'>	  		  contents += goalsAgainst
+</span>126 <span style=''></span><span style='background: #F0ADAD'>	  		  val commit = new Button("Commit")
+</span>127 <span style=''></span><span style='background: #F0ADAD'>	  		  commit.maximumSize = new Dimension(78,20)
+</span>128 <span style=''></span><span style='background: #F0ADAD'>	  		  commit.minimumSize = new Dimension(78,20)
+</span>129 <span style=''></span><span style='background: #F0ADAD'>	  		  commit.preferredSize = new Dimension(78,20)
+</span>130 <span style=''></span><span style='background: #F0ADAD'>	  		  listenTo(commit)
+</span>131 <span style=''></span><span style='background: #F0ADAD'>	  		  reactions += {
+</span>132 <span style=''></span><span style='background: #F0ADAD'>	  		    case ButtonClicked(button) =>
+</span>133 <span style=''></span><span style='background: #F0ADAD'>              println((i+1) + " " + x.index)
+</span>134 <span style=''></span><span style='background: #F0ADAD'>	  		    	controller.setGameResult(i+1, x.index, goals.text.toInt, goalsAgainst.text.toInt)
+</span>135 <span style=''></span><span style='background: #F0ADAD'>	  		    	commit.enabled = false
+</span>136 <span style=''></span><span style='background: #F0ADAD'>	  		  }
+</span>137 <span style=''></span><span style='background: #F0ADAD'>	  		  contents += commit
+</span>138 <span style=''></span><span style='background: #F0ADAD'>	  		  listOfButtons += commit
+</span>139 <span style=''></span><span style='background: #F0ADAD'>	  		  listOfGoals += goals += goalsAgainst
+</span>140 <span style=''></span><span style='background: #F0ADAD'>	  		}
+</span>141 <span style=''></span><span style='background: #F0ADAD'>	  	).toList :::
+</span>142 <span style=''></span><span style='background: #F0ADAD'>	  	List(tables(i))</span><span style=''>	  	
+</span>143 <span style=''>  }
+</span>144 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line Number</th>
+        <th>Statement Id</th>
+        <th>Tree Type</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr>
+      <tr>
+        <td>
+          21
+        </td>
+        <td>
+          2
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Reactor.listenTo
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.listenTo(GUI.this.controller)
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          1
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.GUI.GUI.controller
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.controller
+        </td>
+      </tr><tr>
+        <td>
+          22
+        </td>
+        <td>
+          11
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Reactions.+=
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.reactions.+=(({
+  @SerialVersionUID(0) final &lt;synthetic&gt; class $anonfun extends scala.runtime.AbstractPartialFunction[scala.swing.event.Event,Unit] with Serializable {
+    def &lt;init&gt;(): &lt;$anon: scala.swing.event.Event =&gt; Unit&gt; = {
+      $anonfun.super.&lt;init&gt;();
+      ()
+    };
+    final override def applyOrElse[A1 &lt;: scala.swing.event.Event, B1 &gt;: Unit](x1: A1, default: A1 =&gt; B1): B1 = ((x1.asInstanceOf[scala.swing.event.Event]: scala.swing.event.Event): scala.swing.event.Event @unchecked) match {
+      case (a @ (_: de.htwg.swingCommunication.NewState)) =&gt; GUI.this.updateTables
+      case (g: de.htwg.model.Group, t: de.htwg.model.Team)de.htwg.swingCommunication.GroupWinnerFound((a @ _), (b @ _)) =&gt; {
+        new GroupWinner(a, b);
+        ()
+      }
+      case _ =&gt; ()
+      case (defaultCase$ @ _) =&gt; default.apply(x1)
+    };
+    final def isDefinedAt(x1: scala.swing.event.Event): Boolean = ((x1.asInstanceOf[scala.swing.event.Event]: scala.swing.event.Event): scala.swing.event.Event @unchecked) match {
+      case (a @ (_: de.htwg.swingCommunication.NewState)) =&gt; true
+      case (g: de.htwg.model.Group, t: de.htwg.model.Team)de.htwg.swingCommunication.GroupWinnerFound((a @ _), (b @ _)) =&gt; true
+      case _ =&gt; true
+      case (defaultCase$ @ _) =&gt; false
+    }
+  };
+  new $anonfun()
+}: PartialFunction[scala.swing.event.Event,Unit]))
+        </td>
+      </tr><tr>
+        <td>
+          22
+        </td>
+        <td>
+          10
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.GUI.GUI.$anonfun.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new $anonfun()
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          4
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          case (a @ (_: de.htwg.swingCommunication.NewState)) =&gt; GUI.this.updateTables
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          3
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.GUI.GUI.updateTables
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.updateTables
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          5
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.GUI.GroupWinner.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new GroupWinner(a, b)
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          7
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          case (g: de.htwg.model.Group, t: de.htwg.model.Team)de.htwg.swingCommunication.GroupWinnerFound((a @ _), (b @ _)) =&gt; {
+  new GroupWinner(a, b);
+  ()
+}
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          6
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          ()
+        </td>
+      </tr><tr>
+        <td>
+          25
+        </td>
+        <td>
+          8
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          ()
+        </td>
+      </tr><tr>
+        <td>
+          25
+        </td>
+        <td>
+          9
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          case _ =&gt; ()
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          13
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Option.getOrElse
+        </td>
+        <td style="background: #F0ADAD">
+          new InitTnGDialog().init.getOrElse[de.htwg.GUI.InitTnG](throw new java.this.lang.IllegalStateException(&quot;WTF&quot;))
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          12
+        </td>
+        <td>
+          Throw
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          throw new java.this.lang.IllegalStateException(&quot;WTF&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          30
+        </td>
+        <td>
+          14
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.GUI.InitTnG.cog
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.initTnG.cog
+        </td>
+      </tr><tr>
+        <td>
+          30
+        </td>
+        <td>
+          16
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Option.getOrElse
+        </td>
+        <td style="background: #F0ADAD">
+          new InitGroupsDialog(GUI.this.initTnG.cog).init.getOrElse[de.htwg.GUI.InitGroups](throw new java.this.lang.IllegalStateException(&quot;WTF&quot;))
+        </td>
+      </tr><tr>
+        <td>
+          30
+        </td>
+        <td>
+          15
+        </td>
+        <td>
+          Throw
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          throw new java.this.lang.IllegalStateException(&quot;WTF&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          17
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.GUI.InitTnG.cot
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.initTnG.cot
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          19
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Option.getOrElse
+        </td>
+        <td style="background: #F0ADAD">
+          new InitTeamsDialog(GUI.this.initTnG.cot).init.getOrElse[de.htwg.GUI.InitTeams](throw new java.this.lang.IllegalStateException(&quot;WTF&quot;))
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          18
+        </td>
+        <td>
+          Throw
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          throw new java.this.lang.IllegalStateException(&quot;WTF&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          32
+        </td>
+        <td>
+          20
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.controller.ControllerTrait.initTeams
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.controller.initTeams(x$1)
+        </td>
+      </tr><tr>
+        <td>
+          32
+        </td>
+        <td>
+          21
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.immutable.List.foreach
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.initTeams.teams.foreach[Unit](((x$1: String) =&gt; GUI.this.controller.initTeams(x$1)))
+        </td>
+      </tr><tr>
+        <td>
+          33
+        </td>
+        <td>
+          23
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.controller.ControllerTrait.initGroups
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.controller.initGroups(GUI.this.initTnG.cog, x$2)
+        </td>
+      </tr><tr>
+        <td>
+          33
+        </td>
+        <td>
+          22
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.GUI.InitTnG.cog
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.initTnG.cog
+        </td>
+      </tr><tr>
+        <td>
+          33
+        </td>
+        <td>
+          24
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.immutable.List.foreach
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.initGroups.groups.reverse.foreach[Unit](((x$2: String) =&gt; GUI.this.controller.initGroups(GUI.this.initTnG.cog, x$2)))
+        </td>
+      </tr><tr>
+        <td>
+          35
+        </td>
+        <td>
+          25
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.generic.GenericCompanion.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scala.collection.mutable.ListBuffer.apply[scala.swing.Button]()
+        </td>
+      </tr><tr>
+        <td>
+          36
+        </td>
+        <td>
+          26
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.generic.GenericCompanion.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scala.collection.mutable.ListBuffer.apply[scala.swing.TextField]()
+        </td>
+      </tr><tr>
+        <td>
+          37
+        </td>
+        <td>
+          32
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Table.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new scala.swing.Table(GUI.this.controller.groups.apply(0).teams.size.+(1), 4)
+        </td>
+      </tr><tr>
+        <td>
+          37
+        </td>
+        <td>
+          29
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.math.Numeric.IntIsIntegral
+        </td>
+        <td style="background: #F0ADAD">
+          math.this.Numeric.IntIsIntegral
+        </td>
+      </tr><tr>
+        <td>
+          37
+        </td>
+        <td>
+          31
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          4
+        </td>
+      </tr><tr>
+        <td>
+          37
+        </td>
+        <td>
+          34
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          scala.collection.immutable.List.map
+        </td>
+        <td style="background: #F0ADAD">
+          immutable.this.List.range[Int](0, GUI.this.initTnG.cog)(math.this.Numeric.IntIsIntegral).map[scala.swing.Table, List[scala.swing.Table]](((x: Int) =&gt; new scala.swing.Table(GUI.this.controller.groups.apply(0).teams.size.+(1), 4)))(immutable.this.List.canBuildFrom[scala.swing.Table])
+        </td>
+      </tr><tr>
+        <td>
+          37
+        </td>
+        <td>
+          28
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.GUI.InitTnG.cog
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.initTnG.cog
+        </td>
+      </tr><tr>
+        <td>
+          37
+        </td>
+        <td>
+          27
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          0
+        </td>
+      </tr><tr>
+        <td>
+          37
+        </td>
+        <td>
+          30
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int.+
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.controller.groups.apply(0).teams.size.+(1)
+        </td>
+      </tr><tr>
+        <td>
+          37
+        </td>
+        <td>
+          33
+        </td>
+        <td>
+          TypeApply
+        </td>
+        <td>
+          scala.collection.immutable.List.canBuildFrom
+        </td>
+        <td style="background: #F0ADAD">
+          immutable.this.List.canBuildFrom[scala.swing.Table]
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          35
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.GUI.GUI.updateTables
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.updateTables
+        </td>
+      </tr><tr>
+        <td>
+          40
+        </td>
+        <td>
+          59
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.GUI.GUI.$anon.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new $anon()
+        </td>
+      </tr><tr>
+        <td>
+          41
+        </td>
+        <td>
+          58
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.BufferLike.+=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.contents.+=({
+  final class $anon extends scala.swing.Menu {
+    def &lt;init&gt;(): &lt;$anon: scala.swing.Menu&gt; = {
+      $anon.super.&lt;init&gt;(&quot;File&quot;);
+      ()
+    };
+    $anon.this.contents.+=(new scala.swing.MenuItem(scala.swing.Action.apply(&quot;Players&quot;)({
+      new PlayerManager(GUI.this.controller);
+      ()
+    })));
+    $anon.this.contents.+=(new scala.swing.MenuItem(scala.swing.Action.apply(&quot;Back Season&quot;)({
+      GUI.this.controller.playBackSeason();
+      GUI.this.listOfButtons.foreach[Unit](((x$3: scala.swing.Button) =&gt; x$3.enabled_=(true)));
+      GUI.this.listOfGoals.foreach[Unit](((x$4: scala.swing.TextField) =&gt; x$4.text_=(&quot;0&quot;)))
+    })));
+    $anon.this.contents.+=(new scala.swing.MenuItem(scala.swing.Action.apply(&quot;Quit&quot;)(java.this.lang.System.exit(0))))
+  };
+  new $anon()
+})
+        </td>
+      </tr><tr>
+        <td>
+          41
+        </td>
+        <td>
+          57
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.GUI.GUI.$anon.$anon.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new $anon()
+        </td>
+      </tr><tr>
+        <td>
+          42
+        </td>
+        <td>
+          41
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.MenuItem.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new scala.swing.MenuItem(scala.swing.Action.apply(&quot;Players&quot;)({
+  new PlayerManager(GUI.this.controller);
+  ()
+}))
+        </td>
+      </tr><tr>
+        <td>
+          42
+        </td>
+        <td>
+          38
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.GUI.PlayerManager.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new PlayerManager(GUI.this.controller)
+        </td>
+      </tr><tr>
+        <td>
+          42
+        </td>
+        <td>
+          40
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Action.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scala.swing.Action.apply(&quot;Players&quot;)({
+  new PlayerManager(GUI.this.controller);
+  ()
+})
+        </td>
+      </tr><tr>
+        <td>
+          42
+        </td>
+        <td>
+          37
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.GUI.GUI.controller
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.controller
+        </td>
+      </tr><tr>
+        <td>
+          42
+        </td>
+        <td>
+          36
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;Players&quot;
+        </td>
+      </tr><tr>
+        <td>
+          42
+        </td>
+        <td>
+          39
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          ()
+        </td>
+      </tr><tr>
+        <td>
+          42
+        </td>
+        <td>
+          42
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.BufferLike.+=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.contents.+=(new scala.swing.MenuItem(scala.swing.Action.apply(&quot;Players&quot;)({
+  new PlayerManager(GUI.this.controller);
+  ()
+})))
+        </td>
+      </tr><tr>
+        <td>
+          43
+        </td>
+        <td>
+          50
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.MenuItem.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new scala.swing.MenuItem(scala.swing.Action.apply(&quot;Back Season&quot;)({
+  GUI.this.controller.playBackSeason();
+  GUI.this.listOfButtons.foreach[Unit](((x$3: scala.swing.Button) =&gt; x$3.enabled_=(true)));
+  GUI.this.listOfGoals.foreach[Unit](((x$4: scala.swing.TextField) =&gt; x$4.text_=(&quot;0&quot;)))
+}))
+        </td>
+      </tr><tr>
+        <td>
+          43
+        </td>
+        <td>
+          49
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Action.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scala.swing.Action.apply(&quot;Back Season&quot;)({
+  GUI.this.controller.playBackSeason();
+  GUI.this.listOfButtons.foreach[Unit](((x$3: scala.swing.Button) =&gt; x$3.enabled_=(true)));
+  GUI.this.listOfGoals.foreach[Unit](((x$4: scala.swing.TextField) =&gt; x$4.text_=(&quot;0&quot;)))
+})
+        </td>
+      </tr><tr>
+        <td>
+          43
+        </td>
+        <td>
+          43
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;Back Season&quot;
+        </td>
+      </tr><tr>
+        <td>
+          43
+        </td>
+        <td>
+          51
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.BufferLike.+=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.contents.+=(new scala.swing.MenuItem(scala.swing.Action.apply(&quot;Back Season&quot;)({
+  GUI.this.controller.playBackSeason();
+  GUI.this.listOfButtons.foreach[Unit](((x$3: scala.swing.Button) =&gt; x$3.enabled_=(true)));
+  GUI.this.listOfGoals.foreach[Unit](((x$4: scala.swing.TextField) =&gt; x$4.text_=(&quot;0&quot;)))
+})))
+        </td>
+      </tr><tr>
+        <td>
+          44
+        </td>
+        <td>
+          44
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.controller.ControllerTrait.playBackSeason
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.controller.playBackSeason()
+        </td>
+      </tr><tr>
+        <td>
+          45
+        </td>
+        <td>
+          46
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.generic.TraversableForwarder.foreach
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.listOfButtons.foreach[Unit](((x$3: scala.swing.Button) =&gt; x$3.enabled_=(true)))
+        </td>
+      </tr><tr>
+        <td>
+          45
+        </td>
+        <td>
+          45
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Component.enabled_=
+        </td>
+        <td style="background: #F0ADAD">
+          x$3.enabled_=(true)
+        </td>
+      </tr><tr>
+        <td>
+          46
+        </td>
+        <td>
+          47
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.TextComponent.text_=
+        </td>
+        <td style="background: #F0ADAD">
+          x$4.text_=(&quot;0&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          46
+        </td>
+        <td>
+          48
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.generic.TraversableForwarder.foreach
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.listOfGoals.foreach[Unit](((x$4: scala.swing.TextField) =&gt; x$4.text_=(&quot;0&quot;)))
+        </td>
+      </tr><tr>
+        <td>
+          48
+        </td>
+        <td>
+          53
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.System.exit
+        </td>
+        <td style="background: #F0ADAD">
+          java.this.lang.System.exit(0)
+        </td>
+      </tr><tr>
+        <td>
+          48
+        </td>
+        <td>
+          56
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.BufferLike.+=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.contents.+=(new scala.swing.MenuItem(scala.swing.Action.apply(&quot;Quit&quot;)(java.this.lang.System.exit(0))))
+        </td>
+      </tr><tr>
+        <td>
+          48
+        </td>
+        <td>
+          55
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.MenuItem.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new scala.swing.MenuItem(scala.swing.Action.apply(&quot;Quit&quot;)(java.this.lang.System.exit(0)))
+        </td>
+      </tr><tr>
+        <td>
+          48
+        </td>
+        <td>
+          52
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;Quit&quot;
+        </td>
+      </tr><tr>
+        <td>
+          48
+        </td>
+        <td>
+          54
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Action.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scala.swing.Action.apply(&quot;Quit&quot;)(java.this.lang.System.exit(0))
+        </td>
+      </tr><tr>
+        <td>
+          52
+        </td>
+        <td>
+          68
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          scala.collection.immutable.List.map
+        </td>
+        <td style="background: #F0ADAD">
+          immutable.this.List.range[Int](0, GUI.this.initTnG.cog)(math.this.Numeric.IntIsIntegral).map[scala.swing.BoxPanel, List[scala.swing.BoxPanel]](((i: Int) =&gt; {
+  final class $anon extends scala.swing.BoxPanel {
+    def &lt;init&gt;(): &lt;$anon: scala.swing.BoxPanel&gt; = {
+      $anon.super.&lt;init&gt;(scala.swing.Orientation.Vertical);
+      ()
+    };
+    GUI.this.getGroupComponents(i).map[scala.collection.mutable.Buffer[scala.swing.Component], List[scala.collection.mutable.Buffer[scala.swing.Component]]](((x: scala.swing.Component) =&gt; $anon.this.contents.+=(x)))(immutable.this.List.canBuildFrom[scala.collection.mutable.Buffer[scala.swing.Component]])
+  };
+  new $anon()
+}))(immutable.this.List.canBuildFrom[scala.swing.BoxPanel])
+        </td>
+      </tr><tr>
+        <td>
+          52
+        </td>
+        <td>
+          62
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.math.Numeric.IntIsIntegral
+        </td>
+        <td style="background: #F0ADAD">
+          math.this.Numeric.IntIsIntegral
+        </td>
+      </tr><tr>
+        <td>
+          52
+        </td>
+        <td>
+          67
+        </td>
+        <td>
+          TypeApply
+        </td>
+        <td>
+          scala.collection.immutable.List.canBuildFrom
+        </td>
+        <td style="background: #F0ADAD">
+          immutable.this.List.canBuildFrom[scala.swing.BoxPanel]
+        </td>
+      </tr><tr>
+        <td>
+          52
+        </td>
+        <td>
+          61
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.GUI.InitTnG.cog
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.initTnG.cog
+        </td>
+      </tr><tr>
+        <td>
+          52
+        </td>
+        <td>
+          60
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          0
+        </td>
+      </tr><tr>
+        <td>
+          53
+        </td>
+        <td>
+          66
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.GUI.GUI.$anon.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new $anon()
+        </td>
+      </tr><tr>
+        <td>
+          54
+        </td>
+        <td>
+          65
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          scala.collection.immutable.List.map
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.getGroupComponents(i).map[scala.collection.mutable.Buffer[scala.swing.Component], List[scala.collection.mutable.Buffer[scala.swing.Component]]](((x: scala.swing.Component) =&gt; $anon.this.contents.+=(x)))(immutable.this.List.canBuildFrom[scala.collection.mutable.Buffer[scala.swing.Component]])
+        </td>
+      </tr><tr>
+        <td>
+          54
+        </td>
+        <td>
+          64
+        </td>
+        <td>
+          TypeApply
+        </td>
+        <td>
+          scala.collection.immutable.List.canBuildFrom
+        </td>
+        <td style="background: #F0ADAD">
+          immutable.this.List.canBuildFrom[scala.collection.mutable.Buffer[scala.swing.Component]]
+        </td>
+      </tr><tr>
+        <td>
+          55
+        </td>
+        <td>
+          63
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.BufferLike.+=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.contents.+=(x)
+        </td>
+      </tr><tr>
+        <td>
+          59
+        </td>
+        <td>
+          69
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int.+
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.initTnG.cog./(2.toInt).+(1)
+        </td>
+      </tr><tr>
+        <td>
+          61
+        </td>
+        <td>
+          70
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int.!=
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.initTnG.cog.!=(1)
+        </td>
+      </tr><tr>
+        <td>
+          62
+        </td>
+        <td>
+          80
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          {
+  final class $anon extends scala.swing.GridPanel {
+    def &lt;init&gt;(): &lt;$anon: scala.swing.GridPanel&gt; = {
+      $anon.super.&lt;init&gt;(2, GUI.this.cols);
+      ()
+    };
+    scala.this.Predef.intWrapper(0).until(GUI.this.initTnG.cog).foreach[scala.collection.mutable.Buffer[scala.swing.Component]](((i: Int) =&gt; {
+      val bp: scala.swing.BoxPanel = GUI.this.boxPanels.apply(i);
+      bp.border_=(javax.swing.BorderFactory.createLineBorder(java.awt.Color.BLACK));
+      $anon.this.contents.+=(bp)
+    }))
+  };
+  new $anon()
+}
+        </td>
+      </tr><tr>
+        <td>
+          62
+        </td>
+        <td>
+          79
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.GUI.GUI.$anon.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new $anon()
+        </td>
+      </tr><tr>
+        <td>
+          63
+        </td>
+        <td>
+          71
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          0
+        </td>
+      </tr><tr>
+        <td>
+          63
+        </td>
+        <td>
+          78
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.immutable.Range.foreach
+        </td>
+        <td style="background: #F0ADAD">
+          scala.this.Predef.intWrapper(0).until(GUI.this.initTnG.cog).foreach[scala.collection.mutable.Buffer[scala.swing.Component]](((i: Int) =&gt; {
+  val bp: scala.swing.BoxPanel = GUI.this.boxPanels.apply(i);
+  bp.border_=(javax.swing.BorderFactory.createLineBorder(java.awt.Color.BLACK));
+  $anon.this.contents.+=(bp)
+}))
+        </td>
+      </tr><tr>
+        <td>
+          63
+        </td>
+        <td>
+          72
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.GUI.InitTnG.cog
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.initTnG.cog
+        </td>
+      </tr><tr>
+        <td>
+          64
+        </td>
+        <td>
+          73
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.LinearSeqOptimized.apply
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.boxPanels.apply(i)
+        </td>
+      </tr><tr>
+        <td>
+          65
+        </td>
+        <td>
+          74
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          java.awt.Color.BLACK
+        </td>
+        <td style="background: #F0ADAD">
+          java.awt.Color.BLACK
+        </td>
+      </tr><tr>
+        <td>
+          65
+        </td>
+        <td>
+          76
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Component.border_=
+        </td>
+        <td style="background: #F0ADAD">
+          bp.border_=(javax.swing.BorderFactory.createLineBorder(java.awt.Color.BLACK))
+        </td>
+      </tr><tr>
+        <td>
+          65
+        </td>
+        <td>
+          75
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          javax.swing.BorderFactory.createLineBorder
+        </td>
+        <td style="background: #F0ADAD">
+          javax.swing.BorderFactory.createLineBorder(java.awt.Color.BLACK)
+        </td>
+      </tr><tr>
+        <td>
+          66
+        </td>
+        <td>
+          77
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.BufferLike.+=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.contents.+=(bp)
+        </td>
+      </tr><tr>
+        <td>
+          71
+        </td>
+        <td>
+          88
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          {
+  final class $anon extends scala.swing.GridPanel {
+    def &lt;init&gt;(): &lt;$anon: scala.swing.GridPanel&gt; = {
+      $anon.super.&lt;init&gt;(1, GUI.this.cols);
+      ()
+    };
+    scala.this.Predef.intWrapper(0).until(GUI.this.initTnG.cog).foreach[scala.collection.mutable.Buffer[scala.swing.Component]](((i: Int) =&gt; {
+      val bp: scala.swing.BoxPanel = GUI.this.boxPanels.apply(i);
+      bp.border;
+      $anon.this.contents.+=(bp)
+    }))
+  };
+  new $anon()
+}
+        </td>
+      </tr><tr>
+        <td>
+          71
+        </td>
+        <td>
+          87
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.GUI.GUI.$anon.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new $anon()
+        </td>
+      </tr><tr>
+        <td>
+          72
+        </td>
+        <td>
+          86
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.immutable.Range.foreach
+        </td>
+        <td style="background: #F0ADAD">
+          scala.this.Predef.intWrapper(0).until(GUI.this.initTnG.cog).foreach[scala.collection.mutable.Buffer[scala.swing.Component]](((i: Int) =&gt; {
+  val bp: scala.swing.BoxPanel = GUI.this.boxPanels.apply(i);
+  bp.border;
+  $anon.this.contents.+=(bp)
+}))
+        </td>
+      </tr><tr>
+        <td>
+          72
+        </td>
+        <td>
+          82
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.GUI.InitTnG.cog
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.initTnG.cog
+        </td>
+      </tr><tr>
+        <td>
+          72
+        </td>
+        <td>
+          81
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          0
+        </td>
+      </tr><tr>
+        <td>
+          73
+        </td>
+        <td>
+          83
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.LinearSeqOptimized.apply
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.boxPanels.apply(i)
+        </td>
+      </tr><tr>
+        <td>
+          74
+        </td>
+        <td>
+          84
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.swing.Component.border
+        </td>
+        <td style="background: #F0ADAD">
+          bp.border
+        </td>
+      </tr><tr>
+        <td>
+          75
+        </td>
+        <td>
+          85
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.BufferLike.+=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.contents.+=(bp)
+        </td>
+      </tr><tr>
+        <td>
+          80
+        </td>
+        <td>
+          89
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.GUI.GUI.myMenuBar
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.myMenuBar
+        </td>
+      </tr><tr>
+        <td>
+          80
+        </td>
+        <td>
+          90
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.RichWindow.menuBar_=
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.menuBar_=(GUI.this.myMenuBar)
+        </td>
+      </tr><tr>
+        <td>
+          81
+        </td>
+        <td>
+          92
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Window.contents_=
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.contents_=(GUI.this.myPanel)
+        </td>
+      </tr><tr>
+        <td>
+          81
+        </td>
+        <td>
+          91
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.GUI.GUI.myPanel
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.myPanel
+        </td>
+      </tr><tr>
+        <td>
+          82
+        </td>
+        <td>
+          93
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.UIElement.visible_=
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.visible_=(true)
+        </td>
+      </tr><tr>
+        <td>
+          85
+        </td>
+        <td>
+          94
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          0
+        </td>
+      </tr><tr>
+        <td>
+          86
+        </td>
+        <td>
+          95
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          1
+        </td>
+      </tr><tr>
+        <td>
+          87
+        </td>
+        <td>
+          116
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.immutable.List.foreach
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.tables.foreach[Unit](((table: scala.swing.Table) =&gt; {
+  table.update(0, 0, &quot;Name&quot;);
+  table.update(0, 1, &quot;Points&quot;);
+  table.update(0, 2, &quot;Goals&quot;);
+  table.update(0, 3, &quot;Goals&quot;);
+  GUI.this.controller.groups.apply(i).getTable.reverse.foreach[Unit](((team: de.htwg.model.Team) =&gt; {
+    table.update(j, 0, team.name);
+    table.update(j, 1, team.points);
+    table.update(j, 2, team.goals);
+    table.update(j, 3, team.goalsAgainst);
+    j = j.+(1)
+  }));
+  j = 1;
+  i = i.+(1)
+}))
+        </td>
+      </tr><tr>
+        <td>
+          88
+        </td>
+        <td>
+          96
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Table.update
+        </td>
+        <td style="background: #F0ADAD">
+          table.update(0, 0, &quot;Name&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          89
+        </td>
+        <td>
+          97
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Table.update
+        </td>
+        <td style="background: #F0ADAD">
+          table.update(0, 1, &quot;Points&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          90
+        </td>
+        <td>
+          98
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Table.update
+        </td>
+        <td style="background: #F0ADAD">
+          table.update(0, 2, &quot;Goals&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          91
+        </td>
+        <td>
+          99
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Table.update
+        </td>
+        <td style="background: #F0ADAD">
+          table.update(0, 3, &quot;Goals&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          92
+        </td>
+        <td>
+          113
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.immutable.List.foreach
+        </td>
+        <td style="background: #F0ADAD">
+          GUI.this.controller.groups.apply(i).getTable.reverse.foreach[Unit](((team: de.htwg.model.Team) =&gt; {
+  table.update(j, 0, team.name);
+  table.update(j, 1, team.points);
+  table.update(j, 2, team.goals);
+  table.update(j, 3, team.goalsAgainst);
+  j = j.+(1)
+}))
+        </td>
+      </tr><tr>
+        <td>
+          93
+        </td>
+        <td>
+          101
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Team.name
+        </td>
+        <td style="background: #F0ADAD">
+          team.name
+        </td>
+      </tr><tr>
+        <td>
+          93
+        </td>
+        <td>
+          100
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          0
+        </td>
+      </tr><tr>
+        <td>
+          93
+        </td>
+        <td>
+          102
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Table.update
+        </td>
+        <td style="background: #F0ADAD">
+          table.update(j, 0, team.name)
+        </td>
+      </tr><tr>
+        <td>
+          94
+        </td>
+        <td>
+          104
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Team.points
+        </td>
+        <td style="background: #F0ADAD">
+          team.points
+        </td>
+      </tr><tr>
+        <td>
+          94
+        </td>
+        <td>
+          103
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          1
+        </td>
+      </tr><tr>
+        <td>
+          94
+        </td>
+        <td>
+          105
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Table.update
+        </td>
+        <td style="background: #F0ADAD">
+          table.update(j, 1, team.points)
+        </td>
+      </tr><tr>
+        <td>
+          95
+        </td>
+        <td>
+          107
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Team.goals
+        </td>
+        <td style="background: #F0ADAD">
+          team.goals
+        </td>
+      </tr><tr>
+        <td>
+          95
+        </td>
+        <td>
+          106
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          2
+        </td>
+      </tr><tr>
+        <td>
+          95
+        </td>
+        <td>
+          108
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Table.update
+        </td>
+        <td style="background: #F0ADAD">
+          table.update(j, 2, team.goals)
+        </td>
+      </tr><tr>
+        <td>
+          96
+        </td>
+        <td>
+          110
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Team.goalsAgainst
+        </td>
+        <td style="background: #F0ADAD">
+          team.goalsAgainst
+        </td>
+      </tr><tr>
+        <td>
+          96
+        </td>
+        <td>
+          109
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          3
+        </td>
+      </tr><tr>
+        <td>
+          96
+        </td>
+        <td>
+          111
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Table.update
+        </td>
+        <td style="background: #F0ADAD">
+          table.update(j, 3, team.goalsAgainst)
+        </td>
+      </tr><tr>
+        <td>
+          97
+        </td>
+        <td>
+          112
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int.+
+        </td>
+        <td style="background: #F0ADAD">
+          j.+(1)
+        </td>
+      </tr><tr>
+        <td>
+          99
+        </td>
+        <td>
+          114
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          1
+        </td>
+      </tr><tr>
+        <td>
+          100
+        </td>
+        <td>
+          115
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int.+
+        </td>
+        <td style="background: #F0ADAD">
+          i.+(1)
+        </td>
+      </tr><tr>
+        <td>
+          105
+        </td>
+        <td>
+          117
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.immutable.List.:::
+        </td>
+        <td style="background: #F0ADAD">
+          {
+  &lt;synthetic&gt; &lt;artifact&gt; val x$5: List[scala.swing.FlowPanel{val t1: scala.swing.Label; val t2: scala.swing.Label; val goals: scala.swing.TextField; val goalsAgainst: scala.swing.TextField; val commit: scala.swing.Button}] = GUI.this.controller.getGames(GUI.this.controller.groups.apply(i)).map[scala.swing.FlowPanel{val t1: scala.swing.Label; val t2: scala.swing.Label; val goals: scala.swing.TextField; val goalsAgainst: scala.swing.TextField; val commit: scala.swing.Button}, scala.collection.mutable.ListBuffer[scala.swing.FlowPanel{val t1: scala.swing.Label; val t2: scala.swing.Label; val goals: scala.swing.TextField; val goalsAgainst: scala.swing.TextField; val commit: scala.swing.Button}]](((x: de.htwg.model.Game) =&gt; {
+  final class $anon extends scala.swing.FlowPanel {
+    def &lt;init&gt;(): &lt;$anon: scala.swing.FlowPanel&gt; = {
+      $anon.super.&lt;init&gt;();
+      ()
+    };
+    this.vGap_=(0);
+    private[this] val t1: scala.swing.Label = new scala.swing.Label(x.game._1.name);
+    &lt;stable&gt; &lt;accessor&gt; def t1: scala.swing.Label = $anon.this.t1;
+    $anon.this.t1.minimumSize_=(new java.awt.Dimension(100, 12));
+    $anon.this.t1.preferredSize_=(new java.awt.Dimension(100, 12));
+    $anon.this.t1.maximumSize_=(new java.awt.Dimension(100, 12));
+    $anon.this.contents.+=($anon.this.t1);
+    $anon.this.contents.+=(new scala.swing.Label(&quot; - &quot;));
+    private[this] val t2: scala.swing.Label = new scala.swing.Label(x.game._2.name);
+    &lt;stable&gt; &lt;accessor&gt; def t2: scala.swing.Label = $anon.this.t2;
+    $anon.this.t2.minimumSize_=(new java.awt.Dimension(100, 12));
+    $anon.this.t2.preferredSize_=(new java.awt.Dimension(100, 12));
+    $anon.this.t2.maximumSize_=(new java.awt.Dimension(100, 12));
+    $anon.this.contents.+=($anon.this.t2);
+    $anon.this.contents.+=(new scala.swing.Label(&quot;   &quot;));
+    private[this] val goals: scala.swing.TextField = new scala.swing.TextField(&quot;0&quot;, 3);
+    &lt;stable&gt; &lt;accessor&gt; def goals: scala.swing.TextField = $anon.this.goals;
+    $anon.this.contents.+=($anon.this.goals);
+    $anon.this.contents.+=(new scala.swing.Label(&quot; : &quot;));
+    private[this] val goalsAgainst: scala.swing.TextField = new scala.swing.TextField(&quot;0&quot;, 3);
+    &lt;stable&gt; &lt;accessor&gt; def goalsAgainst: scala.swing.TextField = $anon.this.goalsAgainst;
+    $anon.this.contents.+=($anon.this.goalsAgainst);
+    private[this] val commit: scala.swing.Button = new scala.swing.Button(&quot;Commit&quot;);
+    &lt;stable&gt; &lt;accessor&gt; def commit: scala.swing.Button = $anon.this.commit;
+    $anon.this.commit.maximumSize_=(new java.awt.Dimension(78, 20));
+    $anon.this.commit.minimumSize_=(new java.awt.Dimension(78, 20));
+    $anon.this.commit.preferredSize_=(new java.awt.Dimension(78, 20));
+    $anon.this.listenTo($anon.this.commit);
+    $anon.this.reactions.+=(({
+      @SerialVersionUID(0) final &lt;synthetic&gt; class $anonfun extends scala.runtime.AbstractPartialFunction[scala.swing.event.Event,Unit] with Serializable {
+        def &lt;init&gt;(): &lt;$anon: scala.swing.event.Event =&gt; Unit&gt; = {
+          $anonfun.super.&lt;init&gt;();
+          ()
+        };
+        final override def applyOrElse[A1 &lt;: scala.swing.event.Event, B1 &gt;: Unit](x2: A1, default: A1 =&gt; B1): B1 = ((x2.asInstanceOf[scala.swing.event.Event]: scala.swing.event.Event): scala.swing.event.Event @unchecked) match {
+          case (source: scala.swing.AbstractButton)scala.swing.event.ButtonClicked((button @ _)) =&gt; {
+            scala.this.Predef.println(i.+(1).+(&quot; &quot;).+(x.index));
+            GUI.this.controller.setGameResult(i.+(1), x.index, scala.this.Predef.augmentString($anon.this.goals.text).toInt, scala.this.Predef.augmentString($anon.this.goalsAgainst.text).toInt);
+            $anon.this.commit.enabled_=(false)
+          }
+          case (defaultCase$ @ _) =&gt; default.apply(x2)
+        };
+        final def isDefinedAt(x2: scala.swing.event.Event): Boolean = ((x2.asInstanceOf[scala.swing.event.Event]: scala.swing.event.Event): scala.swing.event.Event @unchecked) match {
+          case (source: scala.swing.AbstractButton)scala.swing.event.ButtonClicked((button @ _)) =&gt; true
+          case (defaultCase$ @ _) =&gt; false
+        }
+      };
+      new $anonfun()
+    }: PartialFunction[scala.swing.event.Event,Unit]));
+    $anon.this.contents.+=($anon.this.commit);
+    GUI.this.listOfButtons.+=($anon.this.commit);
+    GUI.this.listOfGoals.+=($anon.this.goals).+=($anon.this.goalsAgainst)
+  };
+  new $anon()
+}))(mutable.this.ListBuffer.canBuildFrom[scala.swing.FlowPanel{val t1: scala.swing.Label; val t2: scala.swing.Label; val goals: scala.swing.TextField; val goalsAgainst: scala.swing.TextField; val commit: scala.swing.Button}]).toList;
+  immutable.this.List.apply[scala.swing.Table](GUI.this.tables.apply(i)).:::[scala.swing.Component{lazy val peer: javax.swing.JComponent with javax.accessibility.Accessible}](x$5)
+}.:::[scala.swing.Component{lazy val peer: javax.swing.JComponent with javax.accessibility.Accessible}](x$6)
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/C:/Users/ankaufma/git/TournamentManager/TournamentManager/}tournamentmanager...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/Users/gian-lucapiras/git/TournamentManager/TournamentManager/}tournamentmanager...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: default#tournamentmanager_2.11;2.10[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#tournamentmanager_2.11;2.10 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scala-lang#scala-library;2.11.4 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.4 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7aa5b001[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@e161cd3[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.4[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.11.4] org.scala-lang#scala-library;2.11.4[0m
@@ -21,9 +21,9 @@
 [0m[[0mdebug[0m] [0m	found com.escalatesoft.subcut#subcut_2.11;2.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.escalatesoft.subcut#subcut_2.11;2.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.escalatesoft.subcut#subcut_2.11;2.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-compiler;2.11.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-compiler;2.11.0 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-compiler;2.11.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.11.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.11.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.11.0[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-compiler;2.11.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-compiler;2.11.0 [compile->compile(*)][0m
@@ -38,8 +38,8 @@
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-reflect;2.11.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.11.0] org.scala-lang#scala-reflect;2.11.0[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang#scala-reflect;2.11.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.0 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(*)][0m
@@ -82,8 +82,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.0 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-compiler;2.11.0 [runtime->runtime(*)][0m
@@ -99,11 +99,11 @@
 [0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-actor_2.11;2.3.8 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.typesafe.akka#akka-actor_2.11;2.3.8 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.typesafe.akka#akka-actor_2.11;2.3.8 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->com.typesafe#config;1.2.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->com.typesafe#config;1.2.1 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving com.typesafe#config;1.2.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe#config;1.2.1 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe#config;1.2.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe#config;1.2.1[0m
 [0m[[0mdebug[0m] [0m	found com.typesafe#config;1.2.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->com.typesafe#config;1.2.1 [compile->compile(*)][0m
@@ -122,8 +122,8 @@
 [0m[[0mdebug[0m] [0m	[2.11.0-M7] org.scala-lang#scala-swing;2.11.0-M7[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scala-lang#scala-swing;2.11.0-M7 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scala-lang#scala-swing;2.11.0-M7 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.0-M7 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.0-M7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.0-M7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.0-M7 [runtime->runtime(*)][0m
@@ -140,7 +140,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.escalatesoft.subcut#subcut_2.11;2.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.escalatesoft.subcut#subcut_2.11;2.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.escalatesoft.subcut#subcut_2.11;2.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-compiler;2.11.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-compiler;2.11.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-compiler;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
@@ -148,8 +148,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang#scala-reflect;2.11.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang#scala-reflect;2.11.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.0 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(*)][0m
@@ -164,8 +164,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.0 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-compiler;2.11.0 [runtime->runtime(*)][0m
@@ -195,9 +195,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.typesafe.akka#akka-actor_2.11;2.3.8 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.typesafe.akka#akka-actor_2.11;2.3.8 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.typesafe.akka#akka-actor_2.11;2.3.8 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->com.typesafe#config;1.2.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->com.typesafe#config;1.2.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->com.typesafe#config;1.2.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [runtime->compile][0m
@@ -207,8 +207,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scala-lang#scala-swing;2.11.0-M7 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scala-lang#scala-swing;2.11.0-M7 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scala-lang#scala-swing;2.11.0-M7 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.0-M7 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.0-M7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.0-M7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.0-M7 [runtime->runtime(*)][0m
@@ -226,7 +226,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.escalatesoft.subcut#subcut_2.11;2.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.escalatesoft.subcut#subcut_2.11;2.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.escalatesoft.subcut#subcut_2.11;2.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-compiler;2.11.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-compiler;2.11.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-compiler;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
@@ -234,8 +234,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang#scala-reflect;2.11.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang#scala-reflect;2.11.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.0 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(*)][0m
@@ -250,8 +250,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.0 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-compiler;2.11.0 [runtime->runtime(*)][0m
@@ -281,9 +281,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.typesafe.akka#akka-actor_2.11;2.3.8 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.typesafe.akka#akka-actor_2.11;2.3.8 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.typesafe.akka#akka-actor_2.11;2.3.8 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->com.typesafe#config;1.2.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->com.typesafe#config;1.2.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->com.typesafe#config;1.2.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [runtime->compile][0m
@@ -293,8 +293,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scala-lang#scala-swing;2.11.0-M7 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scala-lang#scala-swing;2.11.0-M7 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scala-lang#scala-swing;2.11.0-M7 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.0-M7 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.0-M7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.0-M7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.0-M7 [runtime->runtime(*)][0m
@@ -308,52 +308,51 @@
 [0m[[0mdebug[0m] [0m	found org.specs2#specs2-core_2.11;2.4.15 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.specs2#specs2-core_2.11;2.4.15 [test->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.specs2#specs2-core_2.11;2.4.15 [test->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-core_2.11;2.4.15->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-core_2.11;2.4.15->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-core_2.11;2.4.15->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-core_2.11;2.4.15->org.specs2#specs2-matcher_2.11;2.4.15 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-core_2.11;2.4.15->org.specs2#specs2-matcher_2.11;2.4.15 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.specs2#specs2-matcher_2.11;2.4.15 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.specs2#specs2-matcher_2.11;2.4.15 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.specs2#specs2-matcher_2.11;2.4.15 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.specs2#specs2-matcher_2.11;2.4.15[0m
 [0m[[0mdebug[0m] [0m	found org.specs2#specs2-matcher_2.11;2.4.15 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-core_2.11;2.4.15->org.specs2#specs2-matcher_2.11;2.4.15 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-matcher_2.11;2.4.15->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-matcher_2.11;2.4.15->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-matcher_2.11;2.4.15->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-matcher_2.11;2.4.15->org.specs2#specs2-common_2.11;2.4.15 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-matcher_2.11;2.4.15->org.specs2#specs2-common_2.11;2.4.15 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.specs2#specs2-common_2.11;2.4.15 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.specs2#specs2-common_2.11;2.4.15 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.specs2#specs2-common_2.11;2.4.15 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.specs2#specs2-common_2.11;2.4.15[0m
 [0m[[0mdebug[0m] [0m	found org.specs2#specs2-common_2.11;2.4.15 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-matcher_2.11;2.4.15->org.specs2#specs2-common_2.11;2.4.15 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;2.4.15->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;2.4.15->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;2.4.15->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;2.4.15->org.scalaz#scalaz-core_2.11;7.1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;2.4.15->org.scalaz#scalaz-core_2.11;7.1.0 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.scalaz#scalaz-core_2.11;7.1.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scalaz#scalaz-core_2.11;7.1.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scalaz#scalaz-core_2.11;7.1.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scalaz#scalaz-core_2.11;7.1.0[0m
 [0m[[0mdebug[0m] [0m	found org.scalaz#scalaz-core_2.11;7.1.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;2.4.15->org.scalaz#scalaz-core_2.11;7.1.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang#scala-library;2.11.2 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2->org.scala-lang#scala-library;2.11.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang.modules#scala-xml_2.11;1.0.2 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.11;1.0.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.11;1.0.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.2[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang.modules#scala-xml_2.11;1.0.2 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->compile(*)][0m
@@ -361,46 +360,44 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.4 [runtime->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;2.4.15->org.scalaz#scalaz-concurrent_2.11;7.1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;2.4.15->org.scalaz#scalaz-concurrent_2.11;7.1.0 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.scalaz#scalaz-concurrent_2.11;7.1.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scalaz#scalaz-concurrent_2.11;7.1.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scalaz#scalaz-concurrent_2.11;7.1.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scalaz#scalaz-concurrent_2.11;7.1.0[0m
 [0m[[0mdebug[0m] [0m	found org.scalaz#scalaz-concurrent_2.11;7.1.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;2.4.15->org.scalaz#scalaz-concurrent_2.11;7.1.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-concurrent_2.11;7.1.0->org.scala-lang#scala-library;2.11.2 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-concurrent_2.11;7.1.0->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-concurrent_2.11;7.1.0->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-concurrent_2.11;7.1.0->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-concurrent_2.11;7.1.0->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-concurrent_2.11;7.1.0->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-concurrent_2.11;7.1.0->org.scalaz#scalaz-core_2.11;7.1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-concurrent_2.11;7.1.0->org.scalaz#scalaz-core_2.11;7.1.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-concurrent_2.11;7.1.0->org.scalaz#scalaz-core_2.11;7.1.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-concurrent_2.11;7.1.0->org.scalaz#scalaz-effect_2.11;7.1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-concurrent_2.11;7.1.0->org.scalaz#scalaz-effect_2.11;7.1.0 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.scalaz#scalaz-effect_2.11;7.1.0 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scalaz#scalaz-effect_2.11;7.1.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scalaz#scalaz-effect_2.11;7.1.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scalaz#scalaz-effect_2.11;7.1.0[0m
 [0m[[0mdebug[0m] [0m	found org.scalaz#scalaz-effect_2.11;7.1.0 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-concurrent_2.11;7.1.0->org.scalaz#scalaz-effect_2.11;7.1.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.11;7.1.0->org.scala-lang#scala-library;2.11.2 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.11;7.1.0->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.11;7.1.0->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.11;7.1.0->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.11;7.1.0->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.11;7.1.0->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.11;7.1.0->org.scalaz#scalaz-core_2.11;7.1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.11;7.1.0->org.scalaz#scalaz-core_2.11;7.1.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.11;7.1.0->org.scalaz#scalaz-core_2.11;7.1.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;2.4.15->org.scala-lang#scala-reflect;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;2.4.15->org.scala-lang#scala-reflect;2.11.4 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-reflect;2.11.4 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.11.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.11.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.4[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-reflect;2.11.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.11.4] org.scala-lang#scala-reflect;2.11.4[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;2.4.15->org.scala-lang#scala-reflect;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;2.4.15->org.scala-lang#scala-reflect;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;2.4.15->org.scala-lang#scala-reflect;2.11.4 [compile->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;2.4.15->org.scala-lang#scala-reflect;2.11.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
@@ -452,7 +449,7 @@
 [0m[[0mdebug[0m] [0m	found org.scoverage#scalac-scoverage-runtime_2.11;1.0.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scoverage#scalac-scoverage-runtime_2.11;1.0.1 [provided->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scoverage#scalac-scoverage-runtime_2.11;1.0.1 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-runtime_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-runtime_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-runtime_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-runtime_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-runtime_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [runtime->compile][0m
@@ -464,9 +461,9 @@
 [0m[[0mdebug[0m] [0m	found org.scoverage#scalac-scoverage-plugin_2.11;1.0.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scoverage#scalac-scoverage-plugin_2.11;1.0.1 [provided->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scoverage#scalac-scoverage-plugin_2.11;1.0.1 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-plugin_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-plugin_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-plugin_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-plugin_2.11;1.0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-plugin_2.11;1.0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-plugin_2.11;1.0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
@@ -492,7 +489,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.escalatesoft.subcut#subcut_2.11;2.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.escalatesoft.subcut#subcut_2.11;2.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.escalatesoft.subcut#subcut_2.11;2.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-compiler;2.11.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-compiler;2.11.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-compiler;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
@@ -500,8 +497,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang#scala-reflect;2.11.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang#scala-reflect;2.11.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.0 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(*)][0m
@@ -516,8 +513,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.0 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-compiler;2.11.0 [runtime->runtime(*)][0m
@@ -547,9 +544,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.typesafe.akka#akka-actor_2.11;2.3.8 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.typesafe.akka#akka-actor_2.11;2.3.8 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.typesafe.akka#akka-actor_2.11;2.3.8 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->com.typesafe#config;1.2.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->com.typesafe#config;1.2.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->com.typesafe#config;1.2.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [runtime->compile][0m
@@ -559,8 +556,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scala-lang#scala-swing;2.11.0-M7 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scala-lang#scala-swing;2.11.0-M7 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scala-lang#scala-swing;2.11.0-M7 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.0-M7 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.0-M7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.0-M7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.0-M7 [runtime->runtime(*)][0m
@@ -572,7 +569,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scoverage#scalac-scoverage-runtime_2.11;1.0.1 [provided->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scoverage#scalac-scoverage-runtime_2.11;1.0.1 [provided->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scoverage#scalac-scoverage-runtime_2.11;1.0.1 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-runtime_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-runtime_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-runtime_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-runtime_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-runtime_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [runtime->compile][0m
@@ -580,9 +577,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scoverage#scalac-scoverage-plugin_2.11;1.0.1 [provided->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scoverage#scalac-scoverage-plugin_2.11;1.0.1 [provided->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scoverage#scalac-scoverage-plugin_2.11;1.0.1 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-plugin_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-plugin_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-plugin_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-plugin_2.11;1.0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-plugin_2.11;1.0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-plugin_2.11;1.0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-plugin_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-plugin_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [runtime->compile][0m
@@ -600,7 +597,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.escalatesoft.subcut#subcut_2.11;2.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.escalatesoft.subcut#subcut_2.11;2.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.escalatesoft.subcut#subcut_2.11;2.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-compiler;2.11.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-compiler;2.11.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-compiler;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
@@ -608,8 +605,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang#scala-reflect;2.11.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang#scala-reflect;2.11.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.0 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(*)][0m
@@ -624,8 +621,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.0 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-compiler;2.11.0 [runtime->runtime(*)][0m
@@ -655,9 +652,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.typesafe.akka#akka-actor_2.11;2.3.8 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.typesafe.akka#akka-actor_2.11;2.3.8 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.typesafe.akka#akka-actor_2.11;2.3.8 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->com.typesafe#config;1.2.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->com.typesafe#config;1.2.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->com.typesafe#config;1.2.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [runtime->compile][0m
@@ -667,8 +664,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scala-lang#scala-swing;2.11.0-M7 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scala-lang#scala-swing;2.11.0-M7 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scala-lang#scala-swing;2.11.0-M7 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.0-M7 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.0-M7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.0-M7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.0-M7 [runtime->runtime(*)][0m
@@ -688,7 +685,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.escalatesoft.subcut#subcut_2.11;2.1 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.escalatesoft.subcut#subcut_2.11;2.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.escalatesoft.subcut#subcut_2.11;2.1 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-compiler;2.11.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-compiler;2.11.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-compiler;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
@@ -696,8 +693,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang#scala-reflect;2.11.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang#scala-reflect;2.11.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.0 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.0->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.0->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(*)][0m
@@ -712,8 +709,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.0 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.escalatesoft.subcut#subcut_2.11;2.1->org.scala-lang#scala-compiler;2.11.0 [runtime->runtime(*)][0m
@@ -743,9 +740,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.typesafe.akka#akka-actor_2.11;2.3.8 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.typesafe.akka#akka-actor_2.11;2.3.8 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->com.typesafe.akka#akka-actor_2.11;2.3.8 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->com.typesafe#config;1.2.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->com.typesafe#config;1.2.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->com.typesafe#config;1.2.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.8->org.scala-lang#scala-library;2.11.4 [runtime->compile][0m
@@ -755,8 +752,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scala-lang#scala-swing;2.11.0-M7 [compile->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scala-lang#scala-swing;2.11.0-M7 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scala-lang#scala-swing;2.11.0-M7 [compile->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.0-M7 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.0-M7 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.0-M7 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-swing;2.11.0-M7->org.scala-lang#scala-library;2.11.0-M7 [runtime->runtime(*)][0m
@@ -766,52 +763,53 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.specs2#specs2-core_2.11;2.4.15 [test->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.specs2#specs2-core_2.11;2.4.15 [test->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.specs2#specs2-core_2.11;2.4.15 [test->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-core_2.11;2.4.15->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-core_2.11;2.4.15->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-core_2.11;2.4.15->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-core_2.11;2.4.15->org.specs2#specs2-matcher_2.11;2.4.15 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-core_2.11;2.4.15->org.specs2#specs2-matcher_2.11;2.4.15 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-core_2.11;2.4.15->org.specs2#specs2-matcher_2.11;2.4.15 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-matcher_2.11;2.4.15->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-matcher_2.11;2.4.15->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-matcher_2.11;2.4.15->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-matcher_2.11;2.4.15->org.specs2#specs2-common_2.11;2.4.15 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-matcher_2.11;2.4.15->org.specs2#specs2-common_2.11;2.4.15 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-matcher_2.11;2.4.15->org.specs2#specs2-common_2.11;2.4.15 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;2.4.15->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;2.4.15->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;2.4.15->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;2.4.15->org.scalaz#scalaz-core_2.11;7.1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;2.4.15->org.scalaz#scalaz-core_2.11;7.1.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;2.4.15->org.scalaz#scalaz-core_2.11;7.1.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang#scala-library;2.11.2 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;2.4.15->org.scalaz#scalaz-concurrent_2.11;7.1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-core_2.11;7.1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;2.4.15->org.scalaz#scalaz-concurrent_2.11;7.1.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;2.4.15->org.scalaz#scalaz-concurrent_2.11;7.1.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-concurrent_2.11;7.1.0->org.scala-lang#scala-library;2.11.2 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-concurrent_2.11;7.1.0->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-concurrent_2.11;7.1.0->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-concurrent_2.11;7.1.0->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-concurrent_2.11;7.1.0->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-concurrent_2.11;7.1.0->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-concurrent_2.11;7.1.0->org.scalaz#scalaz-core_2.11;7.1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-concurrent_2.11;7.1.0->org.scalaz#scalaz-core_2.11;7.1.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-concurrent_2.11;7.1.0->org.scalaz#scalaz-core_2.11;7.1.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-concurrent_2.11;7.1.0->org.scalaz#scalaz-effect_2.11;7.1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-concurrent_2.11;7.1.0->org.scalaz#scalaz-effect_2.11;7.1.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-concurrent_2.11;7.1.0->org.scalaz#scalaz-effect_2.11;7.1.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.11;7.1.0->org.scala-lang#scala-library;2.11.2 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.11;7.1.0->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.11;7.1.0->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.11;7.1.0->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.11;7.1.0->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.11;7.1.0->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.11;7.1.0->org.scalaz#scalaz-core_2.11;7.1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.11;7.1.0->org.scalaz#scalaz-core_2.11;7.1.0 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalaz#scalaz-effect_2.11;7.1.0->org.scalaz#scalaz-core_2.11;7.1.0 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;2.4.15->org.scala-lang#scala-reflect;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;2.4.15->org.scala-lang#scala-reflect;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-common_2.11;2.4.15->org.scala-lang#scala-reflect;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-core_2.11;2.4.15->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.specs2#specs2-core_2.11;2.4.15->org.scala-lang#scala-library;2.11.4 [runtime->compile][0m
@@ -862,7 +860,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scoverage#scalac-scoverage-runtime_2.11;1.0.1 [provided->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scoverage#scalac-scoverage-runtime_2.11;1.0.1 [provided->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scoverage#scalac-scoverage-runtime_2.11;1.0.1 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-runtime_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-runtime_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-runtime_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-runtime_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-runtime_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [runtime->compile][0m
@@ -870,10 +868,10 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scoverage#scalac-scoverage-plugin_2.11;1.0.1 [provided->default(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scoverage#scalac-scoverage-plugin_2.11;1.0.1 [provided->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scoverage#scalac-scoverage-plugin_2.11;1.0.1 [provided->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-plugin_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-plugin_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-plugin_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-plugin_2.11;1.0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-plugin_2.11;1.0.1->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-plugin_2.11;1.0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-plugin_2.11;1.0.1->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->master(compile)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-plugin_2.11;1.0.1->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-plugin_2.11;1.0.1->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scoverage#scalac-scoverage-plugin_2.11;1.0.1->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
@@ -899,27 +897,27 @@
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-compiler;2.11.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scala-lang#scala-compiler;2.11.4 [scala-tool->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scala-lang#scala-compiler;2.11.4 [scala-tool->compile][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->default][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->optional(default)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.4->org.scala-lang#scala-reflect;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.4->org.scala-lang#scala-reflect;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.4->org.scala-lang#scala-reflect;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.4->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.4->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.4->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.4->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.4->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.4->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.4->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->compile(*)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [compile->master(compile)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2->org.scala-lang#scala-library;2.11.4 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2->org.scala-lang#scala-library;2.11.4 [compile->master(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2->org.scala-lang#scala-library;2.11.4 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.4->org.scala-lang#scala-library;2.11.4 [runtime->runtime(*)][0m
@@ -940,9 +938,9 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2->org.scala-lang#scala-library;2.11.4 [runtime->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scala-lang#scala-compiler;2.11.4 [scala-tool->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scala-lang#scala-compiler;2.11.4 [scala-tool->optional(default)][0m
-[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.4->jline#jline;2.12 [optional->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.4->jline#jline;2.12 [optional->master(*)][0m
 [0m[[0minfo[0m] [0mResolving jline#jline;2.12 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: jline#jline;2.12 {optional=[compile(*), master(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: jline#jline;2.12 {optional=[compile(*), master(*)]}[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: jline#jline;2.12[0m
 [0m[[0mdebug[0m] [0m	found jline#jline;2.12 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.4->jline#jline;2.12 [optional->compile(*)][0m
@@ -976,19 +974,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scoverage#scalac-scoverage-plugin_2.11;1.0.1!scalac-scoverage-plugin_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.4!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.12!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 726ms :: artifacts dl 19ms[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 compile produced in C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.11-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 runtime produced in C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.11-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 test produced in C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.11-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 provided produced in C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.11-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 optional produced in C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.11-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 compile-internal produced in C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.11-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 runtime-internal produced in C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.11-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 test-internal produced in C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.11-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 plugin produced in C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.11-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 sources produced in C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.11-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 docs produced in C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.11-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 pom produced in C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.11-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 scala-tool produced in C:\Users\ankaufma\git\TournamentManager\TournamentManager\target\resolution-cache\reports\default-tournamentmanager_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (726ms resolve - 19ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 779ms :: artifacts dl 32ms[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 compile produced in /Users/gian-lucapiras/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.11-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 runtime produced in /Users/gian-lucapiras/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.11-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 test produced in /Users/gian-lucapiras/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.11-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 provided produced in /Users/gian-lucapiras/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.11-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 optional produced in /Users/gian-lucapiras/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.11-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 compile-internal produced in /Users/gian-lucapiras/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.11-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 runtime-internal produced in /Users/gian-lucapiras/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.11-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 test-internal produced in /Users/gian-lucapiras/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.11-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 plugin produced in /Users/gian-lucapiras/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.11-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 sources produced in /Users/gian-lucapiras/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.11-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 docs produced in /Users/gian-lucapiras/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.11-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 pom produced in /Users/gian-lucapiras/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.11-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 scala-tool produced in /Users/gian-lucapiras/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.11-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (779ms resolve - 32ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

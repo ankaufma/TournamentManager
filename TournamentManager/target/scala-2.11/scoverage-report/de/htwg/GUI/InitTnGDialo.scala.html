@@ -1,0 +1,1050 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          de/htwg/GUI/InitTnGDialo.scala.html
+        </title>
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.18.3/addons/pager/jquery.tablesorter.pager.min.js"></script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier;'>1 <span style=''>package de.htwg.GUI
+</span>2 <span style=''>import scala.swing._
+</span>3 <span style=''>
+</span>4 <span style=''>case class InitTnG(cot: Int, cog: Int)
+</span>5 <span style=''>class InitTnGDialog extends Dialog {
+</span>6 <span style=''>  var init:Option[InitTnG] = </span><span style='background: #F0ADAD'>None</span><span style=''>
+</span>7 <span style=''>  val cot = </span><span style='background: #F0ADAD'>new TextField("0")</span><span style=''>
+</span>8 <span style=''>  val cog = </span><span style='background: #F0ADAD'>new TextField("0")</span><span style=''>
+</span>9 <span style=''>    
+</span>10 <span style=''>  </span><span style='background: #F0ADAD'>title = "Init Count of Teams and Groups"</span><span style=''>
+</span>11 <span style=''>  </span><span style='background: #F0ADAD'>modal = true</span><span style=''>
+</span>12 <span style=''>
+</span>13 <span style=''>  </span><span style='background: #F0ADAD'>contents = new BorderPanel {
+</span>14 <span style=''></span><span style='background: #F0ADAD'>    layout(new BoxPanel(Orientation.Vertical) {
+</span>15 <span style=''></span><span style='background: #F0ADAD'>      border = Swing.EmptyBorder(5,5,5,5)
+</span>16 <span style=''></span><span style='background: #F0ADAD'>      contents += new Label("Count of Teams:")
+</span>17 <span style=''></span><span style='background: #F0ADAD'>      contents += cot
+</span>18 <span style=''></span><span style='background: #F0ADAD'>      contents += new Label("Count of Groups:")
+</span>19 <span style=''></span><span style='background: #F0ADAD'>      contents += cog
+</span>20 <span style=''></span><span style='background: #F0ADAD'>    }) = BorderPanel.Position.Center
+</span>21 <span style=''></span><span style='background: #F0ADAD'>
+</span>22 <span style=''></span><span style='background: #F0ADAD'>    layout(new FlowPanel(FlowPanel.Alignment.Right)(
+</span>23 <span style=''></span><span style='background: #F0ADAD'>      Button("Submit") { 
+</span>24 <span style=''></span><span style='background: #F0ADAD'>    	  try {
+</span>25 <span style=''></span><span style='background: #F0ADAD'>    	  if(cot.text.toInt > 0 && cog.text.toInt > 0) {
+</span>26 <span style=''></span><span style='background: #F0ADAD'>    	    init = Some(InitTnG(cot.text.toInt, cog.text.toInt))
+</span>27 <span style=''></span><span style='background: #F0ADAD'>    	    endDialog
+</span>28 <span style=''></span><span style='background: #F0ADAD'>    	  } else {
+</span>29 <span style=''></span><span style='background: #F0ADAD'>    	    Dialog.showMessage(this, "Enter a number greater than zero", "Number Format Error", Dialog.Message.Error)
+</span>30 <span style=''></span><span style='background: #F0ADAD'>    	  }
+</span>31 <span style=''></span><span style='background: #F0ADAD'>    	  } catch {
+</span>32 <span style=''></span><span style='background: #F0ADAD'>    	    case nfe: NumberFormatException => 
+</span>33 <span style=''></span><span style='background: #F0ADAD'>    	      Dialog.showMessage(this, "Enter a number greater than zero", "Number Format Error", Dialog.Message.Error)
+</span>34 <span style=''></span><span style='background: #F0ADAD'>    	  }
+</span>35 <span style=''></span><span style='background: #F0ADAD'>      }
+</span>36 <span style=''></span><span style='background: #F0ADAD'>    )) = BorderPanel.Position.South
+</span>37 <span style=''></span><span style='background: #F0ADAD'>  }</span><span style=''>
+</span>38 <span style=''>  
+</span>39 <span style=''>  def endDialog() = </span><span style='background: #F0ADAD'>this.close</span><span style=''>
+</span>40 <span style=''>
+</span>41 <span style=''>  </span><span style='background: #F0ADAD'>centerOnScreen</span><span style=''>
+</span>42 <span style=''>  </span><span style='background: #F0ADAD'>open</span><span style=''>
+</span>43 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line Number</th>
+        <th>Statement Id</th>
+        <th>Tree Type</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr>
+      <tr>
+        <td>
+          6
+        </td>
+        <td>
+          242
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.None
+        </td>
+        <td style="background: #F0ADAD">
+          scala.None
+        </td>
+      </tr><tr>
+        <td>
+          7
+        </td>
+        <td>
+          243
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.TextField.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new scala.swing.TextField(&quot;0&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          8
+        </td>
+        <td>
+          244
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.TextField.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new scala.swing.TextField(&quot;0&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          10
+        </td>
+        <td>
+          245
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.RichWindow.title_=
+        </td>
+        <td style="background: #F0ADAD">
+          InitTnGDialog.this.title_=(&quot;Init Count of Teams and Groups&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          11
+        </td>
+        <td>
+          246
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Dialog.modal_=
+        </td>
+        <td style="background: #F0ADAD">
+          InitTnGDialog.this.modal_=(true)
+        </td>
+      </tr><tr>
+        <td>
+          13
+        </td>
+        <td>
+          292
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.GUI.InitTnGDialog.$anon.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new $anon()
+        </td>
+      </tr><tr>
+        <td>
+          13
+        </td>
+        <td>
+          293
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Window.contents_=
+        </td>
+        <td style="background: #F0ADAD">
+          InitTnGDialog.this.contents_=({
+  final class $anon extends scala.swing.BorderPanel {
+    def &lt;init&gt;(): &lt;$anon: scala.swing.BorderPanel&gt; = {
+      $anon.super.&lt;init&gt;();
+      ()
+    };
+    $anon.this.layout.update({
+      final class $anon extends scala.swing.BoxPanel {
+        def &lt;init&gt;(): &lt;$anon: scala.swing.BoxPanel&gt; = {
+          $anon.super.&lt;init&gt;(scala.swing.Orientation.Vertical);
+          ()
+        };
+        $anon.this.border_=(scala.swing.Swing.EmptyBorder(5, 5, 5, 5));
+        $anon.this.contents.+=(new scala.swing.Label(&quot;Count of Teams:&quot;));
+        $anon.this.contents.+=(InitTnGDialog.this.cot);
+        $anon.this.contents.+=(new scala.swing.Label(&quot;Count of Groups:&quot;));
+        $anon.this.contents.+=(InitTnGDialog.this.cog)
+      };
+      new $anon()
+    }, scala.swing.BorderPanel.Position.Center);
+    $anon.this.layout.update(new scala.swing.FlowPanel(scala.swing.FlowPanel.Alignment.Right)(scala.swing.Button.apply(&quot;Submit&quot;)(try {
+      if (scala.this.Predef.augmentString(InitTnGDialog.this.cot.text).toInt.&gt;(0).&amp;&amp;(scala.this.Predef.augmentString(InitTnGDialog.this.cog.text).toInt.&gt;(0)))
+        {
+          InitTnGDialog.this.init_=(scala.Some.apply[de.htwg.GUI.InitTnG](InitTnG.apply(scala.this.Predef.augmentString(InitTnGDialog.this.cot.text).toInt, scala.this.Predef.augmentString(InitTnGDialog.this.cog.text).toInt)));
+          InitTnGDialog.this.endDialog()
+        }
+      else
+        scala.swing.Dialog.showMessage(this, &quot;Enter a number greater than zero&quot;, &quot;Number Format Error&quot;, scala.swing.Dialog.Message.Error, scala.swing.Dialog.showMessage$default$5)
+    } catch {
+      case (nfe @ (_: NumberFormatException)) =&gt; scala.swing.Dialog.showMessage(this, &quot;Enter a number greater than zero&quot;, &quot;Number Format Error&quot;, scala.swing.Dialog.Message.Error, scala.swing.Dialog.showMessage$default$5)
+    })), scala.swing.BorderPanel.Position.South)
+  };
+  new $anon()
+})
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          257
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.GUI.InitTnGDialog.$anon.$anon.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new $anon()
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          247
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Swing.EmptyBorder
+        </td>
+        <td style="background: #F0ADAD">
+          scala.swing.Swing.EmptyBorder(5, 5, 5, 5)
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          248
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Component.border_=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.border_=(scala.swing.Swing.EmptyBorder(5, 5, 5, 5))
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          250
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.BufferLike.+=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.contents.+=(new scala.swing.Label(&quot;Count of Teams:&quot;))
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          249
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Label.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new scala.swing.Label(&quot;Count of Teams:&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          252
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.BufferLike.+=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.contents.+=(InitTnGDialog.this.cot)
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          251
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.GUI.InitTnGDialog.cot
+        </td>
+        <td style="background: #F0ADAD">
+          InitTnGDialog.this.cot
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          254
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.BufferLike.+=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.contents.+=(new scala.swing.Label(&quot;Count of Groups:&quot;))
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          253
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Label.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new scala.swing.Label(&quot;Count of Groups:&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          256
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.BufferLike.+=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.contents.+=(InitTnGDialog.this.cog)
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          255
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.GUI.InitTnGDialog.cog
+        </td>
+        <td style="background: #F0ADAD">
+          InitTnGDialog.this.cog
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          259
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.MapLike.update
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.layout.update({
+  final class $anon extends scala.swing.BoxPanel {
+    def &lt;init&gt;(): &lt;$anon: scala.swing.BoxPanel&gt; = {
+      $anon.super.&lt;init&gt;(scala.swing.Orientation.Vertical);
+      ()
+    };
+    $anon.this.border_=(scala.swing.Swing.EmptyBorder(5, 5, 5, 5));
+    $anon.this.contents.+=(new scala.swing.Label(&quot;Count of Teams:&quot;));
+    $anon.this.contents.+=(InitTnGDialog.this.cot);
+    $anon.this.contents.+=(new scala.swing.Label(&quot;Count of Groups:&quot;));
+    $anon.this.contents.+=(InitTnGDialog.this.cog)
+  };
+  new $anon()
+}, scala.swing.BorderPanel.Position.Center)
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          258
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.swing.BorderPanel.Position.Center
+        </td>
+        <td style="background: #F0ADAD">
+          scala.swing.BorderPanel.Position.Center
+        </td>
+      </tr><tr>
+        <td>
+          22
+        </td>
+        <td>
+          289
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.FlowPanel.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new scala.swing.FlowPanel(scala.swing.FlowPanel.Alignment.Right)(scala.swing.Button.apply(&quot;Submit&quot;)(try {
+  if (scala.this.Predef.augmentString(InitTnGDialog.this.cot.text).toInt.&gt;(0).&amp;&amp;(scala.this.Predef.augmentString(InitTnGDialog.this.cog.text).toInt.&gt;(0)))
+    {
+      InitTnGDialog.this.init_=(scala.Some.apply[de.htwg.GUI.InitTnG](InitTnG.apply(scala.this.Predef.augmentString(InitTnGDialog.this.cot.text).toInt, scala.this.Predef.augmentString(InitTnGDialog.this.cog.text).toInt)));
+      InitTnGDialog.this.endDialog()
+    }
+  else
+    scala.swing.Dialog.showMessage(this, &quot;Enter a number greater than zero&quot;, &quot;Number Format Error&quot;, scala.swing.Dialog.Message.Error, scala.swing.Dialog.showMessage$default$5)
+} catch {
+  case (nfe @ (_: NumberFormatException)) =&gt; scala.swing.Dialog.showMessage(this, &quot;Enter a number greater than zero&quot;, &quot;Number Format Error&quot;, scala.swing.Dialog.Message.Error, scala.swing.Dialog.showMessage$default$5)
+}))
+        </td>
+      </tr><tr>
+        <td>
+          22
+        </td>
+        <td>
+          260
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.swing.FlowPanel.Alignment.Right
+        </td>
+        <td style="background: #F0ADAD">
+          scala.swing.FlowPanel.Alignment.Right
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          288
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Button.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scala.swing.Button.apply(&quot;Submit&quot;)(try {
+  if (scala.this.Predef.augmentString(InitTnGDialog.this.cot.text).toInt.&gt;(0).&amp;&amp;(scala.this.Predef.augmentString(InitTnGDialog.this.cog.text).toInt.&gt;(0)))
+    {
+      InitTnGDialog.this.init_=(scala.Some.apply[de.htwg.GUI.InitTnG](InitTnG.apply(scala.this.Predef.augmentString(InitTnGDialog.this.cot.text).toInt, scala.this.Predef.augmentString(InitTnGDialog.this.cog.text).toInt)));
+      InitTnGDialog.this.endDialog()
+    }
+  else
+    scala.swing.Dialog.showMessage(this, &quot;Enter a number greater than zero&quot;, &quot;Number Format Error&quot;, scala.swing.Dialog.Message.Error, scala.swing.Dialog.showMessage$default$5)
+} catch {
+  case (nfe @ (_: NumberFormatException)) =&gt; scala.swing.Dialog.showMessage(this, &quot;Enter a number greater than zero&quot;, &quot;Number Format Error&quot;, scala.swing.Dialog.Message.Error, scala.swing.Dialog.showMessage$default$5)
+})
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          261
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;Submit&quot;
+        </td>
+      </tr><tr>
+        <td>
+          25
+        </td>
+        <td>
+          262
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.swing.TextComponent.text
+        </td>
+        <td style="background: #F0ADAD">
+          InitTnGDialog.this.cot.text
+        </td>
+      </tr><tr>
+        <td>
+          25
+        </td>
+        <td>
+          265
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Boolean.&amp;&amp;
+        </td>
+        <td style="background: #F0ADAD">
+          scala.this.Predef.augmentString(InitTnGDialog.this.cot.text).toInt.&gt;(0).&amp;&amp;(scala.this.Predef.augmentString(InitTnGDialog.this.cog.text).toInt.&gt;(0))
+        </td>
+      </tr><tr>
+        <td>
+          25
+        </td>
+        <td>
+          274
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          {
+  InitTnGDialog.this.init_=(scala.Some.apply[de.htwg.GUI.InitTnG](InitTnG.apply(scala.this.Predef.augmentString(InitTnGDialog.this.cot.text).toInt, scala.this.Predef.augmentString(InitTnGDialog.this.cog.text).toInt)));
+  InitTnGDialog.this.endDialog()
+}
+        </td>
+      </tr><tr>
+        <td>
+          25
+        </td>
+        <td>
+          264
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int.&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          scala.this.Predef.augmentString(InitTnGDialog.this.cog.text).toInt.&gt;(0)
+        </td>
+      </tr><tr>
+        <td>
+          25
+        </td>
+        <td>
+          263
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          0
+        </td>
+      </tr><tr>
+        <td>
+          25
+        </td>
+        <td>
+          281
+        </td>
+        <td>
+          If
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          if (scala.this.Predef.augmentString(InitTnGDialog.this.cot.text).toInt.&gt;(0).&amp;&amp;(scala.this.Predef.augmentString(InitTnGDialog.this.cog.text).toInt.&gt;(0)))
+  {
+    InitTnGDialog.this.init_=(scala.Some.apply[de.htwg.GUI.InitTnG](InitTnG.apply(scala.this.Predef.augmentString(InitTnGDialog.this.cot.text).toInt, scala.this.Predef.augmentString(InitTnGDialog.this.cog.text).toInt)));
+    InitTnGDialog.this.endDialog()
+  }
+else
+  scala.swing.Dialog.showMessage(this, &quot;Enter a number greater than zero&quot;, &quot;Number Format Error&quot;, scala.swing.Dialog.Message.Error, scala.swing.Dialog.showMessage$default$5)
+        </td>
+      </tr><tr>
+        <td>
+          26
+        </td>
+        <td>
+          271
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Some.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Some.apply[de.htwg.GUI.InitTnG](InitTnG.apply(scala.this.Predef.augmentString(InitTnGDialog.this.cot.text).toInt, scala.this.Predef.augmentString(InitTnGDialog.this.cog.text).toInt))
+        </td>
+      </tr><tr>
+        <td>
+          26
+        </td>
+        <td>
+          268
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.swing.TextComponent.text
+        </td>
+        <td style="background: #F0ADAD">
+          InitTnGDialog.this.cog.text
+        </td>
+      </tr><tr>
+        <td>
+          26
+        </td>
+        <td>
+          267
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.collection.immutable.StringLike.toInt
+        </td>
+        <td style="background: #F0ADAD">
+          scala.this.Predef.augmentString(InitTnGDialog.this.cot.text).toInt
+        </td>
+      </tr><tr>
+        <td>
+          26
+        </td>
+        <td>
+          270
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.GUI.InitTnG.apply
+        </td>
+        <td style="background: #F0ADAD">
+          InitTnG.apply(scala.this.Predef.augmentString(InitTnGDialog.this.cot.text).toInt, scala.this.Predef.augmentString(InitTnGDialog.this.cog.text).toInt)
+        </td>
+      </tr><tr>
+        <td>
+          26
+        </td>
+        <td>
+          272
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.GUI.InitTnGDialog.init_=
+        </td>
+        <td style="background: #F0ADAD">
+          InitTnGDialog.this.init_=(scala.Some.apply[de.htwg.GUI.InitTnG](InitTnG.apply(scala.this.Predef.augmentString(InitTnGDialog.this.cot.text).toInt, scala.this.Predef.augmentString(InitTnGDialog.this.cog.text).toInt)))
+        </td>
+      </tr><tr>
+        <td>
+          26
+        </td>
+        <td>
+          266
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.swing.TextComponent.text
+        </td>
+        <td style="background: #F0ADAD">
+          InitTnGDialog.this.cot.text
+        </td>
+      </tr><tr>
+        <td>
+          26
+        </td>
+        <td>
+          269
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.collection.immutable.StringLike.toInt
+        </td>
+        <td style="background: #F0ADAD">
+          scala.this.Predef.augmentString(InitTnGDialog.this.cog.text).toInt
+        </td>
+      </tr><tr>
+        <td>
+          27
+        </td>
+        <td>
+          273
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.GUI.InitTnGDialog.endDialog
+        </td>
+        <td style="background: #F0ADAD">
+          InitTnGDialog.this.endDialog()
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          280
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          scala.swing.Dialog.showMessage
+        </td>
+        <td style="background: #F0ADAD">
+          scala.swing.Dialog.showMessage(this, &quot;Enter a number greater than zero&quot;, &quot;Number Format Error&quot;, scala.swing.Dialog.Message.Error, scala.swing.Dialog.showMessage$default$5)
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          277
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.swing.Dialog.Message.Error
+        </td>
+        <td style="background: #F0ADAD">
+          scala.swing.Dialog.Message.Error
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          276
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;Number Format Error&quot;
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          279
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Dialog.showMessage
+        </td>
+        <td style="background: #F0ADAD">
+          scala.swing.Dialog.showMessage(this, &quot;Enter a number greater than zero&quot;, &quot;Number Format Error&quot;, scala.swing.Dialog.Message.Error, scala.swing.Dialog.showMessage$default$5)
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          275
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;Enter a number greater than zero&quot;
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          278
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.swing.Dialog.showMessage$default$5
+        </td>
+        <td style="background: #F0ADAD">
+          scala.swing.Dialog.showMessage$default$5
+        </td>
+      </tr><tr>
+        <td>
+          33
+        </td>
+        <td>
+          286
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Dialog.showMessage
+        </td>
+        <td style="background: #F0ADAD">
+          scala.swing.Dialog.showMessage(this, &quot;Enter a number greater than zero&quot;, &quot;Number Format Error&quot;, scala.swing.Dialog.Message.Error, scala.swing.Dialog.showMessage$default$5)
+        </td>
+      </tr><tr>
+        <td>
+          33
+        </td>
+        <td>
+          283
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;Number Format Error&quot;
+        </td>
+      </tr><tr>
+        <td>
+          33
+        </td>
+        <td>
+          285
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.swing.Dialog.showMessage$default$5
+        </td>
+        <td style="background: #F0ADAD">
+          scala.swing.Dialog.showMessage$default$5
+        </td>
+      </tr><tr>
+        <td>
+          33
+        </td>
+        <td>
+          282
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;Enter a number greater than zero&quot;
+        </td>
+      </tr><tr>
+        <td>
+          33
+        </td>
+        <td>
+          284
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.swing.Dialog.Message.Error
+        </td>
+        <td style="background: #F0ADAD">
+          scala.swing.Dialog.Message.Error
+        </td>
+      </tr><tr>
+        <td>
+          33
+        </td>
+        <td>
+          287
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          case (nfe @ (_: NumberFormatException)) =&gt; scala.swing.Dialog.showMessage(this, &quot;Enter a number greater than zero&quot;, &quot;Number Format Error&quot;, scala.swing.Dialog.Message.Error, scala.swing.Dialog.showMessage$default$5)
+        </td>
+      </tr><tr>
+        <td>
+          36
+        </td>
+        <td>
+          291
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.MapLike.update
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.layout.update(new scala.swing.FlowPanel(scala.swing.FlowPanel.Alignment.Right)(scala.swing.Button.apply(&quot;Submit&quot;)(try {
+  if (scala.this.Predef.augmentString(InitTnGDialog.this.cot.text).toInt.&gt;(0).&amp;&amp;(scala.this.Predef.augmentString(InitTnGDialog.this.cog.text).toInt.&gt;(0)))
+    {
+      InitTnGDialog.this.init_=(scala.Some.apply[de.htwg.GUI.InitTnG](InitTnG.apply(scala.this.Predef.augmentString(InitTnGDialog.this.cot.text).toInt, scala.this.Predef.augmentString(InitTnGDialog.this.cog.text).toInt)));
+      InitTnGDialog.this.endDialog()
+    }
+  else
+    scala.swing.Dialog.showMessage(this, &quot;Enter a number greater than zero&quot;, &quot;Number Format Error&quot;, scala.swing.Dialog.Message.Error, scala.swing.Dialog.showMessage$default$5)
+} catch {
+  case (nfe @ (_: NumberFormatException)) =&gt; scala.swing.Dialog.showMessage(this, &quot;Enter a number greater than zero&quot;, &quot;Number Format Error&quot;, scala.swing.Dialog.Message.Error, scala.swing.Dialog.showMessage$default$5)
+})), scala.swing.BorderPanel.Position.South)
+        </td>
+      </tr><tr>
+        <td>
+          36
+        </td>
+        <td>
+          290
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.swing.BorderPanel.Position.South
+        </td>
+        <td style="background: #F0ADAD">
+          scala.swing.BorderPanel.Position.South
+        </td>
+      </tr><tr>
+        <td>
+          39
+        </td>
+        <td>
+          294
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Window.close
+        </td>
+        <td style="background: #F0ADAD">
+          this.close()
+        </td>
+      </tr><tr>
+        <td>
+          41
+        </td>
+        <td>
+          295
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Window.centerOnScreen
+        </td>
+        <td style="background: #F0ADAD">
+          InitTnGDialog.this.centerOnScreen()
+        </td>
+      </tr><tr>
+        <td>
+          42
+        </td>
+        <td>
+          296
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Window.open
+        </td>
+        <td style="background: #F0ADAD">
+          InitTnGDialog.this.open()
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

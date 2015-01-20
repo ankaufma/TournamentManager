@@ -1,0 +1,2086 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          de/htwg/model/PlayerManager.scala.html
+        </title>
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.18.3/addons/pager/jquery.tablesorter.pager.min.js"></script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier;'>1 <span style=''>package de.htwg.model
+</span>2 <span style=''>
+</span>3 <span style=''>import scala.collection.mutable.ListBuffer
+</span>4 <span style=''>
+</span>5 <span style=''>class PlayerManager (players: ListBuffer[Player]) {
+</span>6 <span style=''>  
+</span>7 <span style=''>  def createPlayer(name: String) {
+</span>8 <span style=''>    </span><span style='background: #F0ADAD'>players += Player(players.size,name,0,0,0,0,false)</span><span style=''>
+</span>9 <span style=''>  }
+</span>10 <span style=''>  
+</span>11 <span style=''>  def sortByGoals = {
+</span>12 <span style=''>    </span><span style='background: #F0ADAD'>players.sortWith(_.assists > _.assists).sortWith(_.goals > _.goals)</span><span style=''>
+</span>13 <span style=''>  }
+</span>14 <span style=''>  
+</span>15 <span style=''>  def incrementGoals(index: Int) {
+</span>16 <span style=''>    </span><span style='background: #F0ADAD'>players.update(index, players(index).copy(goals = players(index).goals + 1))</span><span style=''>
+</span>17 <span style=''>  }
+</span>18 <span style=''>  
+</span>19 <span style=''>  def decrementGoals(index: Int) {
+</span>20 <span style=''>    </span><span style='background: #F0ADAD'>players.update(index, players(index).copy(goals = players(index).goals - 1))</span><span style=''>    
+</span>21 <span style=''>  }
+</span>22 <span style=''>  
+</span>23 <span style=''>  def incrementAssists(index: Int) {
+</span>24 <span style=''>    </span><span style='background: #F0ADAD'>players.update(index, players(index).copy(assists = players(index).assists + 1))</span><span style=''>
+</span>25 <span style=''>  }
+</span>26 <span style=''>  
+</span>27 <span style=''>  def decrementAssists(index: Int) {
+</span>28 <span style=''>    </span><span style='background: #F0ADAD'>players.update(index, players(index).copy(assists = players(index).assists - 1))</span><span style=''>    
+</span>29 <span style=''>  }
+</span>30 <span style=''>    def incrementYellowCards(index: Int) {
+</span>31 <span style=''>    </span><span style='background: #F0ADAD'>players.update(index, players(index).copy(yellowCards = players(index).yellowCards + 1))</span><span style=''>
+</span>32 <span style=''>  }
+</span>33 <span style=''>  
+</span>34 <span style=''>  def decrementYellowCards(index: Int) {
+</span>35 <span style=''>    </span><span style='background: #F0ADAD'>players.update(index, players(index).copy(yellowCards = players(index).yellowCards - 1))</span><span style=''>    
+</span>36 <span style=''>  }
+</span>37 <span style=''>  def incrementRedCards(index: Int) {
+</span>38 <span style=''>    </span><span style='background: #F0ADAD'>players.update(index, players(index).copy(redCards = players(index).redCards + 1))</span><span style=''>
+</span>39 <span style=''>  }
+</span>40 <span style=''>  
+</span>41 <span style=''>  def decrementRedCards(index: Int) {
+</span>42 <span style=''>    </span><span style='background: #F0ADAD'>players.update(index, players(index).copy(redCards = players(index).redCards - 1))</span><span style=''>    
+</span>43 <span style=''>  }
+</span>44 <span style=''>  
+</span>45 <span style=''>  def setBenched(index: Int) {
+</span>46 <span style=''>    if(</span><span style='background: #F0ADAD'>players(index).isBenched == false</span><span style=''>) {
+</span>47 <span style=''>    	</span><span style='background: #F0ADAD'>players.update(index, players(index).copy(isBenched = true))</span><span style=''>  
+</span>48 <span style=''>    } else {
+</span>49 <span style=''>    	</span><span style='background: #F0ADAD'>players.update(index, players(index).copy(isBenched = false))</span><span style=''>
+</span>50 <span style=''>    }
+</span>51 <span style=''>  }
+</span>52 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line Number</th>
+        <th>Statement Id</th>
+        <th>Tree Type</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr>
+      <tr>
+        <td>
+          8
+        </td>
+        <td>
+          1187
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          0
+        </td>
+      </tr><tr>
+        <td>
+          8
+        </td>
+        <td>
+          1186
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.collection.mutable.ListBuffer.size
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.size
+        </td>
+      </tr><tr>
+        <td>
+          8
+        </td>
+        <td>
+          1189
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          0
+        </td>
+      </tr><tr>
+        <td>
+          8
+        </td>
+        <td>
+          1192
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.model.Player.apply
+        </td>
+        <td style="background: #F0ADAD">
+          Player.apply(PlayerManager.this.players.size, name, 0, 0, 0, 0, false)
+        </td>
+      </tr><tr>
+        <td>
+          8
+        </td>
+        <td>
+          1194
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          ()
+        </td>
+      </tr><tr>
+        <td>
+          8
+        </td>
+        <td>
+          1188
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          0
+        </td>
+      </tr><tr>
+        <td>
+          8
+        </td>
+        <td>
+          1191
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          false
+        </td>
+      </tr><tr>
+        <td>
+          8
+        </td>
+        <td>
+          1190
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          0
+        </td>
+      </tr><tr>
+        <td>
+          8
+        </td>
+        <td>
+          1193
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.ListBuffer.+=
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.+=(Player.apply(PlayerManager.this.players.size, name, 0, 0, 0, 0, false))
+        </td>
+      </tr><tr>
+        <td>
+          12
+        </td>
+        <td>
+          1196
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int.&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          x$1.assists.&gt;(x$2.assists)
+        </td>
+      </tr><tr>
+        <td>
+          12
+        </td>
+        <td>
+          1195
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.assists
+        </td>
+        <td style="background: #F0ADAD">
+          x$2.assists
+        </td>
+      </tr><tr>
+        <td>
+          12
+        </td>
+        <td>
+          1198
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int.&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          x$3.goals.&gt;(x$4.goals)
+        </td>
+      </tr><tr>
+        <td>
+          12
+        </td>
+        <td>
+          1197
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.goals
+        </td>
+        <td style="background: #F0ADAD">
+          x$4.goals
+        </td>
+      </tr><tr>
+        <td>
+          12
+        </td>
+        <td>
+          1199
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.SeqLike.sortWith
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.sortWith(((x$1: de.htwg.model.Player, x$2: de.htwg.model.Player) =&gt; x$1.assists.&gt;(x$2.assists))).sortWith(((x$3: de.htwg.model.Player, x$4: de.htwg.model.Player) =&gt; x$3.goals.&gt;(x$4.goals)))
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          1205
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$5
+        </td>
+        <td style="background: #F0ADAD">
+          qual$1.copy$default$5
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          1204
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$4
+        </td>
+        <td style="background: #F0ADAD">
+          qual$1.copy$default$4
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          1207
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$7
+        </td>
+        <td style="background: #F0ADAD">
+          qual$1.copy$default$7
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          1201
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int.+
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.apply(index).goals.+(1)
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          1200
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.ListBuffer.apply
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.apply(index)
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          1209
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.ListBuffer.update
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.update(index, {
+  &lt;artifact&gt; val qual$1: de.htwg.model.Player = PlayerManager.this.players.apply(index);
+  &lt;artifact&gt; val x$5: Int = PlayerManager.this.players.apply(index).goals.+(1);
+  &lt;artifact&gt; val x$6: Int = qual$1.copy$default$1;
+  &lt;artifact&gt; val x$7: String = qual$1.copy$default$2;
+  &lt;artifact&gt; val x$8: Int = qual$1.copy$default$4;
+  &lt;artifact&gt; val x$9: Int = qual$1.copy$default$5;
+  &lt;artifact&gt; val x$10: Int = qual$1.copy$default$6;
+  &lt;artifact&gt; val x$11: Boolean = qual$1.copy$default$7;
+  qual$1.copy(x$6, x$7, x$5, x$8, x$9, x$10, x$11)
+})
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          1203
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$2
+        </td>
+        <td style="background: #F0ADAD">
+          qual$1.copy$default$2
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          1206
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$6
+        </td>
+        <td style="background: #F0ADAD">
+          qual$1.copy$default$6
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          1208
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.model.Player.copy
+        </td>
+        <td style="background: #F0ADAD">
+          qual$1.copy(x$6, x$7, x$5, x$8, x$9, x$10, x$11)
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          1202
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$1
+        </td>
+        <td style="background: #F0ADAD">
+          qual$1.copy$default$1
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          1214
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$4
+        </td>
+        <td style="background: #F0ADAD">
+          qual$2.copy$default$4
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          1213
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$2
+        </td>
+        <td style="background: #F0ADAD">
+          qual$2.copy$default$2
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          1216
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$6
+        </td>
+        <td style="background: #F0ADAD">
+          qual$2.copy$default$6
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          1210
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.ListBuffer.apply
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.apply(index)
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          1219
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.ListBuffer.update
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.update(index, {
+  &lt;artifact&gt; val qual$2: de.htwg.model.Player = PlayerManager.this.players.apply(index);
+  &lt;artifact&gt; val x$12: Int = PlayerManager.this.players.apply(index).goals.-(1);
+  &lt;artifact&gt; val x$13: Int = qual$2.copy$default$1;
+  &lt;artifact&gt; val x$14: String = qual$2.copy$default$2;
+  &lt;artifact&gt; val x$15: Int = qual$2.copy$default$4;
+  &lt;artifact&gt; val x$16: Int = qual$2.copy$default$5;
+  &lt;artifact&gt; val x$17: Int = qual$2.copy$default$6;
+  &lt;artifact&gt; val x$18: Boolean = qual$2.copy$default$7;
+  qual$2.copy(x$13, x$14, x$12, x$15, x$16, x$17, x$18)
+})
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          1218
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.model.Player.copy
+        </td>
+        <td style="background: #F0ADAD">
+          qual$2.copy(x$13, x$14, x$12, x$15, x$16, x$17, x$18)
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          1212
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$1
+        </td>
+        <td style="background: #F0ADAD">
+          qual$2.copy$default$1
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          1215
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$5
+        </td>
+        <td style="background: #F0ADAD">
+          qual$2.copy$default$5
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          1217
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$7
+        </td>
+        <td style="background: #F0ADAD">
+          qual$2.copy$default$7
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          1211
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int.-
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.apply(index).goals.-(1)
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          1222
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$1
+        </td>
+        <td style="background: #F0ADAD">
+          qual$3.copy$default$1
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          1225
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$5
+        </td>
+        <td style="background: #F0ADAD">
+          qual$3.copy$default$5
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          1228
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.model.Player.copy
+        </td>
+        <td style="background: #F0ADAD">
+          qual$3.copy(x$20, x$21, x$22, x$19, x$23, x$24, x$25)
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          1227
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$7
+        </td>
+        <td style="background: #F0ADAD">
+          qual$3.copy$default$7
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          1221
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int.+
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.apply(index).assists.+(1)
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          1224
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$3
+        </td>
+        <td style="background: #F0ADAD">
+          qual$3.copy$default$3
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          1223
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$2
+        </td>
+        <td style="background: #F0ADAD">
+          qual$3.copy$default$2
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          1226
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$6
+        </td>
+        <td style="background: #F0ADAD">
+          qual$3.copy$default$6
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          1229
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.ListBuffer.update
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.update(index, {
+  &lt;artifact&gt; val qual$3: de.htwg.model.Player = PlayerManager.this.players.apply(index);
+  &lt;artifact&gt; val x$19: Int = PlayerManager.this.players.apply(index).assists.+(1);
+  &lt;artifact&gt; val x$20: Int = qual$3.copy$default$1;
+  &lt;artifact&gt; val x$21: String = qual$3.copy$default$2;
+  &lt;artifact&gt; val x$22: Int = qual$3.copy$default$3;
+  &lt;artifact&gt; val x$23: Int = qual$3.copy$default$5;
+  &lt;artifact&gt; val x$24: Int = qual$3.copy$default$6;
+  &lt;artifact&gt; val x$25: Boolean = qual$3.copy$default$7;
+  qual$3.copy(x$20, x$21, x$22, x$19, x$23, x$24, x$25)
+})
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          1220
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.ListBuffer.apply
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.apply(index)
+        </td>
+      </tr><tr>
+        <td>
+          28
+        </td>
+        <td>
+          1237
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$7
+        </td>
+        <td style="background: #F0ADAD">
+          qual$4.copy$default$7
+        </td>
+      </tr><tr>
+        <td>
+          28
+        </td>
+        <td>
+          1231
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int.-
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.apply(index).assists.-(1)
+        </td>
+      </tr><tr>
+        <td>
+          28
+        </td>
+        <td>
+          1234
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$3
+        </td>
+        <td style="background: #F0ADAD">
+          qual$4.copy$default$3
+        </td>
+      </tr><tr>
+        <td>
+          28
+        </td>
+        <td>
+          1236
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$6
+        </td>
+        <td style="background: #F0ADAD">
+          qual$4.copy$default$6
+        </td>
+      </tr><tr>
+        <td>
+          28
+        </td>
+        <td>
+          1239
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.ListBuffer.update
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.update(index, {
+  &lt;artifact&gt; val qual$4: de.htwg.model.Player = PlayerManager.this.players.apply(index);
+  &lt;artifact&gt; val x$26: Int = PlayerManager.this.players.apply(index).assists.-(1);
+  &lt;artifact&gt; val x$27: Int = qual$4.copy$default$1;
+  &lt;artifact&gt; val x$28: String = qual$4.copy$default$2;
+  &lt;artifact&gt; val x$29: Int = qual$4.copy$default$3;
+  &lt;artifact&gt; val x$30: Int = qual$4.copy$default$5;
+  &lt;artifact&gt; val x$31: Int = qual$4.copy$default$6;
+  &lt;artifact&gt; val x$32: Boolean = qual$4.copy$default$7;
+  qual$4.copy(x$27, x$28, x$29, x$26, x$30, x$31, x$32)
+})
+        </td>
+      </tr><tr>
+        <td>
+          28
+        </td>
+        <td>
+          1230
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.ListBuffer.apply
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.apply(index)
+        </td>
+      </tr><tr>
+        <td>
+          28
+        </td>
+        <td>
+          1233
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$2
+        </td>
+        <td style="background: #F0ADAD">
+          qual$4.copy$default$2
+        </td>
+      </tr><tr>
+        <td>
+          28
+        </td>
+        <td>
+          1232
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$1
+        </td>
+        <td style="background: #F0ADAD">
+          qual$4.copy$default$1
+        </td>
+      </tr><tr>
+        <td>
+          28
+        </td>
+        <td>
+          1235
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$5
+        </td>
+        <td style="background: #F0ADAD">
+          qual$4.copy$default$5
+        </td>
+      </tr><tr>
+        <td>
+          28
+        </td>
+        <td>
+          1238
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.model.Player.copy
+        </td>
+        <td style="background: #F0ADAD">
+          qual$4.copy(x$27, x$28, x$29, x$26, x$30, x$31, x$32)
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          1246
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$6
+        </td>
+        <td style="background: #F0ADAD">
+          qual$5.copy$default$6
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          1240
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.ListBuffer.apply
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.apply(index)
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          1249
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.ListBuffer.update
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.update(index, {
+  &lt;artifact&gt; val qual$5: de.htwg.model.Player = PlayerManager.this.players.apply(index);
+  &lt;artifact&gt; val x$33: Int = PlayerManager.this.players.apply(index).yellowCards.+(1);
+  &lt;artifact&gt; val x$34: Int = qual$5.copy$default$1;
+  &lt;artifact&gt; val x$35: String = qual$5.copy$default$2;
+  &lt;artifact&gt; val x$36: Int = qual$5.copy$default$3;
+  &lt;artifact&gt; val x$37: Int = qual$5.copy$default$4;
+  &lt;artifact&gt; val x$38: Int = qual$5.copy$default$6;
+  &lt;artifact&gt; val x$39: Boolean = qual$5.copy$default$7;
+  qual$5.copy(x$34, x$35, x$36, x$37, x$33, x$38, x$39)
+})
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          1243
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$2
+        </td>
+        <td style="background: #F0ADAD">
+          qual$5.copy$default$2
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          1245
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$4
+        </td>
+        <td style="background: #F0ADAD">
+          qual$5.copy$default$4
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          1248
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.model.Player.copy
+        </td>
+        <td style="background: #F0ADAD">
+          qual$5.copy(x$34, x$35, x$36, x$37, x$33, x$38, x$39)
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          1242
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$1
+        </td>
+        <td style="background: #F0ADAD">
+          qual$5.copy$default$1
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          1241
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int.+
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.apply(index).yellowCards.+(1)
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          1244
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$3
+        </td>
+        <td style="background: #F0ADAD">
+          qual$5.copy$default$3
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          1247
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$7
+        </td>
+        <td style="background: #F0ADAD">
+          qual$5.copy$default$7
+        </td>
+      </tr><tr>
+        <td>
+          35
+        </td>
+        <td>
+          1255
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$4
+        </td>
+        <td style="background: #F0ADAD">
+          qual$6.copy$default$4
+        </td>
+      </tr><tr>
+        <td>
+          35
+        </td>
+        <td>
+          1258
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.model.Player.copy
+        </td>
+        <td style="background: #F0ADAD">
+          qual$6.copy(x$41, x$42, x$43, x$44, x$40, x$45, x$46)
+        </td>
+      </tr><tr>
+        <td>
+          35
+        </td>
+        <td>
+          1252
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$1
+        </td>
+        <td style="background: #F0ADAD">
+          qual$6.copy$default$1
+        </td>
+      </tr><tr>
+        <td>
+          35
+        </td>
+        <td>
+          1254
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$3
+        </td>
+        <td style="background: #F0ADAD">
+          qual$6.copy$default$3
+        </td>
+      </tr><tr>
+        <td>
+          35
+        </td>
+        <td>
+          1257
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$7
+        </td>
+        <td style="background: #F0ADAD">
+          qual$6.copy$default$7
+        </td>
+      </tr><tr>
+        <td>
+          35
+        </td>
+        <td>
+          1251
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int.-
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.apply(index).yellowCards.-(1)
+        </td>
+      </tr><tr>
+        <td>
+          35
+        </td>
+        <td>
+          1250
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.ListBuffer.apply
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.apply(index)
+        </td>
+      </tr><tr>
+        <td>
+          35
+        </td>
+        <td>
+          1259
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.ListBuffer.update
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.update(index, {
+  &lt;artifact&gt; val qual$6: de.htwg.model.Player = PlayerManager.this.players.apply(index);
+  &lt;artifact&gt; val x$40: Int = PlayerManager.this.players.apply(index).yellowCards.-(1);
+  &lt;artifact&gt; val x$41: Int = qual$6.copy$default$1;
+  &lt;artifact&gt; val x$42: String = qual$6.copy$default$2;
+  &lt;artifact&gt; val x$43: Int = qual$6.copy$default$3;
+  &lt;artifact&gt; val x$44: Int = qual$6.copy$default$4;
+  &lt;artifact&gt; val x$45: Int = qual$6.copy$default$6;
+  &lt;artifact&gt; val x$46: Boolean = qual$6.copy$default$7;
+  qual$6.copy(x$41, x$42, x$43, x$44, x$40, x$45, x$46)
+})
+        </td>
+      </tr><tr>
+        <td>
+          35
+        </td>
+        <td>
+          1253
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$2
+        </td>
+        <td style="background: #F0ADAD">
+          qual$6.copy$default$2
+        </td>
+      </tr><tr>
+        <td>
+          35
+        </td>
+        <td>
+          1256
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$6
+        </td>
+        <td style="background: #F0ADAD">
+          qual$6.copy$default$6
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          1264
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$3
+        </td>
+        <td style="background: #F0ADAD">
+          qual$7.copy$default$3
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          1267
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$7
+        </td>
+        <td style="background: #F0ADAD">
+          qual$7.copy$default$7
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          1261
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int.+
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.apply(index).redCards.+(1)
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          1260
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.ListBuffer.apply
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.apply(index)
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          1269
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.ListBuffer.update
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.update(index, {
+  &lt;artifact&gt; val qual$7: de.htwg.model.Player = PlayerManager.this.players.apply(index);
+  &lt;artifact&gt; val x$47: Int = PlayerManager.this.players.apply(index).redCards.+(1);
+  &lt;artifact&gt; val x$48: Int = qual$7.copy$default$1;
+  &lt;artifact&gt; val x$49: String = qual$7.copy$default$2;
+  &lt;artifact&gt; val x$50: Int = qual$7.copy$default$3;
+  &lt;artifact&gt; val x$51: Int = qual$7.copy$default$4;
+  &lt;artifact&gt; val x$52: Int = qual$7.copy$default$5;
+  &lt;artifact&gt; val x$53: Boolean = qual$7.copy$default$7;
+  qual$7.copy(x$48, x$49, x$50, x$51, x$52, x$47, x$53)
+})
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          1263
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$2
+        </td>
+        <td style="background: #F0ADAD">
+          qual$7.copy$default$2
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          1266
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$5
+        </td>
+        <td style="background: #F0ADAD">
+          qual$7.copy$default$5
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          1268
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.model.Player.copy
+        </td>
+        <td style="background: #F0ADAD">
+          qual$7.copy(x$48, x$49, x$50, x$51, x$52, x$47, x$53)
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          1262
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$1
+        </td>
+        <td style="background: #F0ADAD">
+          qual$7.copy$default$1
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          1265
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$4
+        </td>
+        <td style="background: #F0ADAD">
+          qual$7.copy$default$4
+        </td>
+      </tr><tr>
+        <td>
+          42
+        </td>
+        <td>
+          1273
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$2
+        </td>
+        <td style="background: #F0ADAD">
+          qual$8.copy$default$2
+        </td>
+      </tr><tr>
+        <td>
+          42
+        </td>
+        <td>
+          1276
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$5
+        </td>
+        <td style="background: #F0ADAD">
+          qual$8.copy$default$5
+        </td>
+      </tr><tr>
+        <td>
+          42
+        </td>
+        <td>
+          1279
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.ListBuffer.update
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.update(index, {
+  &lt;artifact&gt; val qual$8: de.htwg.model.Player = PlayerManager.this.players.apply(index);
+  &lt;artifact&gt; val x$54: Int = PlayerManager.this.players.apply(index).redCards.-(1);
+  &lt;artifact&gt; val x$55: Int = qual$8.copy$default$1;
+  &lt;artifact&gt; val x$56: String = qual$8.copy$default$2;
+  &lt;artifact&gt; val x$57: Int = qual$8.copy$default$3;
+  &lt;artifact&gt; val x$58: Int = qual$8.copy$default$4;
+  &lt;artifact&gt; val x$59: Int = qual$8.copy$default$5;
+  &lt;artifact&gt; val x$60: Boolean = qual$8.copy$default$7;
+  qual$8.copy(x$55, x$56, x$57, x$58, x$59, x$54, x$60)
+})
+        </td>
+      </tr><tr>
+        <td>
+          42
+        </td>
+        <td>
+          1270
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.ListBuffer.apply
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.apply(index)
+        </td>
+      </tr><tr>
+        <td>
+          42
+        </td>
+        <td>
+          1278
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.model.Player.copy
+        </td>
+        <td style="background: #F0ADAD">
+          qual$8.copy(x$55, x$56, x$57, x$58, x$59, x$54, x$60)
+        </td>
+      </tr><tr>
+        <td>
+          42
+        </td>
+        <td>
+          1272
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$1
+        </td>
+        <td style="background: #F0ADAD">
+          qual$8.copy$default$1
+        </td>
+      </tr><tr>
+        <td>
+          42
+        </td>
+        <td>
+          1275
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$4
+        </td>
+        <td style="background: #F0ADAD">
+          qual$8.copy$default$4
+        </td>
+      </tr><tr>
+        <td>
+          42
+        </td>
+        <td>
+          1277
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$7
+        </td>
+        <td style="background: #F0ADAD">
+          qual$8.copy$default$7
+        </td>
+      </tr><tr>
+        <td>
+          42
+        </td>
+        <td>
+          1271
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int.-
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.apply(index).redCards.-(1)
+        </td>
+      </tr><tr>
+        <td>
+          42
+        </td>
+        <td>
+          1274
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$3
+        </td>
+        <td style="background: #F0ADAD">
+          qual$8.copy$default$3
+        </td>
+      </tr><tr>
+        <td>
+          46
+        </td>
+        <td>
+          1280
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Boolean.==
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.apply(index).isBenched.==(false)
+        </td>
+      </tr><tr>
+        <td>
+          47
+        </td>
+        <td>
+          1282
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          true
+        </td>
+      </tr><tr>
+        <td>
+          47
+        </td>
+        <td>
+          1291
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          scala.collection.mutable.ListBuffer.update
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.update(index, {
+  &lt;artifact&gt; val qual$9: de.htwg.model.Player = PlayerManager.this.players.apply(index);
+  &lt;artifact&gt; val x$61: Boolean = true;
+  &lt;artifact&gt; val x$62: Int = qual$9.copy$default$1;
+  &lt;artifact&gt; val x$63: String = qual$9.copy$default$2;
+  &lt;artifact&gt; val x$64: Int = qual$9.copy$default$3;
+  &lt;artifact&gt; val x$65: Int = qual$9.copy$default$4;
+  &lt;artifact&gt; val x$66: Int = qual$9.copy$default$5;
+  &lt;artifact&gt; val x$67: Int = qual$9.copy$default$6;
+  qual$9.copy(x$62, x$63, x$64, x$65, x$66, x$67, x$61)
+})
+        </td>
+      </tr><tr>
+        <td>
+          47
+        </td>
+        <td>
+          1285
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$3
+        </td>
+        <td style="background: #F0ADAD">
+          qual$9.copy$default$3
+        </td>
+      </tr><tr>
+        <td>
+          47
+        </td>
+        <td>
+          1288
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$6
+        </td>
+        <td style="background: #F0ADAD">
+          qual$9.copy$default$6
+        </td>
+      </tr><tr>
+        <td>
+          47
+        </td>
+        <td>
+          1287
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$5
+        </td>
+        <td style="background: #F0ADAD">
+          qual$9.copy$default$5
+        </td>
+      </tr><tr>
+        <td>
+          47
+        </td>
+        <td>
+          1281
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.ListBuffer.apply
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.apply(index)
+        </td>
+      </tr><tr>
+        <td>
+          47
+        </td>
+        <td>
+          1290
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.ListBuffer.update
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.update(index, {
+  &lt;artifact&gt; val qual$9: de.htwg.model.Player = PlayerManager.this.players.apply(index);
+  &lt;artifact&gt; val x$61: Boolean = true;
+  &lt;artifact&gt; val x$62: Int = qual$9.copy$default$1;
+  &lt;artifact&gt; val x$63: String = qual$9.copy$default$2;
+  &lt;artifact&gt; val x$64: Int = qual$9.copy$default$3;
+  &lt;artifact&gt; val x$65: Int = qual$9.copy$default$4;
+  &lt;artifact&gt; val x$66: Int = qual$9.copy$default$5;
+  &lt;artifact&gt; val x$67: Int = qual$9.copy$default$6;
+  qual$9.copy(x$62, x$63, x$64, x$65, x$66, x$67, x$61)
+})
+        </td>
+      </tr><tr>
+        <td>
+          47
+        </td>
+        <td>
+          1284
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$2
+        </td>
+        <td style="background: #F0ADAD">
+          qual$9.copy$default$2
+        </td>
+      </tr><tr>
+        <td>
+          47
+        </td>
+        <td>
+          1283
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$1
+        </td>
+        <td style="background: #F0ADAD">
+          qual$9.copy$default$1
+        </td>
+      </tr><tr>
+        <td>
+          47
+        </td>
+        <td>
+          1286
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$4
+        </td>
+        <td style="background: #F0ADAD">
+          qual$9.copy$default$4
+        </td>
+      </tr><tr>
+        <td>
+          47
+        </td>
+        <td>
+          1289
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.model.Player.copy
+        </td>
+        <td style="background: #F0ADAD">
+          qual$9.copy(x$62, x$63, x$64, x$65, x$66, x$67, x$61)
+        </td>
+      </tr><tr>
+        <td>
+          49
+        </td>
+        <td>
+          1297
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$4
+        </td>
+        <td style="background: #F0ADAD">
+          qual$10.copy$default$4
+        </td>
+      </tr><tr>
+        <td>
+          49
+        </td>
+        <td>
+          1300
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.model.Player.copy
+        </td>
+        <td style="background: #F0ADAD">
+          qual$10.copy(x$69, x$70, x$71, x$72, x$73, x$74, x$68)
+        </td>
+      </tr><tr>
+        <td>
+          49
+        </td>
+        <td>
+          1294
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$1
+        </td>
+        <td style="background: #F0ADAD">
+          qual$10.copy$default$1
+        </td>
+      </tr><tr>
+        <td>
+          49
+        </td>
+        <td>
+          1296
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$3
+        </td>
+        <td style="background: #F0ADAD">
+          qual$10.copy$default$3
+        </td>
+      </tr><tr>
+        <td>
+          49
+        </td>
+        <td>
+          1299
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$6
+        </td>
+        <td style="background: #F0ADAD">
+          qual$10.copy$default$6
+        </td>
+      </tr><tr>
+        <td>
+          49
+        </td>
+        <td>
+          1293
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          false
+        </td>
+      </tr><tr>
+        <td>
+          49
+        </td>
+        <td>
+          1302
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          scala.collection.mutable.ListBuffer.update
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.update(index, {
+  &lt;artifact&gt; val qual$10: de.htwg.model.Player = PlayerManager.this.players.apply(index);
+  &lt;artifact&gt; val x$68: Boolean = false;
+  &lt;artifact&gt; val x$69: Int = qual$10.copy$default$1;
+  &lt;artifact&gt; val x$70: String = qual$10.copy$default$2;
+  &lt;artifact&gt; val x$71: Int = qual$10.copy$default$3;
+  &lt;artifact&gt; val x$72: Int = qual$10.copy$default$4;
+  &lt;artifact&gt; val x$73: Int = qual$10.copy$default$5;
+  &lt;artifact&gt; val x$74: Int = qual$10.copy$default$6;
+  qual$10.copy(x$69, x$70, x$71, x$72, x$73, x$74, x$68)
+})
+        </td>
+      </tr><tr>
+        <td>
+          49
+        </td>
+        <td>
+          1292
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.ListBuffer.apply
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.apply(index)
+        </td>
+      </tr><tr>
+        <td>
+          49
+        </td>
+        <td>
+          1301
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.ListBuffer.update
+        </td>
+        <td style="background: #F0ADAD">
+          PlayerManager.this.players.update(index, {
+  &lt;artifact&gt; val qual$10: de.htwg.model.Player = PlayerManager.this.players.apply(index);
+  &lt;artifact&gt; val x$68: Boolean = false;
+  &lt;artifact&gt; val x$69: Int = qual$10.copy$default$1;
+  &lt;artifact&gt; val x$70: String = qual$10.copy$default$2;
+  &lt;artifact&gt; val x$71: Int = qual$10.copy$default$3;
+  &lt;artifact&gt; val x$72: Int = qual$10.copy$default$4;
+  &lt;artifact&gt; val x$73: Int = qual$10.copy$default$5;
+  &lt;artifact&gt; val x$74: Int = qual$10.copy$default$6;
+  qual$10.copy(x$69, x$70, x$71, x$72, x$73, x$74, x$68)
+})
+        </td>
+      </tr><tr>
+        <td>
+          49
+        </td>
+        <td>
+          1295
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$2
+        </td>
+        <td style="background: #F0ADAD">
+          qual$10.copy$default$2
+        </td>
+      </tr><tr>
+        <td>
+          49
+        </td>
+        <td>
+          1298
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Player.copy$default$5
+        </td>
+        <td style="background: #F0ADAD">
+          qual$10.copy$default$5
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

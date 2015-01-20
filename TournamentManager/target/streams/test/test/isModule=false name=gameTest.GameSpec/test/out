@@ -1,0 +1,30 @@
+[0m[[0minfo[0m] [0mGameSpec[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37mA new game should[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[32m+[0m Should have been created[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37mA new game should[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[32m+[0m have been createtd with name with Bayern vs. Dortmund should beend have created not played yet[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37mCalling get Match should[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[32m+[0m return a List of two teams and getResult a tuple of ints[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37mAfter setting a resuld should[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[32m+[0m with home team won should return a new list fo teams with 3 points for home[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37mAfter setting a resuld should[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[32m+[0m with home team won should return a new list fo teams with 1 points both[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37mAfter setting a resuld should[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[32m+[0m with home team won should return a new list fo teams with 3 points for foriegn[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37mA Already played game should[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[32m+[0m return none on setResult[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37mA Already played game should[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[32m+[0m return some on setResult[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0mTotal for specification GameSpec[0m
+[0m[[0minfo[0m] [0m[36mFinished in 2 ms[0m[0m
+[0m[[0minfo[0m] [0m[36m[0m[36m8 examples, 0 failure, 0 error[0m[0m
+[0m[[0minfo[0m] [0m [0m
