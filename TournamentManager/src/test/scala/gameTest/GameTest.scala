@@ -24,7 +24,7 @@ class GameTest extends Specification {
 
   "Calling get Match" should {
     "return a List of two teams and getResult a tuple of ints" in {
-      game.getMatch must be_==(List(bayern, dortmund))
+      game.getMatch must be_==((bayern, dortmund))
       game.getResult must be_==((0,0))
     }
   }
