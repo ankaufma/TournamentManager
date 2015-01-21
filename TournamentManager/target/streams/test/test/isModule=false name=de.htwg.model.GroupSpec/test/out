@@ -1,0 +1,18 @@
+[0m[[0minfo[0m] [0mGroupSpec[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37mA Group should[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[32m+[0m be able to list the games[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37mA Group should[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[32m+[0m be able to identify the group winner[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37mA Group should[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[32m+[0m be able to get the table[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37mA Group should[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[32m+[0m be able to get the group by ID[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0mTotal for specification GroupSpec[0m
+[0m[[0minfo[0m] [0m[36mFinished in 36 ms[0m[0m
+[0m[[0minfo[0m] [0m[36m[0m[36m4 examples, 0 failure, 0 error[0m[0m
+[0m[[0minfo[0m] [0m [0m

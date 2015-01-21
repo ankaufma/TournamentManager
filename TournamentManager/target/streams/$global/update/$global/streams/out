@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#tournamentmanager_2.11;2.10 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tournamentmanager_2.11;2.10->org.scala-lang#scala-library;2.11.4 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.4 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3b04ad84[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3a1c420[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.4[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.11.4] org.scala-lang#scala-library;2.11.4[0m
@@ -974,7 +974,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scoverage#scalac-scoverage-plugin_2.11;1.0.1!scalac-scoverage-plugin_2.11.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.4!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.12!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 863ms :: artifacts dl 37ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 970ms :: artifacts dl 29ms[0m
 [0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 compile produced in /Users/gian-lucapiras/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.11-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 runtime produced in /Users/gian-lucapiras/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.11-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 test produced in /Users/gian-lucapiras/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.11-test.xml[0m
@@ -988,5 +988,5 @@
 [0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 docs produced in /Users/gian-lucapiras/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.11-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 pom produced in /Users/gian-lucapiras/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.11-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#tournamentmanager_2.11;2.10 scala-tool produced in /Users/gian-lucapiras/git/TournamentManager/TournamentManager/target/resolution-cache/reports/default-tournamentmanager_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (863ms resolve - 37ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (970ms resolve - 29ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

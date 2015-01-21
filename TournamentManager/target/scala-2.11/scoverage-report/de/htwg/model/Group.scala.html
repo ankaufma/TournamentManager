@@ -31,21 +31,21 @@
 </span>6 <span style=''>case class Group (name: String, teams: ListBuffer[Team], games: ListBuffer[Game]) {		
 </span>7 <span style=''>	// Calculates the Matches of the group
 </span>8 <span style=''>	// Gameplan has to be immutable but updatable (ListBuffer)
-</span>9 <span style=''>	var k = </span><span style='background: #F0ADAD'>0</span><span style=''>
-</span>10 <span style=''>	var l = </span><span style='background: #F0ADAD'>(teams.size-1)*(teams.size/2)</span><span style=''>
-</span>11 <span style=''>	</span><span style='background: #F0ADAD'>breakable { 
-</span>12 <span style=''></span><span style='background: #F0ADAD'>	   for(i <- 0 until teams.size; j <- 0 to teams.size-1 if(i!=j)) {
-</span>13 <span style=''></span><span style='background: #F0ADAD'>		   if ((i+1) > teams.size/2) break 
-</span>14 <span style=''></span><span style='background: #F0ADAD'>		   else {
-</span>15 <span style=''></span><span style='background: #F0ADAD'>			   games += new Game(l, (teams(k),teams(j)), (0,0), false)
-</span>16 <span style=''></span><span style='background: #F0ADAD'>			   l-=1
-</span>17 <span style=''></span><span style='background: #F0ADAD'>			   if (k<teams.size-1) k += 1
-</span>18 <span style=''></span><span style='background: #F0ADAD'>			   else k = 0
-</span>19 <span style=''></span><span style='background: #F0ADAD'>		   }
-</span>20 <span style=''></span><span style='background: #F0ADAD'>		}
-</span>21 <span style=''></span><span style='background: #F0ADAD'>	}</span><span style=''>
+</span>9 <span style=''>	var k = </span><span style='background: #AEF1AE'>0</span><span style=''>
+</span>10 <span style=''>	var l = </span><span style='background: #AEF1AE'>(teams.size-1)*(teams.size/2)</span><span style=''>
+</span>11 <span style=''>	</span><span style='background: #AEF1AE'>breakable { 
+</span>12 <span style=''></span><span style='background: #AEF1AE'>	   for(i <- 0 until teams.size; j <- 0 to teams.size-1 if(i!=j)) {
+</span>13 <span style=''></span><span style='background: #AEF1AE'>		   if ((i+1) > teams.size/2) break 
+</span>14 <span style=''></span><span style='background: #AEF1AE'>		   else {
+</span>15 <span style=''></span><span style='background: #AEF1AE'>			   games += new Game(l, (teams(k),teams(j)), (0,0), false)
+</span>16 <span style=''></span><span style='background: #AEF1AE'>			   l-=1
+</span>17 <span style=''></span><span style='background: #AEF1AE'>			   if (k<teams.size-1) k += 1
+</span>18 <span style=''></span><span style='background: #AEF1AE'>			   else k = 0
+</span>19 <span style=''></span><span style='background: #AEF1AE'>		   }
+</span>20 <span style=''></span><span style='background: #AEF1AE'>		}
+</span>21 <span style=''></span><span style='background: #AEF1AE'>	}</span><span style=''>
 </span>22 <span style=''>	
-</span>23 <span style=''>	def getGames() = </span><span style='background: #F0ADAD'>games.reverse</span><span style=''>
+</span>23 <span style=''>	def getGames() = </span><span style='background: #AEF1AE'>games.reverse</span><span style=''>
 </span>24 <span style=''>  
 </span>25 <span style=''>  def getWinner: Option[(Group,Team)] = { 
 </span>26 <span style=''>    </span><span style='background: #F0ADAD'>games.forall { x => x.isPlayed } match {
@@ -57,17 +57,17 @@
 </span>32 <span style=''>  }
 </span>33 <span style=''>  
 </span>34 <span style=''>	
-</span>35 <span style=''>	def getTable (group: Group): List[Team] = </span><span style='background: #F0ADAD'>sort(group.teams)</span><span style=''>
+</span>35 <span style=''>	def getTable (group: Group): List[Team] = </span><span style='background: #AEF1AE'>sort(group.teams)</span><span style=''>
 </span>36 <span style=''>	def getTable = </span><span style='background: #F0ADAD'>sort(this.teams)</span><span style=''>
 </span>37 <span style=''>  
-</span>38 <span style=''>  def getGameById(id: Int): Game = </span><span style='background: #F0ADAD'>games.filter(x => x.index == id)(0)</span><span style=''>
+</span>38 <span style=''>  def getGameById(id: Int): Game = </span><span style='background: #AEF1AE'>games.filter(x => x.index == id)(0)</span><span style=''>
 </span>39 <span style=''>  
 </span>40 <span style=''>	def sort(teams: ListBuffer[Team]): List[Team] = {
-</span>41 <span style=''>	  </span><span style='background: #F0ADAD'>teams.toList.
-</span>42 <span style=''></span><span style='background: #F0ADAD'>	  sortWith((x,y) => x.goals						        >	  y.goals).
-</span>43 <span style=''></span><span style='background: #F0ADAD'>	  sortWith((x,y) => (x.goals-x.goalsAgainst) 	> 	(y.goals-y.goalsAgainst)).
-</span>44 <span style=''></span><span style='background: #F0ADAD'>	  sortWith((x,y) => x.points 					        > 	y.points)
-</span>45 <span style=''></span><span style='background: #F0ADAD'>	  .reverse</span><span style=''>
+</span>41 <span style=''>	  </span><span style='background: #AEF1AE'>teams.toList.
+</span>42 <span style=''></span><span style='background: #AEF1AE'>	  sortWith((x,y) => x.goals						        >	  y.goals).
+</span>43 <span style=''></span><span style='background: #AEF1AE'>	  sortWith((x,y) => (x.goals-x.goalsAgainst) 	> 	(y.goals-y.goalsAgainst)).
+</span>44 <span style=''></span><span style='background: #AEF1AE'>	  sortWith((x,y) => x.points 					        > 	y.points)
+</span>45 <span style=''></span><span style='background: #AEF1AE'>	  .reverse</span><span style=''>
 </span>46 <span style=''>	}
 </span>47 <span style=''>	
 </span>48 <span style=''>	def refractorGamePlan(teams: List[Team]) = {
@@ -115,7 +115,7 @@
         <td>
           &lt;nosymbol&gt;
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           0
         </td>
       </tr><tr>
@@ -131,7 +131,7 @@
         <td>
           &lt;nosymbol&gt;
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           1
         </td>
       </tr><tr>
@@ -147,7 +147,7 @@
         <td>
           scala.Int.*
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           Group.this.teams.size.-(1).*(Group.this.teams.size./(2))
         </td>
       </tr><tr>
@@ -163,7 +163,7 @@
         <td>
           scala.Int./
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           Group.this.teams.size./(2)
         </td>
       </tr><tr>
@@ -179,7 +179,7 @@
         <td>
           scala.util.control.Breaks.breakable
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           scala.util.control.Breaks.breakable(scala.this.Predef.intWrapper(0).until(Group.this.teams.size).foreach[Unit](((i: Int) =&gt; scala.this.Predef.intWrapper(0).to(Group.this.teams.size.-(1)).withFilter(((j: Int) =&gt; i.!=(j))).foreach[Unit](((j: Int) =&gt; if (i.+(1).&gt;(Group.this.teams.size./(2)))
   scala.util.control.Breaks.break()
 else
@@ -205,7 +205,7 @@ else
         <td>
           &lt;nosymbol&gt;
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           0
         </td>
       </tr><tr>
@@ -221,7 +221,7 @@ else
         <td>
           scala.collection.immutable.Range.foreach
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           scala.this.Predef.intWrapper(0).until(Group.this.teams.size).foreach[Unit](((i: Int) =&gt; scala.this.Predef.intWrapper(0).to(Group.this.teams.size.-(1)).withFilter(((j: Int) =&gt; i.!=(j))).foreach[Unit](((j: Int) =&gt; if (i.+(1).&gt;(Group.this.teams.size./(2)))
   scala.util.control.Breaks.break()
 else
@@ -247,7 +247,7 @@ else
         <td>
           scala.Int.-
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           Group.this.teams.size.-(1)
         </td>
       </tr><tr>
@@ -263,7 +263,7 @@ else
         <td>
           &lt;nosymbol&gt;
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           0
         </td>
       </tr><tr>
@@ -279,7 +279,7 @@ else
         <td>
           scala.collection.generic.FilterMonadic.foreach
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           scala.this.Predef.intWrapper(0).to(Group.this.teams.size.-(1)).withFilter(((j: Int) =&gt; i.!=(j))).foreach[Unit](((j: Int) =&gt; if (i.+(1).&gt;(Group.this.teams.size./(2)))
   scala.util.control.Breaks.break()
 else
@@ -305,7 +305,7 @@ else
         <td>
           scala.collection.mutable.ListBuffer.size
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           Group.this.teams.size
         </td>
       </tr><tr>
@@ -321,7 +321,7 @@ else
         <td>
           scala.Int.!=
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           i.!=(j)
         </td>
       </tr><tr>
@@ -337,7 +337,7 @@ else
         <td>
           scala.util.control.Breaks.break
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           scala.util.control.Breaks.break()
         </td>
       </tr><tr>
@@ -353,7 +353,7 @@ else
         <td>
           scala.Int./
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           Group.this.teams.size./(2)
         </td>
       </tr><tr>
@@ -369,7 +369,7 @@ else
         <td>
           &lt;nosymbol&gt;
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           1
         </td>
       </tr><tr>
@@ -385,7 +385,7 @@ else
         <td>
           scala.util.control.Breaks.break
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           scala.util.control.Breaks.break()
         </td>
       </tr><tr>
@@ -401,7 +401,7 @@ else
         <td>
           scala.Int.&gt;
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           i.+(1).&gt;(Group.this.teams.size./(2))
         </td>
       </tr><tr>
@@ -417,7 +417,7 @@ else
         <td>
           &lt;nosymbol&gt;
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           {
   Group.this.games.+=(new Game(Group.this.l, scala.Tuple2.apply[de.htwg.model.Team, de.htwg.model.Team](Group.this.teams.apply(Group.this.k), Group.this.teams.apply(j)), scala.Tuple2.apply[Int, Int](0, 0), false));
   Group.this.l_=(Group.this.l.-(1));
@@ -440,7 +440,7 @@ else
         <td>
           scala.collection.mutable.ListBuffer.+=
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           Group.this.games.+=(new Game(Group.this.l, scala.Tuple2.apply[de.htwg.model.Team, de.htwg.model.Team](Group.this.teams.apply(Group.this.k), Group.this.teams.apply(j)), scala.Tuple2.apply[Int, Int](0, 0), false))
         </td>
       </tr><tr>
@@ -456,7 +456,7 @@ else
         <td>
           scala.collection.mutable.ListBuffer.apply
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           Group.this.teams.apply(Group.this.k)
         </td>
       </tr><tr>
@@ -472,7 +472,7 @@ else
         <td>
           scala.Tuple2.apply
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           scala.Tuple2.apply[Int, Int](0, 0)
         </td>
       </tr><tr>
@@ -488,7 +488,7 @@ else
         <td>
           scala.Tuple2.apply
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           scala.Tuple2.apply[de.htwg.model.Team, de.htwg.model.Team](Group.this.teams.apply(Group.this.k), Group.this.teams.apply(j))
         </td>
       </tr><tr>
@@ -504,7 +504,7 @@ else
         <td>
           de.htwg.model.Game.&lt;init&gt;
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           new Game(Group.this.l, scala.Tuple2.apply[de.htwg.model.Team, de.htwg.model.Team](Group.this.teams.apply(Group.this.k), Group.this.teams.apply(j)), scala.Tuple2.apply[Int, Int](0, 0), false)
         </td>
       </tr><tr>
@@ -520,7 +520,7 @@ else
         <td>
           de.htwg.model.Group.k
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           Group.this.k
         </td>
       </tr><tr>
@@ -536,7 +536,7 @@ else
         <td>
           de.htwg.model.Group.l
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           Group.this.l
         </td>
       </tr><tr>
@@ -552,7 +552,7 @@ else
         <td>
           scala.collection.mutable.ListBuffer.apply
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           Group.this.teams.apply(j)
         </td>
       </tr><tr>
@@ -568,7 +568,7 @@ else
         <td>
           &lt;nosymbol&gt;
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           false
         </td>
       </tr><tr>
@@ -584,7 +584,7 @@ else
         <td>
           de.htwg.model.Group.l_=
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           Group.this.l_=(Group.this.l.-(1))
         </td>
       </tr><tr>
@@ -600,7 +600,7 @@ else
         <td>
           scala.Int.-
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           Group.this.l.-(1)
         </td>
       </tr><tr>
@@ -616,7 +616,7 @@ else
         <td>
           scala.Int.-
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           Group.this.teams.size.-(1)
         </td>
       </tr><tr>
@@ -632,7 +632,7 @@ else
         <td>
           scala.Int.+
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           Group.this.k.+(1)
         </td>
       </tr><tr>
@@ -648,7 +648,7 @@ else
         <td>
           scala.Int.&lt;
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           Group.this.k.&lt;(Group.this.teams.size.-(1))
         </td>
       </tr><tr>
@@ -664,7 +664,7 @@ else
         <td>
           de.htwg.model.Group.k_=
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           Group.this.k_=(Group.this.k.+(1))
         </td>
       </tr><tr>
@@ -680,7 +680,7 @@ else
         <td>
           de.htwg.model.Group.k_=
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           Group.this.k_=(Group.this.k.+(1))
         </td>
       </tr><tr>
@@ -696,7 +696,7 @@ else
         <td>
           de.htwg.model.Group.k_=
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           Group.this.k_=(0)
         </td>
       </tr><tr>
@@ -712,7 +712,7 @@ else
         <td>
           de.htwg.model.Group.k_=
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           Group.this.k_=(0)
         </td>
       </tr><tr>
@@ -728,7 +728,7 @@ else
         <td>
           scala.collection.SeqLike.reverse
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           Group.this.games.reverse
         </td>
       </tr><tr>
@@ -891,7 +891,7 @@ else
         <td>
           de.htwg.model.Group.sort
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           Group.this.sort(group.teams)
         </td>
       </tr><tr>
@@ -907,7 +907,7 @@ else
         <td>
           de.htwg.model.Group.teams
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           group.teams
         </td>
       </tr><tr>
@@ -955,7 +955,7 @@ else
         <td>
           scala.collection.mutable.ListBuffer.apply
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           Group.this.games.filter(((x: de.htwg.model.Game) =&gt; x.index.==(id))).apply(0)
         </td>
       </tr><tr>
@@ -971,7 +971,7 @@ else
         <td>
           scala.Int.&gt;
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           x.goals.&gt;(y.goals)
         </td>
       </tr><tr>
@@ -987,7 +987,7 @@ else
         <td>
           de.htwg.model.Team.goals
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           y.goals
         </td>
       </tr><tr>
@@ -1003,7 +1003,7 @@ else
         <td>
           de.htwg.model.Team.goalsAgainst
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           y.goalsAgainst
         </td>
       </tr><tr>
@@ -1019,7 +1019,7 @@ else
         <td>
           de.htwg.model.Team.goalsAgainst
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           x.goalsAgainst
         </td>
       </tr><tr>
@@ -1035,7 +1035,7 @@ else
         <td>
           scala.Int.&gt;
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           x.goals.-(x.goalsAgainst).&gt;(y.goals.-(y.goalsAgainst))
         </td>
       </tr><tr>
@@ -1051,7 +1051,7 @@ else
         <td>
           scala.Int.-
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           y.goals.-(y.goalsAgainst)
         </td>
       </tr><tr>
@@ -1067,7 +1067,7 @@ else
         <td>
           scala.Int.&gt;
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           x.points.&gt;(y.points)
         </td>
       </tr><tr>
@@ -1083,7 +1083,7 @@ else
         <td>
           de.htwg.model.Team.points
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           y.points
         </td>
       </tr><tr>
@@ -1099,7 +1099,7 @@ else
         <td>
           scala.collection.immutable.List.reverse
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           teams.toList.sortWith(((x: de.htwg.model.Team, y: de.htwg.model.Team) =&gt; x.goals.&gt;(y.goals))).sortWith(((x: de.htwg.model.Team, y: de.htwg.model.Team) =&gt; x.goals.-(x.goalsAgainst).&gt;(y.goals.-(y.goalsAgainst)))).sortWith(((x: de.htwg.model.Team, y: de.htwg.model.Team) =&gt; x.points.&gt;(y.points))).reverse
         </td>
       </tr><tr>

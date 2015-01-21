@@ -1,5 +1,5 @@
 <scoverage 
-statement-count="1302" statements-invoked="186" statement-rate="14,29" branch-rate="22,22" version="1.0" timestamp="1421792803968">
+statement-count="1302" statements-invoked="235" statement-rate="18,05" branch-rate="37,04" version="1.0" timestamp="1421798278500">
     <packages>
         <package name="de.htwg.GUI" statement-count="477" statements-invoked="0" statement-rate="0,00">
             <classes>
@@ -3537,7 +3537,7 @@ statement-count="1302" statements-invoked="186" statement-rate="14,29" branch-ra
 </class>
             </classes>
         </package>
-        <package name="de.htwg.model" statement-count="297" statements-invoked="186" statement-rate="62,63">
+        <package name="de.htwg.model" statement-count="297" statements-invoked="235" statement-rate="79,12">
             <classes>
                 <class 
                 name="Game" filename="/de/htwg/model/Game.scala" statement-count="69" statements-invoked="69" statement-rate="100,00" branch-rate="100,00">
@@ -4178,7 +4178,7 @@ statement-count="1302" statements-invoked="186" statement-rate="14,29" branch-ra
                     </methods>
 </class>
                 <class 
-                name="Group" filename="/de/htwg/model/Group.scala" statement-count="111" statements-invoked="0" statement-rate="0,00" branch-rate="0,00">
+                name="Group" filename="/de/htwg/model/Group.scala" statement-count="111" statements-invoked="49" statement-rate="44,14" branch-rate="50,00">
                     <methods>
                         <method 
                         name="de.htwg.model/Group/getWinner" statement-count="9" statements-invoked="0" statement-rate="0,00" branch-rate="0,00">
@@ -4213,10 +4213,10 @@ statement-count="1302" statements-invoked="186" statement-rate="14,29" branch-ra
                             </statements>
 </method>
                         <method 
-                        name="de.htwg.model/Group/getGames" statement-count="1" statements-invoked="0" statement-rate="0,00" branch-rate="0,00">
+                        name="de.htwg.model/Group/getGames" statement-count="1" statements-invoked="1" statement-rate="100,00" branch-rate="100,00">
                             <statements>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="getGames" start="627" end="640" line="23" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="getGames" start="627" end="640" line="23" branch="false" invocation-count="1">
 </statement>
                             </statements>
 </method>
@@ -4384,160 +4384,160 @@ statement-count="1302" statements-invoked="186" statement-rate="14,29" branch-ra
                             </statements>
 </method>
                         <method 
-                        name="de.htwg.model/Group/getGameById" statement-count="1" statements-invoked="0" statement-rate="0,00" branch-rate="0,00">
+                        name="de.htwg.model/Group/getGameById" statement-count="1" statements-invoked="1" statement-rate="100,00" branch-rate="100,00">
                             <statements>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="getGameById" start="972" end="1007" line="38" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="getGameById" start="972" end="1007" line="38" branch="false" invocation-count="1">
 </statement>
                             </statements>
 </method>
                         <method 
-                        name="de.htwg.model/Group/&lt;none&gt;" statement-count="36" statements-invoked="0" statement-rate="0,00" branch-rate="0,00">
+                        name="de.htwg.model/Group/&lt;none&gt;" statement-count="36" statements-invoked="36" statement-rate="100,00" branch-rate="100,00">
                             <statements>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="476" end="531" line="15" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="476" end="531" line="15" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="587" end="592" line="18" branch="true" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="587" end="592" line="18" branch="true" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="365" end="366" line="12" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="365" end="366" line="12" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="451" end="456" line="13" branch="true" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="451" end="456" line="13" branch="true" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="555" end="567" line="17" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="555" end="567" line="17" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="498" end="506" line="15" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="498" end="506" line="15" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="356" end="599" line="12" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="356" end="599" line="12" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="395" end="407" line="12" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="395" end="407" line="12" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="320" end="321" line="10" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="320" end="321" line="10" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="518" end="523" line="15" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="518" end="523" line="15" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="437" end="449" line="13" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="437" end="449" line="13" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="569" end="575" line="17" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="569" end="575" line="17" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="297" end="298" line="9" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="297" end="298" line="9" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="432" end="433" line="13" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="432" end="433" line="13" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="497" end="516" line="15" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="497" end="516" line="15" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="587" end="592" line="18" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="587" end="592" line="18" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="451" end="456" line="13" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="451" end="456" line="13" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="485" end="531" line="15" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="485" end="531" line="15" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="308" end="337" line="10" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="308" end="337" line="10" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="390" end="391" line="12" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="390" end="391" line="12" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="385" end="599" line="12" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="385" end="599" line="12" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="538" end="542" line="16" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="538" end="542" line="16" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="504" end="505" line="15" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="504" end="505" line="15" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="538" end="542" line="16" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="538" end="542" line="16" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="468" end="599" line="14" branch="true" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="468" end="599" line="14" branch="true" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="373" end="383" line="12" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="373" end="383" line="12" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="494" end="495" line="15" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="494" end="495" line="15" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="507" end="515" line="15" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="507" end="515" line="15" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="553" end="567" line="17" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="553" end="567" line="17" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="339" end="606" line="11" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="339" end="606" line="11" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="411" end="415" line="12" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="411" end="415" line="12" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="429" end="449" line="13" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="429" end="449" line="13" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="525" end="530" line="15" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="525" end="530" line="15" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="569" end="575" line="17" branch="true" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="569" end="575" line="17" branch="true" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="324" end="336" line="10" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="324" end="336" line="10" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="569" end="575" line="17" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="&lt;none&gt;" start="569" end="575" line="17" branch="false" invocation-count="1">
 </statement>
                             </statements>
 </method>
                         <method 
-                        name="de.htwg.model/Group/sort" statement-count="9" statements-invoked="0" statement-rate="0,00" branch-rate="0,00">
+                        name="de.htwg.model/Group/sort" statement-count="9" statements-invoked="9" statement-rate="100,00" branch-rate="100,00">
                             <statements>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="sort" start="1233" end="1266" line="44" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="sort" start="1233" end="1266" line="44" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="sort" start="1100" end="1132" line="42" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="sort" start="1100" end="1132" line="42" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="sort" start="1125" end="1132" line="42" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="sort" start="1125" end="1132" line="42" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="sort" start="1194" end="1208" line="43" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="sort" start="1194" end="1208" line="43" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="sort" start="1258" end="1266" line="44" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="sort" start="1258" end="1266" line="44" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="sort" start="1065" end="1279" line="45" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="sort" start="1065" end="1279" line="45" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="sort" start="1165" end="1179" line="43" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="sort" start="1165" end="1179" line="43" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="sort" start="1156" end="1209" line="43" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="sort" start="1156" end="1209" line="43" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="sort" start="1186" end="1208" line="43" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="sort" start="1186" end="1208" line="43" branch="false" invocation-count="1">
 </statement>
                             </statements>
 </method>
                         <method 
-                        name="de.htwg.model/Group/getTable" statement-count="4" statements-invoked="0" statement-rate="0,00" branch-rate="0,00">
+                        name="de.htwg.model/Group/getTable" statement-count="4" statements-invoked="2" statement-rate="50,00" branch-rate="100,00">
                             <statements>
                                 <statement 
                                 package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="getTable" start="917" end="933" line="36" branch="false" invocation-count="0">
@@ -4546,10 +4546,10 @@ statement-count="1302" statements-invoked="186" statement-rate="14,29" branch-ra
                                 package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="getTable" start="922" end="932" line="36" branch="false" invocation-count="0">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="getTable" start="883" end="900" line="35" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="getTable" start="883" end="900" line="35" branch="false" invocation-count="1">
 </statement>
                                 <statement 
-                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="getTable" start="888" end="899" line="35" branch="false" invocation-count="0">
+                                package="de.htwg.model" class="Group" class-type="Class" top-level-class="Group" source="/Users/gian-lucapiras/git/TournamentManager/TournamentManager/src/main/scala/de/htwg/model/Group.scala" method="getTable" start="888" end="899" line="35" branch="false" invocation-count="1">
 </statement>
                             </statements>
 </method>
