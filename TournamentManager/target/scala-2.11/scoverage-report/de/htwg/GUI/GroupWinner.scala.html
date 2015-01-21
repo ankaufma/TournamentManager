@@ -1,0 +1,335 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          de/htwg/GUI/GroupWinner.scala.html
+        </title>
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.18.3/addons/pager/jquery.tablesorter.pager.min.js"></script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier;'>1 <span style=''>package de.htwg.GUI
+</span>2 <span style=''>
+</span>3 <span style=''>import scala.swing.Dialog
+</span>4 <span style=''>import java.awt.FlowLayout
+</span>5 <span style=''>import scala.swing._
+</span>6 <span style=''>import scala.swing.event.ButtonClicked
+</span>7 <span style=''>import scala.swing.event.ButtonClicked
+</span>8 <span style=''>import de.htwg.actorCommunication
+</span>9 <span style=''>import scala.collection.mutable.ListBuffer
+</span>10 <span style=''>import de.htwg.model._
+</span>11 <span style=''>
+</span>12 <span style=''>class GroupWinner(g: Group, t: Team) extends Frame {
+</span>13 <span style=''>	</span><span style='background: #F0ADAD'>title = "WINNER!"</span><span style=''>
+</span>14 <span style=''>	
+</span>15 <span style=''>	</span><span style='background: #F0ADAD'>contents = new BoxPanel(Orientation.Vertical) {
+</span>16 <span style=''></span><span style='background: #F0ADAD'>	  contents += new FlowPanel {
+</span>17 <span style=''></span><span style='background: #F0ADAD'>	    vGap = 0
+</span>18 <span style=''></span><span style='background: #F0ADAD'>	    contents += new Label("Winner of Group " + g.name + " is " + t.name)
+</span>19 <span style=''></span><span style='background: #F0ADAD'>	  }
+</span>20 <span style=''></span><span style='background: #F0ADAD'>	}</span><span style=''>
+</span>21 <span style=''>	
+</span>22 <span style=''>	</span><span style='background: #F0ADAD'>centerOnScreen</span><span style=''>
+</span>23 <span style=''>	</span><span style='background: #F0ADAD'>open</span><span style=''>
+</span>24 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line Number</th>
+        <th>Statement Id</th>
+        <th>Tree Type</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr>
+      <tr>
+        <td>
+          13
+        </td>
+        <td>
+          118
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.RichWindow.title_=
+        </td>
+        <td style="background: #F0ADAD">
+          GroupWinner.this.title_=(&quot;WINNER!&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          130
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Window.contents_=
+        </td>
+        <td style="background: #F0ADAD">
+          GroupWinner.this.contents_=({
+  final class $anon extends scala.swing.BoxPanel {
+    def &lt;init&gt;(): &lt;$anon: scala.swing.BoxPanel&gt; = {
+      $anon.super.&lt;init&gt;(scala.swing.Orientation.Vertical);
+      ()
+    };
+    $anon.this.contents.+=({
+      final class $anon extends scala.swing.FlowPanel {
+        def &lt;init&gt;(): &lt;$anon: scala.swing.FlowPanel&gt; = {
+          $anon.super.&lt;init&gt;();
+          ()
+        };
+        $anon.this.vGap_=(0);
+        $anon.this.contents.+=(new scala.swing.Label(&quot;Winner of Group &quot;.+(GroupWinner.this.g.name).+(&quot; is &quot;).+(GroupWinner.this.t.name)))
+      };
+      new $anon()
+    })
+  };
+  new $anon()
+})
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          129
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.GUI.GroupWinner.$anon.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new $anon()
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          128
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.BufferLike.+=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.contents.+=({
+  final class $anon extends scala.swing.FlowPanel {
+    def &lt;init&gt;(): &lt;$anon: scala.swing.FlowPanel&gt; = {
+      $anon.super.&lt;init&gt;();
+      ()
+    };
+    $anon.this.vGap_=(0);
+    $anon.this.contents.+=(new scala.swing.Label(&quot;Winner of Group &quot;.+(GroupWinner.this.g.name).+(&quot; is &quot;).+(GroupWinner.this.t.name)))
+  };
+  new $anon()
+})
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          127
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.GUI.GroupWinner.$anon.$anon.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new $anon()
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          119
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.FlowPanel.vGap_=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.vGap_=(0)
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          122
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot; is &quot;
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          125
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Label.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new scala.swing.Label(&quot;Winner of Group &quot;.+(GroupWinner.this.g.name).+(&quot; is &quot;).+(GroupWinner.this.t.name))
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          124
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.String.+
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;Winner of Group &quot;.+(GroupWinner.this.g.name).+(&quot; is &quot;).+(GroupWinner.this.t.name)
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          121
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Group.name
+        </td>
+        <td style="background: #F0ADAD">
+          GroupWinner.this.g.name
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          120
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;Winner of Group &quot;
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          123
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.model.Team.name
+        </td>
+        <td style="background: #F0ADAD">
+          GroupWinner.this.t.name
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          126
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.BufferLike.+=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.contents.+=(new scala.swing.Label(&quot;Winner of Group &quot;.+(GroupWinner.this.g.name).+(&quot; is &quot;).+(GroupWinner.this.t.name)))
+        </td>
+      </tr><tr>
+        <td>
+          22
+        </td>
+        <td>
+          131
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Window.centerOnScreen
+        </td>
+        <td style="background: #F0ADAD">
+          GroupWinner.this.centerOnScreen()
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          132
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Window.open
+        </td>
+        <td style="background: #F0ADAD">
+          GroupWinner.this.open()
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

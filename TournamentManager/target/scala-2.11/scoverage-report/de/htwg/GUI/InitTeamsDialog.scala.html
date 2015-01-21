@@ -1,0 +1,1332 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          de/htwg/GUI/InitTeamsDialog.scala.html
+        </title>
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.18.3/addons/pager/jquery.tablesorter.pager.min.js"></script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier;'>1 <span style=''>package de.htwg.GUI
+</span>2 <span style=''>import scala.swing._
+</span>3 <span style=''>
+</span>4 <span style=''>case class InitTeams(teams: List[String])
+</span>5 <span style=''>class InitTeamsDialog(val cot: Int) extends Dialog {
+</span>6 <span style=''>  var init:Option[InitTeams] = </span><span style='background: #F0ADAD'>None</span><span style=''>
+</span>7 <span style=''>  val listOfTeams: List[TextField] = </span><span style='background: #F0ADAD'>for(i <- List.range(0, cot)) yield new TextField(8)</span><span style=''>
+</span>8 <span style=''>  </span><span style='background: #F0ADAD'>title = "Init Team Names"</span><span style=''>
+</span>9 <span style=''>  </span><span style='background: #F0ADAD'>modal = true</span><span style=''>
+</span>10 <span style=''>
+</span>11 <span style=''>  </span><span style='background: #F0ADAD'>contents = new BorderPanel {
+</span>12 <span style=''></span><span style='background: #F0ADAD'>    if(cot<16) {
+</span>13 <span style=''></span><span style='background: #F0ADAD'>    layout(new BoxPanel(Orientation.Vertical) {
+</span>14 <span style=''></span><span style='background: #F0ADAD'>      border = Swing.EmptyBorder(5,5,5,5)
+</span>15 <span style=''></span><span style='background: #F0ADAD'>      for(i <- 0 until cot) {
+</span>16 <span style=''></span><span style='background: #F0ADAD'>        contents += new Label("Enter Team name " + (i+1) + ":")
+</span>17 <span style=''></span><span style='background: #F0ADAD'>        contents += listOfTeams(i)
+</span>18 <span style=''></span><span style='background: #F0ADAD'>      }
+</span>19 <span style=''></span><span style='background: #F0ADAD'>    }) = BorderPanel.Position.Center
+</span>20 <span style=''></span><span style='background: #F0ADAD'>
+</span>21 <span style=''></span><span style='background: #F0ADAD'>    layout(new FlowPanel(FlowPanel.Alignment.Right)(
+</span>22 <span style=''></span><span style='background: #F0ADAD'>      Button("Submit") { 
+</span>23 <span style=''></span><span style='background: #F0ADAD'>    	  init = Some(InitTeams(listOfTeams.map(x => x.text)))
+</span>24 <span style=''></span><span style='background: #F0ADAD'>    	  endDialog()
+</span>25 <span style=''></span><span style='background: #F0ADAD'>      }
+</span>26 <span style=''></span><span style='background: #F0ADAD'>    )) = BorderPanel.Position.South
+</span>27 <span style=''></span><span style='background: #F0ADAD'>  } else {
+</span>28 <span style=''></span><span style='background: #F0ADAD'>        layout(new FlowPanel {
+</span>29 <span style=''></span><span style='background: #F0ADAD'>      border = Swing.EmptyBorder(5,5,5,5)
+</span>30 <span style=''></span><span style='background: #F0ADAD'>      for(i <- 0 until cot) {
+</span>31 <span style=''></span><span style='background: #F0ADAD'>        contents += new Label("Enter Team name " + (i+1) + ":")
+</span>32 <span style=''></span><span style='background: #F0ADAD'>        contents += listOfTeams(i)
+</span>33 <span style=''></span><span style='background: #F0ADAD'>      }
+</span>34 <span style=''></span><span style='background: #F0ADAD'>    }) = BorderPanel.Position.Center
+</span>35 <span style=''></span><span style='background: #F0ADAD'>
+</span>36 <span style=''></span><span style='background: #F0ADAD'>    layout(new FlowPanel(FlowPanel.Alignment.Right)(
+</span>37 <span style=''></span><span style='background: #F0ADAD'>      Button("Submit") { 
+</span>38 <span style=''></span><span style='background: #F0ADAD'>    	  init = Some(InitTeams(listOfTeams.map(x => x.text)))
+</span>39 <span style=''></span><span style='background: #F0ADAD'>    	  endDialog()
+</span>40 <span style=''></span><span style='background: #F0ADAD'>      }
+</span>41 <span style=''></span><span style='background: #F0ADAD'>    )) = BorderPanel.Position.South
+</span>42 <span style=''></span><span style='background: #F0ADAD'>  }}</span><span style=''>
+</span>43 <span style=''>  
+</span>44 <span style=''>  def endDialog() = </span><span style='background: #F0ADAD'>this.close</span><span style=''>
+</span>45 <span style=''>
+</span>46 <span style=''>  </span><span style='background: #F0ADAD'>centerOnScreen</span><span style=''>
+</span>47 <span style=''>  </span><span style='background: #F0ADAD'>open</span><span style=''>
+</span>48 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line Number</th>
+        <th>Statement Id</th>
+        <th>Tree Type</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr>
+      <tr>
+        <td>
+          6
+        </td>
+        <td>
+          173
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.None
+        </td>
+        <td style="background: #F0ADAD">
+          scala.None
+        </td>
+      </tr><tr>
+        <td>
+          7
+        </td>
+        <td>
+          176
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.math.Numeric.IntIsIntegral
+        </td>
+        <td style="background: #F0ADAD">
+          math.this.Numeric.IntIsIntegral
+        </td>
+      </tr><tr>
+        <td>
+          7
+        </td>
+        <td>
+          175
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.GUI.InitTeamsDialog.cot
+        </td>
+        <td style="background: #F0ADAD">
+          InitTeamsDialog.this.cot
+        </td>
+      </tr><tr>
+        <td>
+          7
+        </td>
+        <td>
+          178
+        </td>
+        <td>
+          TypeApply
+        </td>
+        <td>
+          scala.collection.immutable.List.canBuildFrom
+        </td>
+        <td style="background: #F0ADAD">
+          immutable.this.List.canBuildFrom[scala.swing.TextField]
+        </td>
+      </tr><tr>
+        <td>
+          7
+        </td>
+        <td>
+          174
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          0
+        </td>
+      </tr><tr>
+        <td>
+          7
+        </td>
+        <td>
+          177
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.TextField.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new scala.swing.TextField(8)
+        </td>
+      </tr><tr>
+        <td>
+          7
+        </td>
+        <td>
+          179
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          scala.collection.immutable.List.map
+        </td>
+        <td style="background: #F0ADAD">
+          immutable.this.List.range[Int](0, InitTeamsDialog.this.cot)(math.this.Numeric.IntIsIntegral).map[scala.swing.TextField, List[scala.swing.TextField]](((i: Int) =&gt; new scala.swing.TextField(8)))(immutable.this.List.canBuildFrom[scala.swing.TextField])
+        </td>
+      </tr><tr>
+        <td>
+          8
+        </td>
+        <td>
+          180
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.RichWindow.title_=
+        </td>
+        <td style="background: #F0ADAD">
+          InitTeamsDialog.this.title_=(&quot;Init Team Names&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          9
+        </td>
+        <td>
+          181
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Dialog.modal_=
+        </td>
+        <td style="background: #F0ADAD">
+          InitTeamsDialog.this.modal_=(true)
+        </td>
+      </tr><tr>
+        <td>
+          11
+        </td>
+        <td>
+          238
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Window.contents_=
+        </td>
+        <td style="background: #F0ADAD">
+          InitTeamsDialog.this.contents_=({
+  final class $anon extends scala.swing.BorderPanel {
+    def &lt;init&gt;(): &lt;$anon: scala.swing.BorderPanel&gt; = {
+      $anon.super.&lt;init&gt;();
+      ()
+    };
+    if (InitTeamsDialog.this.cot.&lt;(16))
+      {
+        $anon.this.layout.update({
+          final class $anon extends scala.swing.BoxPanel {
+            def &lt;init&gt;(): &lt;$anon: scala.swing.BoxPanel&gt; = {
+              $anon.super.&lt;init&gt;(scala.swing.Orientation.Vertical);
+              ()
+            };
+            $anon.this.border_=(scala.swing.Swing.EmptyBorder(5, 5, 5, 5));
+            scala.this.Predef.intWrapper(0).until(InitTeamsDialog.this.cot).foreach[scala.collection.mutable.Buffer[scala.swing.Component]](((i: Int) =&gt; {
+              $anon.this.contents.+=(new scala.swing.Label(&quot;Enter Team name &quot;.+(i.+(1)).+(&quot;:&quot;)));
+              $anon.this.contents.+=(InitTeamsDialog.this.listOfTeams.apply(i))
+            }))
+          };
+          new $anon()
+        }, scala.swing.BorderPanel.Position.Center);
+        $anon.this.layout.update(new scala.swing.FlowPanel(scala.swing.FlowPanel.Alignment.Right)(scala.swing.Button.apply(&quot;Submit&quot;)({
+          InitTeamsDialog.this.init_=(scala.Some.apply[de.htwg.GUI.InitTeams](InitTeams.apply(InitTeamsDialog.this.listOfTeams.map[String, List[String]](((x: scala.swing.TextField) =&gt; x.text))(immutable.this.List.canBuildFrom[String]))));
+          InitTeamsDialog.this.endDialog()
+        })), scala.swing.BorderPanel.Position.South)
+      }
+    else
+      {
+        $anon.this.layout.update({
+          final class $anon extends scala.swing.FlowPanel {
+            def &lt;init&gt;(): &lt;$anon: scala.swing.FlowPanel&gt; = {
+              $anon.super.&lt;init&gt;();
+              ()
+            };
+            $anon.this.border_=(scala.swing.Swing.EmptyBorder(5, 5, 5, 5));
+            scala.this.Predef.intWrapper(0).until(InitTeamsDialog.this.cot).foreach[scala.collection.mutable.Buffer[scala.swing.Component]](((i: Int) =&gt; {
+              $anon.this.contents.+=(new scala.swing.Label(&quot;Enter Team name &quot;.+(i.+(1)).+(&quot;:&quot;)));
+              $anon.this.contents.+=(InitTeamsDialog.this.listOfTeams.apply(i))
+            }))
+          };
+          new $anon()
+        }, scala.swing.BorderPanel.Position.Center);
+        $anon.this.layout.update(new scala.swing.FlowPanel(scala.swing.FlowPanel.Alignment.Right)(scala.swing.Button.apply(&quot;Submit&quot;)({
+          InitTeamsDialog.this.init_=(scala.Some.apply[de.htwg.GUI.InitTeams](InitTeams.apply(InitTeamsDialog.this.listOfTeams.map[String, List[String]](((x: scala.swing.TextField) =&gt; x.text))(immutable.this.List.canBuildFrom[String]))));
+          InitTeamsDialog.this.endDialog()
+        })), scala.swing.BorderPanel.Position.South)
+      }
+  };
+  new $anon()
+})
+        </td>
+      </tr><tr>
+        <td>
+          11
+        </td>
+        <td>
+          237
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.GUI.InitTeamsDialog.$anon.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new $anon()
+        </td>
+      </tr><tr>
+        <td>
+          12
+        </td>
+        <td>
+          209
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          {
+  $anon.this.layout.update({
+    final class $anon extends scala.swing.BoxPanel {
+      def &lt;init&gt;(): &lt;$anon: scala.swing.BoxPanel&gt; = {
+        $anon.super.&lt;init&gt;(scala.swing.Orientation.Vertical);
+        ()
+      };
+      $anon.this.border_=(scala.swing.Swing.EmptyBorder(5, 5, 5, 5));
+      scala.this.Predef.intWrapper(0).until(InitTeamsDialog.this.cot).foreach[scala.collection.mutable.Buffer[scala.swing.Component]](((i: Int) =&gt; {
+        $anon.this.contents.+=(new scala.swing.Label(&quot;Enter Team name &quot;.+(i.+(1)).+(&quot;:&quot;)));
+        $anon.this.contents.+=(InitTeamsDialog.this.listOfTeams.apply(i))
+      }))
+    };
+    new $anon()
+  }, scala.swing.BorderPanel.Position.Center);
+  $anon.this.layout.update(new scala.swing.FlowPanel(scala.swing.FlowPanel.Alignment.Right)(scala.swing.Button.apply(&quot;Submit&quot;)({
+    InitTeamsDialog.this.init_=(scala.Some.apply[de.htwg.GUI.InitTeams](InitTeams.apply(InitTeamsDialog.this.listOfTeams.map[String, List[String]](((x: scala.swing.TextField) =&gt; x.text))(immutable.this.List.canBuildFrom[String]))));
+    InitTeamsDialog.this.endDialog()
+  })), scala.swing.BorderPanel.Position.South)
+}
+        </td>
+      </tr><tr>
+        <td>
+          12
+        </td>
+        <td>
+          182
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int.&lt;
+        </td>
+        <td style="background: #F0ADAD">
+          InitTeamsDialog.this.cot.&lt;(16)
+        </td>
+      </tr><tr>
+        <td>
+          13
+        </td>
+        <td>
+          193
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.GUI.InitTeamsDialog.$anon.$anon.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new $anon()
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          184
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Component.border_=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.border_=(scala.swing.Swing.EmptyBorder(5, 5, 5, 5))
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          183
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Swing.EmptyBorder
+        </td>
+        <td style="background: #F0ADAD">
+          scala.swing.Swing.EmptyBorder(5, 5, 5, 5)
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          185
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          0
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          192
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.immutable.Range.foreach
+        </td>
+        <td style="background: #F0ADAD">
+          scala.this.Predef.intWrapper(0).until(InitTeamsDialog.this.cot).foreach[scala.collection.mutable.Buffer[scala.swing.Component]](((i: Int) =&gt; {
+  $anon.this.contents.+=(new scala.swing.Label(&quot;Enter Team name &quot;.+(i.+(1)).+(&quot;:&quot;)));
+  $anon.this.contents.+=(InitTeamsDialog.this.listOfTeams.apply(i))
+}))
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          186
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.GUI.InitTeamsDialog.cot
+        </td>
+        <td style="background: #F0ADAD">
+          InitTeamsDialog.this.cot
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          187
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.String.+
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;Enter Team name &quot;.+(i.+(1)).+(&quot;:&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          189
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.BufferLike.+=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.contents.+=(new scala.swing.Label(&quot;Enter Team name &quot;.+(i.+(1)).+(&quot;:&quot;)))
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          188
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Label.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new scala.swing.Label(&quot;Enter Team name &quot;.+(i.+(1)).+(&quot;:&quot;))
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          191
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.BufferLike.+=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.contents.+=(InitTeamsDialog.this.listOfTeams.apply(i))
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          190
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.LinearSeqOptimized.apply
+        </td>
+        <td style="background: #F0ADAD">
+          InitTeamsDialog.this.listOfTeams.apply(i)
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          194
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.swing.BorderPanel.Position.Center
+        </td>
+        <td style="background: #F0ADAD">
+          scala.swing.BorderPanel.Position.Center
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          195
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.MapLike.update
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.layout.update({
+  final class $anon extends scala.swing.BoxPanel {
+    def &lt;init&gt;(): &lt;$anon: scala.swing.BoxPanel&gt; = {
+      $anon.super.&lt;init&gt;(scala.swing.Orientation.Vertical);
+      ()
+    };
+    $anon.this.border_=(scala.swing.Swing.EmptyBorder(5, 5, 5, 5));
+    scala.this.Predef.intWrapper(0).until(InitTeamsDialog.this.cot).foreach[scala.collection.mutable.Buffer[scala.swing.Component]](((i: Int) =&gt; {
+      $anon.this.contents.+=(new scala.swing.Label(&quot;Enter Team name &quot;.+(i.+(1)).+(&quot;:&quot;)));
+      $anon.this.contents.+=(InitTeamsDialog.this.listOfTeams.apply(i))
+    }))
+  };
+  new $anon()
+}, scala.swing.BorderPanel.Position.Center)
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          196
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.swing.FlowPanel.Alignment.Right
+        </td>
+        <td style="background: #F0ADAD">
+          scala.swing.FlowPanel.Alignment.Right
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          206
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.FlowPanel.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new scala.swing.FlowPanel(scala.swing.FlowPanel.Alignment.Right)(scala.swing.Button.apply(&quot;Submit&quot;)({
+  InitTeamsDialog.this.init_=(scala.Some.apply[de.htwg.GUI.InitTeams](InitTeams.apply(InitTeamsDialog.this.listOfTeams.map[String, List[String]](((x: scala.swing.TextField) =&gt; x.text))(immutable.this.List.canBuildFrom[String]))));
+  InitTeamsDialog.this.endDialog()
+}))
+        </td>
+      </tr><tr>
+        <td>
+          22
+        </td>
+        <td>
+          205
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Button.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scala.swing.Button.apply(&quot;Submit&quot;)({
+  InitTeamsDialog.this.init_=(scala.Some.apply[de.htwg.GUI.InitTeams](InitTeams.apply(InitTeamsDialog.this.listOfTeams.map[String, List[String]](((x: scala.swing.TextField) =&gt; x.text))(immutable.this.List.canBuildFrom[String]))));
+  InitTeamsDialog.this.endDialog()
+})
+        </td>
+      </tr><tr>
+        <td>
+          22
+        </td>
+        <td>
+          197
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;Submit&quot;
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          200
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          scala.collection.immutable.List.map
+        </td>
+        <td style="background: #F0ADAD">
+          InitTeamsDialog.this.listOfTeams.map[String, List[String]](((x: scala.swing.TextField) =&gt; x.text))(immutable.this.List.canBuildFrom[String])
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          202
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Some.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Some.apply[de.htwg.GUI.InitTeams](InitTeams.apply(InitTeamsDialog.this.listOfTeams.map[String, List[String]](((x: scala.swing.TextField) =&gt; x.text))(immutable.this.List.canBuildFrom[String])))
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          199
+        </td>
+        <td>
+          TypeApply
+        </td>
+        <td>
+          scala.collection.immutable.List.canBuildFrom
+        </td>
+        <td style="background: #F0ADAD">
+          immutable.this.List.canBuildFrom[String]
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          198
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.swing.TextComponent.text
+        </td>
+        <td style="background: #F0ADAD">
+          x.text
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          201
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.GUI.InitTeams.apply
+        </td>
+        <td style="background: #F0ADAD">
+          InitTeams.apply(InitTeamsDialog.this.listOfTeams.map[String, List[String]](((x: scala.swing.TextField) =&gt; x.text))(immutable.this.List.canBuildFrom[String]))
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          203
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.GUI.InitTeamsDialog.init_=
+        </td>
+        <td style="background: #F0ADAD">
+          InitTeamsDialog.this.init_=(scala.Some.apply[de.htwg.GUI.InitTeams](InitTeams.apply(InitTeamsDialog.this.listOfTeams.map[String, List[String]](((x: scala.swing.TextField) =&gt; x.text))(immutable.this.List.canBuildFrom[String]))))
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          204
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.GUI.InitTeamsDialog.endDialog
+        </td>
+        <td style="background: #F0ADAD">
+          InitTeamsDialog.this.endDialog()
+        </td>
+      </tr><tr>
+        <td>
+          26
+        </td>
+        <td>
+          208
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.MapLike.update
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.layout.update(new scala.swing.FlowPanel(scala.swing.FlowPanel.Alignment.Right)(scala.swing.Button.apply(&quot;Submit&quot;)({
+  InitTeamsDialog.this.init_=(scala.Some.apply[de.htwg.GUI.InitTeams](InitTeams.apply(InitTeamsDialog.this.listOfTeams.map[String, List[String]](((x: scala.swing.TextField) =&gt; x.text))(immutable.this.List.canBuildFrom[String]))));
+  InitTeamsDialog.this.endDialog()
+})), scala.swing.BorderPanel.Position.South)
+        </td>
+      </tr><tr>
+        <td>
+          26
+        </td>
+        <td>
+          207
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.swing.BorderPanel.Position.South
+        </td>
+        <td style="background: #F0ADAD">
+          scala.swing.BorderPanel.Position.South
+        </td>
+      </tr><tr>
+        <td>
+          27
+        </td>
+        <td>
+          236
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          {
+  $anon.this.layout.update({
+    final class $anon extends scala.swing.FlowPanel {
+      def &lt;init&gt;(): &lt;$anon: scala.swing.FlowPanel&gt; = {
+        $anon.super.&lt;init&gt;();
+        ()
+      };
+      $anon.this.border_=(scala.swing.Swing.EmptyBorder(5, 5, 5, 5));
+      scala.this.Predef.intWrapper(0).until(InitTeamsDialog.this.cot).foreach[scala.collection.mutable.Buffer[scala.swing.Component]](((i: Int) =&gt; {
+        $anon.this.contents.+=(new scala.swing.Label(&quot;Enter Team name &quot;.+(i.+(1)).+(&quot;:&quot;)));
+        $anon.this.contents.+=(InitTeamsDialog.this.listOfTeams.apply(i))
+      }))
+    };
+    new $anon()
+  }, scala.swing.BorderPanel.Position.Center);
+  $anon.this.layout.update(new scala.swing.FlowPanel(scala.swing.FlowPanel.Alignment.Right)(scala.swing.Button.apply(&quot;Submit&quot;)({
+    InitTeamsDialog.this.init_=(scala.Some.apply[de.htwg.GUI.InitTeams](InitTeams.apply(InitTeamsDialog.this.listOfTeams.map[String, List[String]](((x: scala.swing.TextField) =&gt; x.text))(immutable.this.List.canBuildFrom[String]))));
+    InitTeamsDialog.this.endDialog()
+  })), scala.swing.BorderPanel.Position.South)
+}
+        </td>
+      </tr><tr>
+        <td>
+          28
+        </td>
+        <td>
+          220
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.GUI.InitTeamsDialog.$anon.$anon.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new $anon()
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          211
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Component.border_=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.border_=(scala.swing.Swing.EmptyBorder(5, 5, 5, 5))
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          210
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Swing.EmptyBorder
+        </td>
+        <td style="background: #F0ADAD">
+          scala.swing.Swing.EmptyBorder(5, 5, 5, 5)
+        </td>
+      </tr><tr>
+        <td>
+          30
+        </td>
+        <td>
+          219
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.immutable.Range.foreach
+        </td>
+        <td style="background: #F0ADAD">
+          scala.this.Predef.intWrapper(0).until(InitTeamsDialog.this.cot).foreach[scala.collection.mutable.Buffer[scala.swing.Component]](((i: Int) =&gt; {
+  $anon.this.contents.+=(new scala.swing.Label(&quot;Enter Team name &quot;.+(i.+(1)).+(&quot;:&quot;)));
+  $anon.this.contents.+=(InitTeamsDialog.this.listOfTeams.apply(i))
+}))
+        </td>
+      </tr><tr>
+        <td>
+          30
+        </td>
+        <td>
+          213
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          de.htwg.GUI.InitTeamsDialog.cot
+        </td>
+        <td style="background: #F0ADAD">
+          InitTeamsDialog.this.cot
+        </td>
+      </tr><tr>
+        <td>
+          30
+        </td>
+        <td>
+          212
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          0
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          214
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.String.+
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;Enter Team name &quot;.+(i.+(1)).+(&quot;:&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          216
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.BufferLike.+=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.contents.+=(new scala.swing.Label(&quot;Enter Team name &quot;.+(i.+(1)).+(&quot;:&quot;)))
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          215
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Label.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new scala.swing.Label(&quot;Enter Team name &quot;.+(i.+(1)).+(&quot;:&quot;))
+        </td>
+      </tr><tr>
+        <td>
+          32
+        </td>
+        <td>
+          218
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.BufferLike.+=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.contents.+=(InitTeamsDialog.this.listOfTeams.apply(i))
+        </td>
+      </tr><tr>
+        <td>
+          32
+        </td>
+        <td>
+          217
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.LinearSeqOptimized.apply
+        </td>
+        <td style="background: #F0ADAD">
+          InitTeamsDialog.this.listOfTeams.apply(i)
+        </td>
+      </tr><tr>
+        <td>
+          34
+        </td>
+        <td>
+          222
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.MapLike.update
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.layout.update({
+  final class $anon extends scala.swing.FlowPanel {
+    def &lt;init&gt;(): &lt;$anon: scala.swing.FlowPanel&gt; = {
+      $anon.super.&lt;init&gt;();
+      ()
+    };
+    $anon.this.border_=(scala.swing.Swing.EmptyBorder(5, 5, 5, 5));
+    scala.this.Predef.intWrapper(0).until(InitTeamsDialog.this.cot).foreach[scala.collection.mutable.Buffer[scala.swing.Component]](((i: Int) =&gt; {
+      $anon.this.contents.+=(new scala.swing.Label(&quot;Enter Team name &quot;.+(i.+(1)).+(&quot;:&quot;)));
+      $anon.this.contents.+=(InitTeamsDialog.this.listOfTeams.apply(i))
+    }))
+  };
+  new $anon()
+}, scala.swing.BorderPanel.Position.Center)
+        </td>
+      </tr><tr>
+        <td>
+          34
+        </td>
+        <td>
+          221
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.swing.BorderPanel.Position.Center
+        </td>
+        <td style="background: #F0ADAD">
+          scala.swing.BorderPanel.Position.Center
+        </td>
+      </tr><tr>
+        <td>
+          36
+        </td>
+        <td>
+          223
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.swing.FlowPanel.Alignment.Right
+        </td>
+        <td style="background: #F0ADAD">
+          scala.swing.FlowPanel.Alignment.Right
+        </td>
+      </tr><tr>
+        <td>
+          36
+        </td>
+        <td>
+          233
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.FlowPanel.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new scala.swing.FlowPanel(scala.swing.FlowPanel.Alignment.Right)(scala.swing.Button.apply(&quot;Submit&quot;)({
+  InitTeamsDialog.this.init_=(scala.Some.apply[de.htwg.GUI.InitTeams](InitTeams.apply(InitTeamsDialog.this.listOfTeams.map[String, List[String]](((x: scala.swing.TextField) =&gt; x.text))(immutable.this.List.canBuildFrom[String]))));
+  InitTeamsDialog.this.endDialog()
+}))
+        </td>
+      </tr><tr>
+        <td>
+          37
+        </td>
+        <td>
+          232
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Button.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scala.swing.Button.apply(&quot;Submit&quot;)({
+  InitTeamsDialog.this.init_=(scala.Some.apply[de.htwg.GUI.InitTeams](InitTeams.apply(InitTeamsDialog.this.listOfTeams.map[String, List[String]](((x: scala.swing.TextField) =&gt; x.text))(immutable.this.List.canBuildFrom[String]))));
+  InitTeamsDialog.this.endDialog()
+})
+        </td>
+      </tr><tr>
+        <td>
+          37
+        </td>
+        <td>
+          224
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;Submit&quot;
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          227
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          scala.collection.immutable.List.map
+        </td>
+        <td style="background: #F0ADAD">
+          InitTeamsDialog.this.listOfTeams.map[String, List[String]](((x: scala.swing.TextField) =&gt; x.text))(immutable.this.List.canBuildFrom[String])
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          226
+        </td>
+        <td>
+          TypeApply
+        </td>
+        <td>
+          scala.collection.immutable.List.canBuildFrom
+        </td>
+        <td style="background: #F0ADAD">
+          immutable.this.List.canBuildFrom[String]
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          229
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Some.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Some.apply[de.htwg.GUI.InitTeams](InitTeams.apply(InitTeamsDialog.this.listOfTeams.map[String, List[String]](((x: scala.swing.TextField) =&gt; x.text))(immutable.this.List.canBuildFrom[String])))
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          225
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.swing.TextComponent.text
+        </td>
+        <td style="background: #F0ADAD">
+          x.text
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          228
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.GUI.InitTeams.apply
+        </td>
+        <td style="background: #F0ADAD">
+          InitTeams.apply(InitTeamsDialog.this.listOfTeams.map[String, List[String]](((x: scala.swing.TextField) =&gt; x.text))(immutable.this.List.canBuildFrom[String]))
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          230
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.GUI.InitTeamsDialog.init_=
+        </td>
+        <td style="background: #F0ADAD">
+          InitTeamsDialog.this.init_=(scala.Some.apply[de.htwg.GUI.InitTeams](InitTeams.apply(InitTeamsDialog.this.listOfTeams.map[String, List[String]](((x: scala.swing.TextField) =&gt; x.text))(immutable.this.List.canBuildFrom[String]))))
+        </td>
+      </tr><tr>
+        <td>
+          39
+        </td>
+        <td>
+          231
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          de.htwg.GUI.InitTeamsDialog.endDialog
+        </td>
+        <td style="background: #F0ADAD">
+          InitTeamsDialog.this.endDialog()
+        </td>
+      </tr><tr>
+        <td>
+          41
+        </td>
+        <td>
+          235
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.mutable.MapLike.update
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.layout.update(new scala.swing.FlowPanel(scala.swing.FlowPanel.Alignment.Right)(scala.swing.Button.apply(&quot;Submit&quot;)({
+  InitTeamsDialog.this.init_=(scala.Some.apply[de.htwg.GUI.InitTeams](InitTeams.apply(InitTeamsDialog.this.listOfTeams.map[String, List[String]](((x: scala.swing.TextField) =&gt; x.text))(immutable.this.List.canBuildFrom[String]))));
+  InitTeamsDialog.this.endDialog()
+})), scala.swing.BorderPanel.Position.South)
+        </td>
+      </tr><tr>
+        <td>
+          41
+        </td>
+        <td>
+          234
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.swing.BorderPanel.Position.South
+        </td>
+        <td style="background: #F0ADAD">
+          scala.swing.BorderPanel.Position.South
+        </td>
+      </tr><tr>
+        <td>
+          44
+        </td>
+        <td>
+          239
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Window.close
+        </td>
+        <td style="background: #F0ADAD">
+          this.close()
+        </td>
+      </tr><tr>
+        <td>
+          46
+        </td>
+        <td>
+          240
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Window.centerOnScreen
+        </td>
+        <td style="background: #F0ADAD">
+          InitTeamsDialog.this.centerOnScreen()
+        </td>
+      </tr><tr>
+        <td>
+          47
+        </td>
+        <td>
+          241
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.swing.Window.open
+        </td>
+        <td style="background: #F0ADAD">
+          InitTeamsDialog.this.open()
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>
