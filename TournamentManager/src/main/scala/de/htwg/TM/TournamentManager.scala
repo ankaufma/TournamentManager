@@ -8,16 +8,18 @@ import akka.actor.ActorSystem
 import de.htwg.actorCommunication._
 import de.htwg.controller._
 import com.escalatesoft.subcut.inject._
+import NewBindingModule._
+
 
 object TournamentManager extends App {
-    override def main(args: Array[String]) {
-    val controller = new RealController
-//  val system = ActorSystem.create("MySystem");
-//  val actorcontroller = system.actorOf(Props[ActorController], "Controller")
-//  val tuiactor = system.actorOf(Props[TUIActor], "TUI")
-//  tuiactor ! "Start"
+    implicit val bindingModule: BindingModule = SubCutConfig
+    val controller = new Inject().controller
     val tui = new TUI(controller)
     val gui = new GUI(controller)
     while(tui.routine(readLine)) {}
-    }
+
+//    val system = ActorSystem.create("MySystem")
+//    val actorcontroller = system.actorOf(Props[ActorController], "Controller")
+//    val tuiactor = system.actorOf(Props[TUIActor], "TUI")
+//    tuiactor ! "Start"
 }

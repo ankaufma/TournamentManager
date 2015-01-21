@@ -125,6 +125,7 @@ class TUI (controller: ControllerTrait) extends Reactor {
     case a: NewState => 
       printMatches(a.g)
       printTable(a.g)
+    case Quit => System.exit(0)
     case _ => 
   }
   
@@ -155,7 +156,7 @@ class TUI (controller: ControllerTrait) extends Reactor {
         case 'M' :: 'a' :: rest => controller.groups.foreach(printMatches(_))
         case 'm' :: 'e' :: rest => printMenu()
         case 'M' :: 'e' :: rest => printMenu()
-        case 'q' :: rest => continue = false
+        case 'q' :: rest => controller.quit()
         case 'Q' :: rest => continue = false
         case _ => {
          try { 

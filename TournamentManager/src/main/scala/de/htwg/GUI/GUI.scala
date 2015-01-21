@@ -7,21 +7,15 @@ import java.awt.GridLayout
 import scala.collection.mutable.ListBuffer
 import java.awt.Dimension
 import java.awt.Color
-import akka.actor.Actor
-import akka.actor.Props
-import akka.event.Logging
-import akka.actor.ActorSystem
-import akka.actor.ActorContext
-import akka.actor.ActorRef
+import de.htwg.swingCommunication._
 
 class GUI(controller: ControllerTrait) extends Frame {
-  import de.htwg.swingCommunication._
-  import controller.getEasyTable
   
   listenTo(controller)
   reactions += {
 	  case a: NewState => updateTables
     case GroupWinnerFound(a,b) => new GroupWinner(a,b)
+		case Quit => System.exit(0)
 	  case _ => 
   }
   
@@ -45,7 +39,7 @@ class GUI(controller: ControllerTrait) extends Frame {
     	  listOfButtons.foreach(_.enabled = true) 
     	  listOfGoals.foreach(_.text = "0")
         })
-      contents += new MenuItem(Action("Quit") { System.exit(0) })
+      contents += new MenuItem(Action("Quit") { controller.quit() })
     }
   }
   

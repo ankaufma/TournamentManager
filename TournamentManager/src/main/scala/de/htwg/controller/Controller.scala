@@ -1,5 +1,7 @@
 package de.htwg.controller
 
+import de.htwg.swingCommunication.Quit
+
 import scala.collection.mutable.ListBuffer
 import scala.swing.event.Event
 import scala.swing.Publisher
@@ -8,20 +10,24 @@ import de.htwg.GUI
 import akka.actor._
 import com.escalatesoft.subcut.inject._
     
-  class RealController extends ControllerTrait {
+  class RealController(implicit val bindingModule: BindingModule) extends ControllerTrait with Injectable {
     import de.htwg.swingCommunication._
     class EasyTable(group: Group) {
       def getEasyTable = getTable(group)
     }
-    
+
+    def quit(): Unit = {
+      publish(Quit)
+    }
+
     override val groupWinners = new ListBuffer[Team]()
     override val players = new PlayerManager(ListBuffer())
     override val teams = new ListBuffer[Team]()
     override val groups = new ListBuffer[Group]() 
     def initTeams(team: String) = {
         teams += Team(teams.size-1,team,0,0,0)
-        publish(TeamsInit) 
-      }
+        publish(TeamsInit)
+    }
     
     def createPlayer(name: String) = {
       players.createPlayer(name)
@@ -108,11 +114,12 @@ import com.escalatesoft.subcut.inject._
     }
   }
   
-  class DummyController extends ControllerTrait {
+  class DummyController(implicit val bindingModule: BindingModule) extends ControllerTrait with Injectable {
     override val groupWinners = new ListBuffer[Team]()
     override val players = new PlayerManager(ListBuffer())
     override val teams = new ListBuffer[Team]()
-    override val groups = new ListBuffer[Group]() 
+    override val groups = new ListBuffer[Group]()
+    def quit(): Unit = ???
     def createPlayer(name: String)= ???
     def incrementGoals(index: Int)= ???
     def decrementGoals(index: Int)= ???
@@ -245,7 +252,8 @@ trait ControllerTrait extends Publisher {
     val groupWinners = new ListBuffer[Team]()
     val players = new PlayerManager(ListBuffer())
     val teams = new ListBuffer[Team]()
-    val groups = new ListBuffer[Group]() 
+    val groups = new ListBuffer[Group]()
+    def quit()
     def createPlayer(name: String) 
     def incrementGoals(index: Int)
     def decrementGoals(index: Int)
